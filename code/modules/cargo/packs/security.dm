@@ -1518,5 +1518,5 @@
 	desc = "A slow firing, stylish anti-tank pistol."
 	cost = 4500 //less dps than amr less price i guess?
 	num_contained = 1
-	contains = list(/obj/item/gun/ballistic/automatic/pistol/p577)
+	contains = list(/obj/item/gun/ballistic/automatic/pistol/p500/p577)
 	crate_name = "select weapon crate"
