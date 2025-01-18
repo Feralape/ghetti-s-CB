@@ -1797,3 +1797,10 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Cave"
 	icon_state = "cave"
 	outdoors = TRUE
+
+//testing
+
+/area/f13/test_bunker
+	name = "test Bunker"
+	icon_state = "mountain_bunker"
+	requires_power = TRUE
