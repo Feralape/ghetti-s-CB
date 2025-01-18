@@ -1130,7 +1130,7 @@
 //loadout version
 /obj/item/gun/ballistic/automatic/pistol/p500
 	name = "NT P-500 Superheavy Pistol"
-	desc = "A super heavy pistol chambered in 14mm, it has a strange red logo of nine tails at the slide aswell. You will most likely want to have a cybernetic arm to lessen the risk of having your arm torn off on shooting this pistol."
+	desc = "A super heavy pistol chambered in .577 Nitro Express, it has a strange red logo of nine tails at the slide aswell. You will most likely want to have a cybernetic arm to lessen the risk of having your arm torn off on shooting this pistol."
 	icon_state = "p500"
 	item_state = "pistolchrome"
 	icon = 'icons/fallout/objects/guns/longguns.dmi'
@@ -1140,7 +1140,7 @@
 	mag_type = /obj/item/ammo_box/magazine/ne577
 	weapon_class = WEAPON_CLASS_SMALL
 	weapon_weight = GUN_TWO_HAND_ONLY
-	damage_multiplier = GUN_EXTRA_DAMAGE_T3 //60 dps
+//	damage_multiplier = GUN_EXTRA_DAMAGE_T3 //60 dps
 	//(Just remove the ability to akimbo this if that becomes a thing in the future and allow one handing it?)
 	init_recoil = HANDGUN_RECOIL(4.0, 2.2) //mom said we got akimbo at home, akimbo at home: 
 	init_firemodes = list(
@@ -1152,16 +1152,17 @@
 
 //for premium shop
 /obj/item/gun/ballistic/automatic/pistol/p500/p577
-	name = "NT P-577 Superheavy Pistol"
-	desc = "A super heavy pistol chambered in .577 Nitro Express but rechambered to use 14mm for easier resupplying, it has a strange red logo of nine tails at the slide aswell. It has an integrated laser sight. You most likely want to have a cybernetic arm to lessen the risk of having your arm torn off on shooting this pistol. Looks to be a recent version just before the war, Limited production."
+	name = "NT P-577 Kitsunemimi Superheavy Pistol"
+	desc = "A super heavy pistol chambered in .577 Nitro Express. It has a strange red logo of nine tails at the slide aswell. It has an integrated laser sight. You most likely want to have a cybernetic arm to lessen the risk of having your arm torn off on shooting this pistol. Looks to be a recent version just before the war, Limited production."
 	icon_state = "p577"
-	damage_multiplier = GUN_EXTRA_DAMAGE_T10 // 129dps, less than other rares i guess it's fair tho for a pistol with single shots?
+	damage_multiplier = GUN_EXTRA_DAMAGE_T3
+//	damage_multiplier = GUN_EXTRA_DAMAGE_T10 // 129dps, less than other rares i guess it's fair tho for a pistol with single shots?
 	
 	init_recoil = HANDGUN_RECOIL(4.4, 2.4)
 
 //Custom skins etc
 /obj/item/gun/ballistic/automatic/pistol/p500/crimsondeath
-	name = "NT P-500 Kitsunemimi -Crimson Death- .577NE Pistol"
+	name = "NT P-500 -Crimson Death- .577NE Pistol"
 	desc = "A super heavy pistol chambered in .577 Nitro Express, laser engraved 'Crimson Death' to the side and it has a strange red logo of nine tails at the slide aswell. It has an integrated laser sight and holographic sight built in, you most likely want to have a cybernetic arm to lessen the risk of having your arm torn off on shooting this pistol. This strange high tech, expensive pistol does not seem from this age, it has a name inscribed to it 'Elizabeth Decker'."
 	icon_state = "crimsondeath"
 
