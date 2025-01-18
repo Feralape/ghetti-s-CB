@@ -30,7 +30,6 @@
 		/datum/language/dwarf,
 		/datum/language/tribal,
 		/datum/language/signlanguage,
-		/datum/language/pokemon,
 		/datum/language/canine,
 		/datum/language/squirrel,
 		/datum/language/sergal,

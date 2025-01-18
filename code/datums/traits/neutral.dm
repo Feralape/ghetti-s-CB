@@ -493,7 +493,7 @@
 	var/mob/living/H = quirk_holder
 	if(!QDELETED(H))
 		H.remove_language(/datum/language/narsie)
-
+/*
 /datum/quirk/pokespeak
 	name = "Pokemon Language Comprehension"
 	desc = "You're somehow capable of understanding and speaking the common pokemon language."
@@ -513,6 +513,7 @@
 	var/mob/living/H = quirk_holder
 	if(!QDELETED(H))
 		H.remove_language(/datum/language/pokemon)
+*/
 
 /datum/quirk/oldnorsecommon
 	name = "Combined Common Nordic-Germanic Language Comprehension"

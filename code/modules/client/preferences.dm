@@ -263,8 +263,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/custom_species = null
 
 	//Creature Preferences
-	var/creature_species = 		"Eevee"
-	var/creature_name = 		"Eevee"
+	var/creature_species = 		"Catslug"
+	var/creature_name = 		"Catslug"
 	var/creature_flavor_text = 	null
 	var/creature_ooc = 			null
 	var/image/creature_image = null

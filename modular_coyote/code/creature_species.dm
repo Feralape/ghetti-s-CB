@@ -28,6 +28,7 @@
 	wagging_type = "mam_waggingtail"
 	footstep_type = FOOTSTEP_MOB_CLAW
 
+/*
 //Start Pokemon//
 //Alphabetical Please//
 
@@ -637,7 +638,7 @@
 
 //^^^ Please keep these alphabetical. Don't just add to the bottom of the list. ^^^//
 //End Pokemon//
-
+*/
 //Start Other//
 
 /datum/species/feral/catslug

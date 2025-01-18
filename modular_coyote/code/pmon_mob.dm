@@ -87,7 +87,7 @@
 /mob/living/simple_animal/advanced/Destroy()
 	GLOB.advanced_mob_list -= src
 	. = ..()
-
+/*
 ///////////////////////////////
 //////ALPHABETICAL PLEASE//////
 ///////////////////////////////
@@ -692,7 +692,6 @@
 	p_types = list(P_TYPE_PSYCH)
 //	p_additional_moves = list(/mob/living/simple_animal/advanced/proc/move_fly,
 //							/mob/living/simple_animal/advanced/proc/move_hover)
-
 /mob/living/simple_animal/advanced/purrloin
 	name = "purrloin"
 	icon_state = "purrloin"
@@ -700,7 +699,6 @@
 	icon_dead = "purrloin_d"
 	p_types = list(P_TYPE_DARK)
 	mob_size = MOB_SIZE_SMALL
-/*
 /mob/living/simple_animal/advanced/ralts
 	name = "ralts"
 	icon_state = "ralts"
@@ -708,7 +706,6 @@
 	icon_dead = "ralts_d"
 	p_types = list(P_TYPE_PSYCH, P_TYPE_FAIRY)
 	mob_size = MOB_SIZE_SMALL
-*/
 /mob/living/simple_animal/advanced/raticate
 	name = "raticate"
 	icon_state = "raticate"
@@ -799,3 +796,4 @@
 //DON'T JUST ADD TO THE BOTTOM OF THIS FILE//
 //				  OR ELSE				   //
 /////////////////////////////////////////////
+*/

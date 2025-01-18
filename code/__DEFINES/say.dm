@@ -80,7 +80,7 @@
 #define BACKGROUND_INFO_NOTE_TEMPLATE "Background Info Template\n\
 	Keep in mind that you do not need to have answers for all of these questions from the word go, but having answers for some of them should greatly improve your playing experience due to it solidifying your character more robustly in a very fluid world.\n\
 	\n\
-	1. What is your characters background?  What setting are they from?  How did they come here?\n\"
+	1. What is your characters background?  What setting are they from?  How did they come here?"
 
 
 // Is something in the IC chat filter? This is config dependent.
@@ -100,7 +100,7 @@
 #define EMOTE_HEADER_TEXT "\
 	- underline(_text_), bold(+text+), italic(|text|). \n\
 	- singing(%text), your name(@), ! at start to emote on radio. \n\
-	- some emoticons can be used with say also.\n\"
+	- some emoticons can be used with say also."
 //Dan is the best, <3 ~TK
 //put space before the \ so it reads properly
 // use \ for readability, but one big line. \n for a new line. \n\ for a new line and readability.
