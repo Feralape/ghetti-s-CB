@@ -70,7 +70,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "au" = (
 /obj/machinery/door/poddoor{
@@ -608,7 +608,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "dp" = (
 /turf/open/floor/plating,
@@ -619,7 +619,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "dt" = (
 /turf/closed/indestructible/rock/sand,
@@ -1262,7 +1262,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "ib" = (
 /obj/effect/decal/cleanable/glass,
@@ -2113,7 +2113,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "nH" = (
 /obj/structure/table/reinforced,
@@ -2611,7 +2611,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "qX" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2955,7 +2955,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "tq" = (
 /obj/item/binoculars,
@@ -3467,7 +3467,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "wT" = (
 /obj/effect/decal/cleanable/ash,
@@ -4865,7 +4865,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "FV" = (
 /obj/structure/spider/stickyweb,
@@ -4907,7 +4907,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "Gj" = (
 /obj/machinery/door/airlock/maintenance_hatch{
@@ -5887,7 +5887,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "MI" = (
 /obj/effect/decal/remains/human,
@@ -6714,7 +6714,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest)
 "Sq" = (
 /mob/living/simple_animal/hostile/poison/giant_spider{

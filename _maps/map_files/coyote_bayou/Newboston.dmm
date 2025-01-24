@@ -736,7 +736,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/building)
 "atg" = (
-/turf/open/water{
+/turf/open/liquid/water{
 	icon = 'icons/turf/pool.dmi';
 	icon_state = "pool_tile"
 	},
@@ -24685,7 +24685,7 @@
 /area/f13/tribe)
 "mWc" = (
 /obj/item/toy/beach_ball,
-/turf/open/water{
+/turf/open/liquid/water{
 	icon = 'icons/turf/pool.dmi';
 	icon_state = "pool_tile"
 	},
@@ -41003,7 +41003,7 @@
 /area/f13/building)
 "vAD" = (
 /obj/item/bikehorn/rubberducky,
-/turf/open/water{
+/turf/open/liquid/water{
 	icon = 'icons/turf/pool.dmi';
 	icon_state = "pool_tile"
 	},
@@ -45640,7 +45640,7 @@
 /area/f13/tcoms)
 "xXJ" = (
 /obj/item/reagent_containers/food/snacks/cola_float,
-/turf/open/water{
+/turf/open/liquid/water{
 	icon = 'icons/turf/pool.dmi';
 	icon_state = "pool_tile"
 	},

@@ -3012,7 +3012,7 @@
 /area/f13/wasteland)
 "bBr" = (
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "bBt" = (
 /obj/effect/decal/cleanable/dirt{
@@ -8211,7 +8211,7 @@
 	},
 /area/f13/wasteland)
 "ekU" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "ekX" = (
 /obj/structure/simple_door/bunker/glass,
@@ -38097,7 +38097,7 @@
 	pixel_x = 20
 	},
 /obj/structure/timeddoor,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "toe" = (
 /obj/structure/statue/sandstone/gravestone{
@@ -42968,7 +42968,7 @@
 /area/f13/wasteland)
 "vTv" = (
 /obj/structure/barricade/bars,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "vTy" = (
 /obj/structure/chair/f13foldupchair,
@@ -44965,7 +44965,7 @@
 /area/f13/wasteland)
 "xaj" = (
 /obj/item/storage/trash_stack,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "xap" = (
 /obj/machinery/light{

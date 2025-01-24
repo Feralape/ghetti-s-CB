@@ -115,7 +115,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "adn" = (
 /turf/closed/indestructible/opshuttle{
@@ -1097,7 +1097,7 @@
 /obj/structure/window/reinforced{
 	color = "#3e3d42"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "aUr" = (
 /obj/structure/rack,
@@ -3029,7 +3029,7 @@
 	layer = 3.1
 	},
 /obj/machinery/light/small,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/offices1st)
 "cDQ" = (
 /obj/structure/destructible/tribal_torch/wall{
@@ -3190,7 +3190,7 @@
 	dir = 1;
 	layer = 3.1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/offices1st)
 "cJy" = (
 /obj/structure/extinguisher_cabinet,
@@ -4247,7 +4247,7 @@
 	dir = 4
 	},
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/operations)
 "dvt" = (
 /obj/structure/cable{
@@ -4779,7 +4779,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "dNi" = (
 /obj/structure/table/wood,
@@ -5019,7 +5019,7 @@
 /obj/structure/flora/junglebush/c,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "dWc" = (
 /turf/open/floor/plasteel/f13/vault_floor/white,
@@ -5211,7 +5211,7 @@
 	dir = 1;
 	layer = 3
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/leisure)
 "edS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7038,7 +7038,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "fAe" = (
 /obj/structure/rack,
@@ -8879,7 +8879,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "gSN" = (
 /obj/machinery/door_timer{
@@ -9563,7 +9563,7 @@
 /obj/structure/flora/junglebush{
 	pixel_x = -15
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/rnd)
 "htS" = (
 /obj/structure/stone_tile/surrounding/cracked,
@@ -10102,7 +10102,7 @@
 	color = "#3e3d42"
 	},
 /obj/structure/flora/junglebush,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "hRS" = (
 /obj/structure/sign/poster/prewar/poster71,
@@ -10480,7 +10480,7 @@
 	},
 /area/f13/brotherhood/rnd)
 "ijW" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "ikl" = (
 /obj/structure/table{
@@ -10570,7 +10570,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "ioh" = (
 /obj/machinery/computer/security/wooden_tv{
@@ -11059,7 +11059,7 @@
 	color = "#3e3d42";
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/offices1st)
 "iLh" = (
 /obj/machinery/light/small{
@@ -11780,7 +11780,7 @@
 	color = "#3e3d42";
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/offices1st)
 "jon" = (
 /obj/structure/stone_tile/cracked,
@@ -12047,7 +12047,7 @@
 	pixel_x = -15
 	},
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/rnd)
 "jBP" = (
 /obj/structure/closet/crate/bin{
@@ -12209,7 +12209,7 @@
 /obj/structure/flora/rock/jungle{
 	density = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/leisure)
 "jIL" = (
 /obj/item/radio/intercom{
@@ -13010,7 +13010,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/floor,
 /area/f13/vault)
 "ksN" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/leisure)
 "ktn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13647,7 +13647,7 @@
 /obj/machinery/hydroponics/constructable,
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "kPD" = (
 /obj/structure/rack,
@@ -13903,7 +13903,7 @@
 	},
 /obj/structure/flora/rock/jungle,
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "laP" = (
 /obj/effect/turf_decal/stripes/corner{
@@ -15271,7 +15271,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "mll" = (
 /obj/structure/table/wood/fancy/black,
@@ -17122,7 +17122,7 @@
 	dir = 1;
 	layer = 3.1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/offices1st)
 "nHv" = (
 /obj/structure/closet/secure_closet/freezer/kitchen/maintenance,
@@ -17587,7 +17587,7 @@
 	},
 /obj/structure/flora/ausbushes/reedbush,
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/operations)
 "obq" = (
 /obj/machinery/light/small,
@@ -17605,7 +17605,7 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/junglebush,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/rnd)
 "obW" = (
 /obj/structure/sign/poster/prewar/poster75,
@@ -18766,7 +18766,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "oTP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19539,7 +19539,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "put" = (
 /obj/structure/noticeboard{
@@ -20204,7 +20204,7 @@
 	color = "#3e3d42";
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/leisure)
 "pXU" = (
 /obj/structure/chair/stool/retro/backed{
@@ -20453,7 +20453,7 @@
 	dir = 1;
 	layer = 3.1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/rnd)
 "qgx" = (
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -20894,7 +20894,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/brflowers,
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/archives)
 "qve" = (
 /obj/structure/fluff/railing{
@@ -20941,7 +20941,7 @@
 /obj/structure/window/reinforced{
 	color = "#3e3d42"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/archives)
 "qwL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21424,7 +21424,7 @@
 /obj/structure/flora/ausbushes/grassybush{
 	layer = 2.1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/leisure)
 "qOj" = (
 /obj/structure/bookcase,
@@ -21475,7 +21475,7 @@
 	dir = 1;
 	layer = 3
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "qQr" = (
 /obj/item/radio/intercom{
@@ -23359,7 +23359,7 @@
 /obj/structure/disposalpipe/broken{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "srZ" = (
 /obj/structure/chair/comfy/black{
@@ -23506,7 +23506,7 @@
 	layer = 3.1
 	},
 /obj/structure/flora/junglebush/large,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "swu" = (
 /obj/machinery/vending/cigarette,
@@ -23843,7 +23843,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "sJv" = (
 /obj/effect/turf_decal/caution/stand_clear/white,
@@ -23915,7 +23915,7 @@
 	color = "#3e3d42"
 	},
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/operations)
 "sMa" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24014,7 +24014,7 @@
 	},
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/ywflowers,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/operations)
 "sQz" = (
 /obj/structure/simple_door/metal/ventilation,
@@ -24369,7 +24369,7 @@
 	dir = 1;
 	layer = 3
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/rnd)
 "tdE" = (
 /obj/effect/turf_decal/weather/snow/corner{
@@ -24509,7 +24509,7 @@
 /obj/machinery/hydroponics/constructable,
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "tiE" = (
 /obj/machinery/light,
@@ -24963,7 +24963,7 @@
 	},
 /obj/structure/flora/ausbushes/brflowers,
 /obj/structure/flora/ausbushes/reedbush,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/operations)
 "tFX" = (
 /obj/item/radio/intercom{
@@ -25068,7 +25068,7 @@
 	color = "#3e3d42";
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/leisure)
 "tIq" = (
 /obj/effect/turf_decal/stripes/white/line{
@@ -25659,7 +25659,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/archives)
 "ueZ" = (
 /obj/machinery/light{
@@ -26008,7 +26008,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "usv" = (
 /obj/machinery/vending/wardrobe/law_wardrobe,
@@ -26461,7 +26461,7 @@
 	color = "#3e3d42"
 	},
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "uJZ" = (
 /obj/structure/ladder/unbreakable{
@@ -26486,7 +26486,7 @@
 	pixel_y = 32
 	},
 /obj/structure/flora/ausbushes/reedbush,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/leisure)
 "uKO" = (
 /obj/structure/table/wood,
@@ -27638,7 +27638,7 @@
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "vBG" = (
 /obj/structure/cable{
@@ -27699,7 +27699,7 @@
 	layer = 3
 	},
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "vFl" = (
 /obj/structure/stone_tile/block,
@@ -27810,7 +27810,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "vMI" = (
 /obj/machinery/light{
@@ -28189,7 +28189,7 @@
 	},
 /obj/structure/flora/ausbushes/sparsegrass,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "wcO" = (
 /obj/item/am_shielding_container,
@@ -28871,7 +28871,7 @@
 	color = "#3e3d42";
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/offices1st)
 "wGd" = (
 /obj/effect/decal/cleanable/dirt,
@@ -28932,7 +28932,7 @@
 	dir = 6
 	},
 /obj/structure/spacevine,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "wLd" = (
 /obj/machinery/vr_sleeper/bos,
@@ -29259,7 +29259,7 @@
 /obj/structure/flora/junglebush/b,
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/effect/light_emitter,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/enclave)
 "wYa" = (
 /turf/closed/wall/r_wall,
@@ -29281,7 +29281,7 @@
 /obj/structure/flora/ausbushes/fullgrass,
 /obj/structure/flora/ausbushes/ywflowers,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/archives)
 "wYo" = (
 /obj/structure/safe/floor,
@@ -30293,7 +30293,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/underground/cave)
 "xRe" = (
 /obj/structure/table/wood,
@@ -30602,7 +30602,7 @@
 	brightness = 3;
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/archives)
 "yhL" = (
 /obj/structure/table,
@@ -30697,7 +30697,7 @@
 /obj/structure/flora/ausbushes/grassybush{
 	layer = 2.1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/operations)
 "ykN" = (
 /obj/structure/table/wood,
@@ -30724,7 +30724,7 @@
 /obj/structure/flora/grass/jungle/b,
 /obj/structure/flora/ausbushes/reedbush,
 /obj/structure/flora/ausbushes/fullgrass,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/brotherhood/rnd)
 "ylo" = (
 /obj/structure/table/wood/fancy,

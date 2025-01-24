@@ -96,11 +96,11 @@
 	max_integrity = 800;
 	obj_integrity = 800
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "aaw" = (
 /mob/living/simple_animal/hostile/mirelurk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "aax" = (
 /obj/structure/barricade/bars,
@@ -891,7 +891,7 @@
 	},
 /area/f13/building/massfusion)
 "adv" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/massfusion)
 "adw" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -3906,7 +3906,7 @@
 "aos" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/structure/sink/deep_water,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "aot" = (
 /obj/effect/spawner/lootdrop/trash,
@@ -6319,7 +6319,7 @@
 /area/f13/wasteland/city)
 "awQ" = (
 /mob/living/simple_animal/hostile/bloatfly,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "awR" = (
 /obj/machinery/light/small{
@@ -9868,7 +9868,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "aIR" = (
 /obj/structure/barricade/wooden,
@@ -14733,7 +14733,7 @@
 /area/f13/building/abandoned)
 "aZh" = (
 /obj/effect/decal/cleanable/cobweb,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "aZk" = (
 /obj/structure/window/fulltile/wood{
@@ -14986,7 +14986,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "bae" = (
 /obj/structure/closet,
@@ -18228,7 +18228,7 @@
 /area/f13/building)
 "bns" = (
 /obj/structure/wreck/trash/bus_door,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "bnt" = (
 /obj/structure/bed/mattress{
@@ -19866,7 +19866,7 @@
 /turf/open/floor/plating/f13/inside/gravel,
 /area/f13/wasteland)
 "bzQ" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "bzT" = (
 /obj/structure/chair/booth{
@@ -20443,7 +20443,7 @@
 /area/f13/store)
 "bJJ" = (
 /obj/structure/flora/junglebush/b,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/ruins)
 "bJN" = (
 /obj/structure/table/wood,
@@ -21120,7 +21120,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland/city)
 "bVB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -21271,7 +21271,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "bYV" = (
 /obj/structure/punching_bag,
@@ -21829,7 +21829,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_3"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "chX" = (
 /obj/structure/closet/cardboard/metal,
@@ -21900,7 +21900,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland/city)
 "ciS" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -22873,7 +22873,7 @@
 /area/f13/building/abandoned)
 "cqs" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "cqw" = (
 /obj/effect/decal/cleanable/dirt,
@@ -23014,7 +23014,7 @@
 /area/f13/ruins)
 "crr" = (
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "crs" = (
 /obj/structure/bed,
@@ -25175,7 +25175,7 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/chair/stool,
 /obj/item/fishingrod,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "del" = (
 /obj/structure/flora/tree/thick_tree,
@@ -26031,7 +26031,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland/city)
 "dus" = (
 /obj/structure/chair/sofa/corp/corner{
@@ -27263,7 +27263,7 @@
 	icon_state = "tall_grass_3"
 	},
 /mob/living/simple_animal/hostile/bloatfly,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "dSl" = (
 /obj/structure/chair/wood,
@@ -27763,7 +27763,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/mall)
 "ecv" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -27898,7 +27898,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_3"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "eft" = (
 /obj/structure/table/wood,
@@ -28828,7 +28828,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "ewM" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -30878,7 +30878,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland/city)
 "fkX" = (
 /obj/structure/wreck/trash/three_barrels,
@@ -31038,7 +31038,7 @@
 	},
 /area/f13/building/abandoned)
 "fpg" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/ruins)
 "fpj" = (
 /obj/effect/decal/cleanable/dirt,
@@ -33352,7 +33352,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/ruins)
 "ghh" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "ghy" = (
 /obj/structure/nest/randomized{
@@ -34058,7 +34058,7 @@
 /area/f13/wasteland)
 "gxE" = (
 /obj/structure/flora/ausbushes/leafybush,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/ruins)
 "gxR" = (
 /obj/structure/fence/corner{
@@ -34513,7 +34513,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "gFs" = (
 /obj/effect/decal/cleanable/dirt,
@@ -34780,7 +34780,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_6"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "gJs" = (
 /obj/structure/barricade/wooden,
@@ -35014,7 +35014,7 @@
 /area/f13/building/abandoned)
 "gNQ" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "gNU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -36107,7 +36107,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "hkO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -38124,7 +38124,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "hZZ" = (
 /obj/structure/decoration/clock{
@@ -39429,7 +39429,7 @@
 /obj/structure/flora/tree/tall{
 	icon_state = "tree_2"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "ixW" = (
 /obj/structure/simple_door/interior,
@@ -42131,7 +42131,7 @@
 	dir = 9
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/mall)
 "jyU" = (
 /obj/structure/closet/boxinggloves,
@@ -46085,7 +46085,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/mall)
 "lbX" = (
 /obj/effect/decal/cleanable/dirt{
@@ -53594,7 +53594,7 @@
 	icon_state = "tall_grass_3"
 	},
 /mob/living/simple_animal/hostile/bloatfly,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "nOR" = (
 /obj/structure/chair/left{
@@ -54268,7 +54268,7 @@
 /area/f13/building/abandoned)
 "ocZ" = (
 /obj/structure/flora/tree/jungle/small,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/ruins)
 "odd" = (
 /obj/structure/flora/grass/wasteland{
@@ -55590,7 +55590,7 @@
 /area/f13/wasteland/city)
 "oCN" = (
 /obj/structure/flora/wasteplant/wild_punga,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "oCR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -55927,7 +55927,7 @@
 /area/f13/ruins)
 "oJI" = (
 /mob/living/simple_animal/hostile/mirelurk/baby,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/massfusion)
 "oJV" = (
 /obj/structure/flora/grass/jungle,
@@ -57890,7 +57890,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_3"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "puU" = (
 /obj/structure/chair/booth{
@@ -59255,7 +59255,7 @@
 /obj/structure/flora/tree/jungle/small{
 	color = "#d9b51c"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "pYl" = (
 /obj/structure/nest/randomized{
@@ -60036,7 +60036,7 @@
 /turf/open/indestructible/ground/outside/water,
 /area/f13/wasteland)
 "qoU" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "qpo" = (
 /mob/living/simple_animal/hostile/stalker,
@@ -60082,7 +60082,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "qpR" = (
 /obj/structure/flora/grass/jungle,
@@ -60782,7 +60782,7 @@
 /area/f13/building/mall)
 "qDT" = (
 /mob/living/simple_animal/opossum,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "qEh" = (
 /obj/structure/chair/f13chair2{
@@ -61606,7 +61606,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "qVH" = (
 /turf/open/indestructible/ground/outside/dirt{
@@ -62253,7 +62253,7 @@
 	dir = 4
 	},
 /obj/structure/pondlily_small,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "rjx" = (
 /obj/structure/car/rubbish3,
@@ -64434,7 +64434,7 @@
 /obj/structure/fluff/railing{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/mall)
 "sdK" = (
 /obj/structure/sign/map/left{
@@ -66611,7 +66611,7 @@
 "sXb" = (
 /obj/structure/flora/rock/jungle,
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "sXv" = (
 /turf/open/indestructible/ground/outside/road{
@@ -67892,7 +67892,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo12"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "tws" = (
 /obj/effect/decal/cleanable/dirt,
@@ -68281,7 +68281,7 @@
 	pixel_y = -11
 	},
 /obj/effect/decal/waste,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "tDy" = (
 /obj/structure/table/wood,
@@ -69169,7 +69169,7 @@
 /area/f13/ruins)
 "tUB" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "tUJ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -70251,7 +70251,7 @@
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/massfusion)
 "usn" = (
 /obj/effect/decal/cleanable/dirt,
@@ -72416,7 +72416,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "vlJ" = (
 /obj/effect/decal/cleanable/dirt,
@@ -76326,7 +76326,7 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "wOR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -77112,7 +77112,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "xeL" = (
 /obj/effect/decal/cleanable/dirt,
@@ -78745,7 +78745,7 @@
 /obj/structure/flora/grass/wasteland{
 	icon_state = "tall_grass_3"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "xKv" = (
 /obj/structure/wreck/trash/brokenvendor,
@@ -79298,7 +79298,7 @@
 /area/f13/building)
 "xVj" = (
 /obj/structure/flora/ausbushes/grassybush,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "xVR" = (
 /obj/effect/decal/cleanable/dirt,

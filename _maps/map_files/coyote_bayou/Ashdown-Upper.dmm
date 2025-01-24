@@ -11,14 +11,14 @@
 /area/f13/wasteland)
 "an" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "aq" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
 	dir = 4
 	},
 /obj/structure/flora/ausbushes/stalkybush,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "as" = (
 /obj/structure/barricade/wooden,
@@ -1384,7 +1384,7 @@
 /area/f13/caves)
 "kL" = (
 /obj/structure/flora/ausbushes/leafybush,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "kM" = (
 /obj/structure/flora/junglebush/b,
@@ -2379,7 +2379,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland/ashdown)
 "sa" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "sb" = (
 /obj/structure/flora/ausbushes/sparsegrass,
@@ -5424,7 +5424,7 @@
 /area/f13/building/abandoned)
 "MT" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "MU" = (
 /obj/structure/barricade/wooden,
@@ -5820,7 +5820,7 @@
 	},
 /area/f13/building/workshop/ashdown)
 "Qw" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "Qy" = (
 /obj/structure/chair/booth,

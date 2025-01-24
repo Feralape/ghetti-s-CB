@@ -500,6 +500,10 @@
 #define SHOES_TRAIT "shoes" //inherited from your sweet kicks
 #define GLOVE_TRAIT "glove" //inherited by your cool gloves
 #define BOOK_TRAIT "granter (book)" // knowledge is power
+///AM is currently submerged
+#define TRAIT_SUBMERGED "trait_submerged"
+///AM will not be submerged. Trait must ALWAYS be added via the add_nosubmerge_trait proc for correct behavior
+#define TRAIT_NOSUBMERGE "trait_nosubmerge"
 
 // unique trait sources, still defines
 #define STATUE_TRAIT "statue"
@@ -545,6 +549,8 @@
 #define CLOWNOP_TRAIT "clown-op"
 #define MEGAFAUNA_TRAIT "megafauna"
 #define DEATHSQUAD_TRAIT "deathsquad"
+#define SUBMERGED_TRAIT "submerged_trait"
+
 /// This trait is added by the active directional block system.
 #define ACTIVE_BLOCK_TRAIT				"active_block"
 /// This trait is added by the parry system.

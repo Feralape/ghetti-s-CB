@@ -15,7 +15,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -111,7 +111,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "aJ" = (
 /obj/structure/railing/handrail{
@@ -143,7 +143,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "aW" = (
 /obj/structure/table/reinforced,
@@ -387,7 +387,7 @@
 	},
 /area/science/robotics)
 "cD" = (
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -580,7 +580,7 @@
 	pixel_y = 2
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -591,7 +591,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -733,7 +733,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -811,7 +811,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "eV" = (
 /obj/structure/railing,
@@ -852,7 +852,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -909,7 +909,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "fy" = (
 /obj/structure/reagent_dispensers/barrel/dangerous{
@@ -957,7 +957,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1064,7 +1064,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1088,7 +1088,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1118,7 +1118,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1198,7 +1198,7 @@
 	name = "steam";
 	pixel_x = -11
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "hG" = (
 /obj/machinery/conveyor{
@@ -1226,7 +1226,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "hM" = (
 /obj/effect/decal/cleanable/crayon{
@@ -1341,7 +1341,7 @@
 	pixel_y = 2
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1391,7 +1391,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "iO" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -1401,7 +1401,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1539,7 +1539,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1973,7 +1973,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "no" = (
 /obj/structure/sink/deep_water,
@@ -1986,7 +1986,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -1999,7 +1999,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -2243,7 +2243,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "pf" = (
 /obj/effect/decal/cleanable/robot_debris,
@@ -2543,7 +2543,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -2561,7 +2561,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -2578,7 +2578,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "rs" = (
 /obj/machinery/conveyor{
@@ -3012,7 +3012,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "uc" = (
 /obj/structure/fence/handrail_corner{
@@ -3263,7 +3263,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -3319,7 +3319,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "wc" = (
 /obj/structure/table/reinforced,
@@ -3372,7 +3372,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -3600,7 +3600,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -3833,7 +3833,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -3955,7 +3955,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -4461,7 +4461,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -4499,7 +4499,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "EF" = (
 /obj/structure/chair/office{
@@ -4590,7 +4590,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "FC" = (
 /obj/structure/lattice/lava,
@@ -4657,7 +4657,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -4815,7 +4815,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -4844,7 +4844,7 @@
 	name = "steam";
 	pixel_x = -18
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "GK" = (
 /turf/open/space/basic,
@@ -4870,7 +4870,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "Hb" = (
 /obj/machinery/vending/donksofttoyvendor,
@@ -4905,7 +4905,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -5223,7 +5223,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -5243,7 +5243,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "JI" = (
 /obj/effect/spawner/lootdrop/f13/rare_toys,
@@ -5488,7 +5488,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "Lc" = (
 /obj/item/trash/f13/dog,
@@ -5609,7 +5609,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -5649,7 +5649,7 @@
 /area/science/robotics)
 "Md" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "Mh" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
@@ -5664,7 +5664,7 @@
 	},
 /area/science/robotics)
 "Mm" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "Mn" = (
 /obj/effect/decal/cleanable/blood{
@@ -5752,7 +5752,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "MG" = (
 /obj/structure/table/reinforced,
@@ -5796,7 +5796,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -5876,7 +5876,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -5888,7 +5888,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -5910,7 +5910,7 @@
 	pixel_y = 2
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "NU" = (
 /obj/structure/closet/crate/grave,
@@ -5935,7 +5935,7 @@
 /area/science/robotics)
 "Of" = (
 /obj/structure/lattice,
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#FFA500"
 	},
 /area/science/robotics/lab)
@@ -5944,7 +5944,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "Oo" = (
 /obj/structure/flora/ausbushes/ywflowers,
@@ -5993,7 +5993,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -6056,7 +6056,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -6102,7 +6102,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "PV" = (
 /obj/effect/mob_spawn/human/corpse/russian,
@@ -6332,7 +6332,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -6565,7 +6565,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -6595,7 +6595,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -6621,7 +6621,7 @@
 	name = "steam";
 	pixel_x = -11
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "SY" = (
 /obj/mecha/working/ripley/mining,
@@ -6907,7 +6907,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -6953,7 +6953,7 @@
 	dir = 4;
 	pixel_y = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -7274,7 +7274,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -7367,7 +7367,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/forest)
 "YE" = (
 /turf/closed/wall/r_wall,
@@ -7379,7 +7379,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)
@@ -7477,7 +7477,7 @@
 	name = "steam";
 	pixel_x = -13
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	color = "#9c9c9c"
 	},
 /area/f13/forest)

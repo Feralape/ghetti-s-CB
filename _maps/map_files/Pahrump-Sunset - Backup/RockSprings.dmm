@@ -2196,7 +2196,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "biA" = (
 /obj/effect/landmark/start/f13/raider,
@@ -6020,7 +6020,7 @@
 	height = 2;
 	id = "geckorassic"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "cRS" = (
 /obj/structure/decoration/rag,
@@ -6325,7 +6325,7 @@
 /turf/open/indestructible/ground/outside/gravel,
 /area/f13/building/tribal/cave)
 "cZh" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "cZo" = (
 /obj/structure/flora/ausbushes/fullgrass,
@@ -10731,7 +10731,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "fex" = (
 /obj/structure/wreck/trash/machinepiletwo,
@@ -14076,7 +14076,7 @@
 /area/f13/building/tribal)
 "gNv" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "gNx" = (
 /obj/effect/decal/cleanable/oil{
@@ -15905,7 +15905,7 @@
 /area/f13/wasteland)
 "hGB" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "hGD" = (
 /obj/structure/car/rubbish2,
@@ -17203,7 +17203,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "ikG" = (
 /obj/machinery/light/small{
@@ -28285,7 +28285,7 @@
 /area/f13/wasteland)
 "nIN" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "nIO" = (
 /obj/structure/chair/pew/right,
@@ -31432,7 +31432,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "pil" = (
 /obj/effect/decal/cleanable/dirt,
@@ -37368,7 +37368,7 @@
 	light_color = "#d8b1b1"
 	},
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "sdb" = (
 /obj/structure/table/wood,
@@ -40667,7 +40667,7 @@
 /turf/open/indestructible/ground/outside/dirt,
 /area/f13/wasteland)
 "tHx" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "tHP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -46216,7 +46216,7 @@
 /area/f13/wasteland)
 "wvJ" = (
 /obj/structure/sink/deep_water,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "wvQ" = (
 /obj/structure/flora/ausbushes/reedbush,
@@ -48858,7 +48858,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "xIt" = (
 /obj/effect/turf_decal/weather/dirt{

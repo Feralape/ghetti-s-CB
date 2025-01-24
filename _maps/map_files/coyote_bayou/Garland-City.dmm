@@ -187,7 +187,7 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/building)
 "agW" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "agY" = (
 /obj/structure/car/rubbish2,
@@ -705,7 +705,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "azS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -938,7 +938,7 @@
 	color = "#363636"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "aJX" = (
 /obj/structure/lamp_post,
@@ -2855,7 +2855,7 @@
 	},
 /area/f13/building)
 "cgY" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "chi" = (
 /obj/machinery/light/small/broken{
@@ -3396,7 +3396,7 @@
 	name = "vines"
 	},
 /obj/effect/spawner/lootdrop/f13/uncommon,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "czP" = (
 /obj/structure/table/wood,
@@ -4023,7 +4023,7 @@
 /area/f13/wasteland)
 "cTp" = (
 /obj/structure/flora/junglebush/b,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "cUg" = (
 /obj/item/storage/trash_stack,
@@ -4105,7 +4105,7 @@
 "cXp" = (
 /obj/structure/flora/grass/jungle/b,
 /obj/effect/spawner/lootdrop/f13/rare,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "cXE" = (
 /obj/structure/sign/crosswalk{
@@ -4339,7 +4339,7 @@
 	randomizer_kind = "mid level mobs";
 	randomizer_tag = "sand gang"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "dee" = (
 /obj/structure/nest/randomized{
@@ -4678,7 +4678,7 @@
 /obj/structure/disposalpipe/trunk/multiz/down{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "dro" = (
 /obj/structure/bed/mattress,
@@ -5062,7 +5062,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "dGD" = (
 /obj/effect/decal/cleanable/dirt,
@@ -5688,7 +5688,7 @@
 /area/f13/wasteland)
 "ebw" = (
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "ecf" = (
 /obj/structure/bed/old,
@@ -6227,7 +6227,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "ewS" = (
 /obj/structure/table,
@@ -6987,7 +6987,7 @@
 	color = "#363636"
 	},
 /mob/living/simple_animal/hostile/supermutant/legendary,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "eWU" = (
 /obj/structure/closet/crate/large,
@@ -7604,7 +7604,7 @@
 /obj/structure/simple_door/metal/ventilation,
 /obj/effect/spawner/lootdrop/f13/uncommon,
 /obj/effect/spawner/lootdrop/f13/uncommon,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "fwp" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -8087,7 +8087,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "#363636"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "fQR" = (
 /obj/structure/table/wood,
@@ -8187,7 +8187,7 @@
 "fUs" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/spawner/lootdrop/f13/uncommon,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "fUK" = (
 /obj/structure/barricade/sandbags,
@@ -8629,7 +8629,7 @@
 /area/f13/wasteland)
 "gku" = (
 /obj/structure/disposalpipe/trunk/multiz,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "gkQ" = (
 /obj/structure/closet/crate/trashcart,
@@ -9389,7 +9389,7 @@
 /obj/machinery/light/small/broken{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "gNE" = (
 /obj/effect/decal/cleanable/blood/drip,
@@ -9449,7 +9449,7 @@
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/f13/rare,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "gRm" = (
 /obj/effect/decal/cleanable/dirt{
@@ -9726,7 +9726,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "hcv" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -11757,7 +11757,7 @@
 /obj/machinery/light/small/broken{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "iuy" = (
 /obj/structure/chair/wood/fancy{
@@ -14858,7 +14858,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "kDB" = (
 /obj/effect/spawner/lootdrop/f13/armor/tier1,
@@ -15086,7 +15086,7 @@
 /area/f13/building)
 "kLb" = (
 /obj/structure/flora/grass/jungle/b,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "kLw" = (
 /obj/structure/table,
@@ -15236,7 +15236,7 @@
 /obj/structure/disposalpipe/junction/yjunction{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "kTa" = (
 /turf/closed/mineral/random/low_chance,
@@ -15982,7 +15982,7 @@
 	name = "vines"
 	},
 /obj/effect/spawner/lootdrop/f13/uncommon,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "lqO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -16535,7 +16535,7 @@
 	randomizer_kind = "mid level mobs";
 	randomizer_tag = "wasteplant gang"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "lMN" = (
 /obj/effect/decal/waste{
@@ -16584,7 +16584,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "lOG" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -16764,7 +16764,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "lUT" = (
 /obj/machinery/smartfridge/bottlerack,
@@ -16773,7 +16773,7 @@
 /area/f13/city)
 "lUY" = (
 /obj/effect/decal/remains/human,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "lVa" = (
 /obj/item/twohanded/required/kirbyplants/random,
@@ -17232,7 +17232,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/debris/v4,
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "mjC" = (
 /obj/effect/turf_decal/weather/dirt,
@@ -17518,7 +17518,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo11"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "msL" = (
 /obj/structure/grille,
@@ -17871,7 +17871,7 @@
 "mCK" = (
 /obj/effect/decal/remains/human,
 /obj/effect/spawner/lootdrop/f13/rare,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "mCX" = (
 /obj/structure/simple_door/metal/store,
@@ -19548,7 +19548,7 @@
 /area/f13/building)
 "nKV" = (
 /obj/effect/validball_spawner,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "nLF" = (
 /turf/open/floor/plasteel/f13/vault_floor/yellow{
@@ -20322,7 +20322,7 @@
 /area/f13/building)
 "omt" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "omw" = (
 /obj/structure/closet/crate/large,
@@ -20390,7 +20390,7 @@
 /obj/machinery/light/small/broken{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "ooB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20485,7 +20485,7 @@
 /turf/open/indestructible/ground/outside/desert/harsh,
 /area/f13/wasteland)
 "orw" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "orV" = (
 /obj/structure/chair/stool,
@@ -22031,7 +22031,7 @@
 "psD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/rock/jungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "psK" = (
 /obj/machinery/vending/nukacolavend,
@@ -22224,7 +22224,7 @@
 /area/f13/wasteland)
 "pzR" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "pAz" = (
 /obj/structure/spacevine{
@@ -22463,7 +22463,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "pJi" = (
 /obj/structure/closet/crate/bin,
@@ -23537,7 +23537,7 @@
 /obj/structure/disposalpipe/broken{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "qvx" = (
 /obj/effect/decal/waste{
@@ -23659,7 +23659,7 @@
 	layer = 6;
 	pixel_y = -9
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "qyU" = (
 /obj/effect/decal/remains/human,
@@ -25421,7 +25421,7 @@
 /obj/structure/disposalpipe/broken{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "rQA" = (
 /obj/structure/spacevine{
@@ -25668,7 +25668,7 @@
 /obj/effect/decal/waste{
 	icon_state = "goo11"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "saV" = (
 /obj/structure/lattice,
@@ -26464,7 +26464,7 @@
 /area/f13/building)
 "sEP" = (
 /obj/effect/spawner/lootdrop/f13/rare,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "sER" = (
 /obj/structure/barricade/wooden,
@@ -28208,7 +28208,7 @@
 "tOm" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/light/small/broken,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "tOy" = (
 /turf/open/indestructible/ground/outside/road{
@@ -28394,7 +28394,7 @@
 "tUa" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/light/small,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "tUd" = (
 /obj/structure/chair/stool/retro,
@@ -28404,7 +28404,7 @@
 /area/f13/building)
 "tUM" = (
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "tVJ" = (
 /obj/structure/simple_door/room{
@@ -28697,7 +28697,7 @@
 /area/f13/building)
 "uey" = (
 /obj/machinery/light/small/broken,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "ufb" = (
 /obj/effect/decal/remains{
@@ -29321,7 +29321,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "uBb" = (
 /turf/open/indestructible/ground/outside/road{
@@ -29632,7 +29632,7 @@
 /obj/structure/spacevine{
 	name = "vines"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "uNF" = (
 /obj/structure/rack,
@@ -29656,7 +29656,7 @@
 	dir = 4
 	},
 /obj/structure/flora/grass/jungle/b,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "uNO" = (
 /obj/structure/closet,
@@ -29804,7 +29804,7 @@
 /obj/effect/spawner/lootdrop/f13/rare_weps,
 /obj/effect/spawner/lootdrop/f13/rare_armor,
 /obj/effect/spawner/lootdrop/f13/rare_armor,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "uUf" = (
 /obj/structure/spacevine{
@@ -29966,7 +29966,7 @@
 /obj/structure/disposalpipe/broken{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "uXI" = (
 /obj/structure/car/rubbish4,
@@ -31042,7 +31042,7 @@
 "vPV" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "vQp" = (
 /obj/structure/extinguisher_cabinet,
@@ -31535,7 +31535,7 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "weY" = (
 /obj/effect/decal/cleanable/dirt,
@@ -32386,7 +32386,7 @@
 	dir = 5
 	},
 /obj/structure/disposalpipe/broken,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "wJN" = (
 /obj/structure/curtain{
@@ -33021,7 +33021,7 @@
 	name = "vines"
 	},
 /obj/effect/spawner/lootdrop/f13/uncommon,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "xfx" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -33045,7 +33045,7 @@
 	randomizer_kind = "mid level mobs";
 	randomizer_tag = "sand gang"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "xhp" = (
 /obj/structure/wreck/trash/engine,
@@ -34084,7 +34084,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "xUu" = (
 /turf/closed/wall/f13/wood,
@@ -34559,7 +34559,7 @@
 /area/f13/wasteland)
 "ylD" = (
 /obj/effect/spawner/lootdrop/f13/rare,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "ylF" = (
 /obj/effect/decal/cleanable/dirt,

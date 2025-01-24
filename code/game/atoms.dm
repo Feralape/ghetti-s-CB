@@ -40,8 +40,6 @@
 	var/datum/proximity_monitor/proximity_monitor
 	var/fingerprintslast
 
-	var/list/filter_data //For handling persistent filters
-
 	var/custom_price
 	var/custom_premium_price
 
@@ -1196,38 +1194,6 @@
 		message += " | BWB: [dealt_bare_wound_bonus]"
 
 	victim.log_message(message, LOG_ATTACK, color="blue")
-
-/atom/proc/add_filter(name,priority,list/params)
-	LAZYINITLIST(filter_data)
-	var/list/p = params.Copy()
-	p["priority"] = priority
-	filter_data[name] = p
-	update_filters()
-
-/atom/proc/update_filters()
-	filters = null
-	filter_data = sortTim(filter_data, GLOBAL_PROC_REF(cmp_filter_data_priority), TRUE)
-	for(var/f in filter_data)
-		var/list/data = filter_data[f]
-		var/list/arguments = data.Copy()
-		arguments -= "priority"
-		filters += filter(arglist(arguments))
-	UNSETEMPTY(filter_data)
-
-/atom/proc/get_filter(name)
-	if(filter_data && filter_data[name])
-		return filters[filter_data.Find(name)]
-
-/atom/proc/remove_filter(name_or_names)
-	if(!filter_data)
-		return
-
-	var/list/names = islist(name_or_names) ? name_or_names : list(name_or_names)
-
-	for(var/name in names)
-		if(filter_data[name])
-			filter_data -= name
-	update_filters()
 
 /atom/proc/intercept_zImpact(atom/movable/AM, levels = 1)
 	. |= SEND_SIGNAL(src, COMSIG_ATOM_INTERCEPT_Z_FALL, AM, levels)

@@ -750,6 +750,5 @@
 #define COMSIG_SPLURT_SOMEONE_CUMMED "COMSIG_SPLURT_SOMEONE_CUMMED" // (mob/living/me, mob/living/coomer)
 #define COMSIG_SPLURT_I_CAME "COMSIG_SPLURT_I_CAME" // (mob/coomer) usually me
 
-
-
-
+#define COMSIG_TURF_SUBMERGE_CHECK "turf_submerge_check" //from /turf/proc/get_submerge_height() checking if something on the turf should submerge an AM
+#define COMSIG_TURF_CHECK_COVERED "turf_check_covered" //from /turf/open/liquid/Entered checking if something is covering the turf

@@ -317,7 +317,7 @@
 	dir = 4
 	},
 /obj/structure/sink/deep_water,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "cC" = (
 /obj/structure/flora/ausbushes/grassybush,
@@ -1931,7 +1931,7 @@
 	},
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/sink/deep_water,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "tx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4393,7 +4393,7 @@
 	icon_state = "skin"
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "Qx" = (
 /obj/effect/decal/cleanable/dirt,

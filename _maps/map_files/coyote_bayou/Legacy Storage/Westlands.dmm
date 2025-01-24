@@ -11781,7 +11781,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/water/cursed_spring,
+/turf/open/liquid/water/cursed_spring,
 /area/awaymission/wildwest/refine)
 "Xn" = (
 /obj/effect/spawner/lootdrop/f13/rare,

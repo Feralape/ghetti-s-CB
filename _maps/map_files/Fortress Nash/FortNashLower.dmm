@@ -646,7 +646,7 @@
 /area/f13/building/hospital)
 "axw" = (
 /obj/structure/simple_door/bunker,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/tunnel)
 "axC" = (
 /obj/effect/decal/fakelattice,
@@ -1043,7 +1043,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "aRI" = (
 /obj/structure/bonfire/prelit,
@@ -1377,7 +1377,7 @@
 "bhW" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/wreck/trash/machinepiletwo,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "bhY" = (
 /obj/structure/spider/stickyweb{
@@ -1456,7 +1456,7 @@
 /area/f13/building/hospital)
 "bjZ" = (
 /obj/effect/spawner/lootdrop/f13/medical/random_fev,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "bkI" = (
 /obj/effect/decal/remains/human,
@@ -2019,7 +2019,7 @@
 /area/f13/caves)
 "bDj" = (
 /mob/living/simple_animal/hostile/deathclaw,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/tunnel)
 "bDk" = (
 /mob/living/simple_animal/hostile/supermutant,
@@ -2664,7 +2664,7 @@
 /turf/open/floor/plating/tunnel,
 /area/f13/tunnel)
 "bJq" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/tunnel)
 "bJu" = (
 /obj/effect/decal/cleanable/dirt,
@@ -3437,7 +3437,7 @@
 /area/f13/tunnel)
 "bOm" = (
 /obj/structure/barricade/bars,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "bOn" = (
 /turf/closed/wall/rust,
@@ -4377,7 +4377,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "bTK" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -4545,7 +4545,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "bWq" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "bWr" = (
 /obj/structure/barricade/wooden/strong,
@@ -5616,7 +5616,7 @@
 	dir = 1
 	},
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "crn" = (
 /obj/item/storage/trash_stack,
@@ -6327,7 +6327,7 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "cWO" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6522,7 +6522,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "deK" = (
 /obj/effect/turf_decal/stripes/line{
@@ -6563,7 +6563,7 @@
 /obj/structure/fluff/rails{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "dhP" = (
 /obj/structure/window/fulltile/house{
@@ -7008,7 +7008,7 @@
 "dCS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/bars,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "dDC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7023,7 +7023,7 @@
 "dDD" = (
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "dDJ" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -7139,7 +7139,7 @@
 /area/f13/building/sewers)
 "dHk" = (
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "dHo" = (
 /obj/machinery/light,
@@ -7652,7 +7652,7 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "eek" = (
 /obj/effect/decal/cleanable/blood/old{
@@ -7781,7 +7781,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "elc" = (
 /obj/effect/decal/cleanable/dirt{
@@ -7823,7 +7823,7 @@
 /area/f13/building/sewers)
 "eoq" = (
 /obj/structure/fence,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "eou" = (
 /obj/structure/table,
@@ -7986,7 +7986,7 @@
 "etz" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/window/fulltile/wood_window,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "etW" = (
 /obj/machinery/light/small{
@@ -8366,7 +8366,7 @@
 	dir = 8;
 	light_color = "#d8b1b1"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "eId" = (
 /obj/structure/sign/warning/docking{
@@ -9077,7 +9077,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "foS" = (
 /obj/structure/rack,
@@ -9118,7 +9118,7 @@
 	dir = 1;
 	pixel_y = 23
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "fqT" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -9211,7 +9211,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "fvi" = (
 /obj/machinery/light/small{
@@ -9357,7 +9357,7 @@
 /area/f13/caves)
 "fBw" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "fBV" = (
 /obj/item/trash,
@@ -9412,7 +9412,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "fET" = (
 /obj/structure/table,
@@ -9533,7 +9533,7 @@
 /area/f13/tunnel)
 "fLF" = (
 /obj/structure/window/fulltile/house/broken,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "fLR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -9698,7 +9698,7 @@
 /area/f13/tunnel)
 "fVh" = (
 /obj/structure/reagent_dispensers/barrel/three,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "fVu" = (
 /turf/open/floor/plasteel/f13/vault_floor,
@@ -9853,7 +9853,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "gck" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10358,7 +10358,7 @@
 	maxHealth = 1250;
 	melee_damage_upper = 60
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "gxF" = (
 /obj/structure/cable{
@@ -10373,7 +10373,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "gxO" = (
 /obj/structure/closet/crate,
@@ -10589,7 +10589,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/blue/white,
 /area/f13/caves)
 "gGV" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "gHm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -10798,7 +10798,7 @@
 /area/f13/caves)
 "gPw" = (
 /obj/item/fishingrod,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "gQb" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -10966,7 +10966,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden/strong,
 /obj/structure/barricade/wooden/planks/pregame,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "gYD" = (
 /turf/open/floor/f13{
@@ -11012,7 +11012,7 @@
 "hab" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "haf" = (
 /obj/machinery/door/airlock/grunge,
@@ -11235,7 +11235,7 @@
 "hkt" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/wreck/trash/machinepile,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "hkJ" = (
 /obj/item/storage/trash_stack,
@@ -11284,7 +11284,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "hnt" = (
 /obj/effect/decal/cleanable/dirt,
@@ -12134,7 +12134,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "ict" = (
 /obj/item/assembly/signaler{
@@ -12706,7 +12706,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "ixh" = (
 /obj/structure/closet,
@@ -12836,7 +12836,7 @@
 "iBf" = (
 /obj/structure/barricade/bars,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "iBp" = (
 /obj/item/trash,
@@ -13235,7 +13235,7 @@
 "iRj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/tunnel)
 "iRl" = (
 /obj/structure/simple_door/metal,
@@ -13392,7 +13392,7 @@
 /area/f13/building/museum)
 "iYp" = (
 /obj/structure/girder/reinforced,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "iYJ" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -13633,7 +13633,7 @@
 	faction = list("raider");
 	name = "Bottom-Feeder Bot"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "jgQ" = (
 /obj/structure/simple_door/interior,
@@ -14144,7 +14144,7 @@
 	brightness = 3;
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "jDu" = (
 /obj/effect/decal/waste,
@@ -14529,7 +14529,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "jSN" = (
 /obj/machinery/telecomms/server/presets/khans,
@@ -14704,7 +14704,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "kbt" = (
 /obj/structure/destructible/tribal_torch/wall/lit,
@@ -14749,7 +14749,7 @@
 /area/f13/tunnel)
 "keE" = (
 /obj/structure/wreck/trash/halftire,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "kfw" = (
 /obj/effect/decal/cleanable/dirt{
@@ -15168,7 +15168,7 @@
 /obj/structure/simple_door/metal/barred,
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "kwX" = (
 /obj/effect/decal/cleanable/dirt{
@@ -15344,7 +15344,7 @@
 	color = "#A47449";
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "kDw" = (
 /obj/structure/cargocrate,
@@ -15746,7 +15746,7 @@
 /area/f13/tunnel)
 "kTY" = (
 /mob/living/simple_animal/hostile/radroach,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "kUb" = (
 /obj/structure/spacevine{
@@ -15758,7 +15758,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "kUz" = (
 /mob/living/simple_animal/hostile/raider/baseball{
@@ -16034,7 +16034,7 @@
 /area/f13/caves)
 "lfB" = (
 /obj/structure/reagent_dispensers/barrel/dangerous,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "lfO" = (
 /obj/effect/decal/waste{
@@ -16281,7 +16281,7 @@
 	dir = 8;
 	pixel_x = -20
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "lpx" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -16415,7 +16415,7 @@
 /area/f13/caves)
 "lvB" = (
 /obj/structure/barricade/sandbags,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "lvJ" = (
 /obj/structure/closet/locker,
@@ -17575,7 +17575,7 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "mmk" = (
 /mob/living/simple_animal/hostile/radroach,
@@ -17587,7 +17587,7 @@
 /area/f13/caves)
 "mmH" = (
 /obj/structure/flora/rock/pile/largejungle,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/tunnel)
 "mmS" = (
 /obj/structure/sign/yield{
@@ -17755,7 +17755,7 @@
 /obj/structure/girder/reinforced,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "muO" = (
 /obj/effect/spawner/lootdrop/f13/junkspawners,
@@ -18740,7 +18740,7 @@
 /area/f13/caves)
 "nmK" = (
 /obj/machinery/light/small,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "nnK" = (
 /obj/structure/obstacle/barbedwire/end{
@@ -18777,7 +18777,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "noG" = (
 /obj/structure/chair/middle{
@@ -18891,7 +18891,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "nrR" = (
 /obj/structure/lattice{
@@ -19219,7 +19219,7 @@
 	pixel_x = 12;
 	pixel_y = 0
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "nHe" = (
 /obj/machinery/hydroponics/soil,
@@ -19404,7 +19404,7 @@
 	color = "#a98c5d";
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "nNN" = (
 /obj/structure/table,
@@ -19669,7 +19669,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "nYc" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20270,7 +20270,7 @@
 /area/f13/building/museum)
 "oxK" = (
 /obj/effect/decal/remains/human,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "oyg" = (
 /obj/machinery/light/small{
@@ -20436,7 +20436,7 @@
 /obj/structure/simple_door/metal/ventilation{
 	name = "drainage system"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "oGa" = (
 /obj/structure/barricade/wooden,
@@ -20455,7 +20455,7 @@
 /area/f13/caves)
 "oGV" = (
 /obj/structure/simple_door/metal/barred,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "oHv" = (
 /obj/structure/fence{
@@ -20577,7 +20577,7 @@
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "oNg" = (
 /obj/machinery/shower{
@@ -20677,7 +20677,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "oRB" = (
 /obj/machinery/power/terminal,
@@ -20868,7 +20868,7 @@
 "oYw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "oYB" = (
 /obj/structure/table,
@@ -21360,7 +21360,7 @@
 /area/f13/caves)
 "ppF" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "pqj" = (
 /obj/structure/barricade/wooden/strong,
@@ -21676,7 +21676,7 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/remains/human,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "pAi" = (
 /obj/item/reagent_containers/food/snacks/deadmouse,
@@ -21770,7 +21770,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbearcore"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "pDv" = (
 /obj/structure/rack,
@@ -23795,7 +23795,7 @@
 "rdq" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/simple_door/metal/barred,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "rdE" = (
 /obj/item/paper_bin{
@@ -23946,7 +23946,7 @@
 	dir = 4;
 	pixel_x = 20
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "rkJ" = (
 /obj/structure/bed/old,
@@ -24511,7 +24511,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "rLW" = (
 /obj/effect/decal/cleanable/blood/gibs/down{
@@ -24651,7 +24651,7 @@
 /area/f13/ncr)
 "rRt" = (
 /obj/item/storage/trash_stack,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "rRB" = (
 /obj/machinery/computer/rdconsole/core/followers{
@@ -24833,7 +24833,7 @@
 	height = 1;
 	id = "geckorassic"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/tunnel)
 "rZn" = (
 /obj/structure/rack/shelf_metal,
@@ -24897,7 +24897,7 @@
 /area/f13/tunnel)
 "saE" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/radiation)
 "saF" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24924,7 +24924,7 @@
 "sbJ" = (
 /obj/structure/simple_door/metal/barred,
 /obj/structure/lattice/catwalk,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "sbY" = (
 /turf/open/floor/plasteel/f13/vault_floor/plating,
@@ -24960,7 +24960,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "sed" = (
 /obj/effect/decal/cleanable/glass,
@@ -25162,7 +25162,7 @@
 "son" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/table,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "soz" = (
 /mob/living/simple_animal/hostile/handy/protectron,
@@ -25351,7 +25351,7 @@
 "swz" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/wreck/trash/two_barrels,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "swO" = (
 /obj/effect/turf_decal/box,
@@ -25468,7 +25468,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "sBU" = (
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
@@ -25557,7 +25557,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "sEs" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25617,7 +25617,7 @@
 /obj/machinery/light/broken{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "sIj" = (
 /obj/structure/chair/f13chair1,
@@ -25671,7 +25671,7 @@
 	dir = 4
 	},
 /obj/structure/flora/grass/coyote/twelve,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "sKz" = (
 /obj/machinery/light/small{
@@ -25717,7 +25717,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "sMB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25741,7 +25741,7 @@
 "sOr" = (
 /obj/item/storage/trash_stack,
 /obj/item/mine/explosive,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "sOK" = (
 /obj/effect/decal/cleanable/blood/gibs/down{
@@ -25886,7 +25886,7 @@
 "sTt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "sTX" = (
 /obj/machinery/light/small{
@@ -25985,7 +25985,7 @@
 /area/f13/caves)
 "sYR" = (
 /obj/structure/window/fulltile/wood_window,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "sZg" = (
 /obj/effect/decal/cleanable/glass,
@@ -26011,7 +26011,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "taj" = (
 /obj/structure/table,
@@ -26164,7 +26164,7 @@
 /obj/effect/decal/cleanable/blood/old{
 	icon_state = "gibbearcore"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "tgH" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -26278,7 +26278,7 @@
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/building)
 "tkZ" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "tlg" = (
 /obj/effect/decal/cleanable/generic,
@@ -26925,7 +26925,7 @@
 /area/f13/caves)
 "tQC" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/caves)
 "tRm" = (
 /obj/structure/bed/mattress{
@@ -28104,7 +28104,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "uRH" = (
 /obj/effect/turf_decal/bot,
@@ -28236,7 +28236,7 @@
 	dir = 1;
 	light_color = "red"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "uXy" = (
 /obj/effect/decal/cleanable/dirt,
@@ -29243,11 +29243,11 @@
 /area/f13/building/massfusion)
 "vOh" = (
 /obj/item/mine/explosive,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "vOn" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "vOB" = (
 /obj/machinery/autolathe,
@@ -29332,7 +29332,7 @@
 "vSi" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/window/fulltile/house/broken,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "vSH" = (
 /obj/structure/handrail/g_central{
@@ -29347,7 +29347,7 @@
 /obj/structure/handrail/g_central{
 	pixel_y = -16
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "vSP" = (
 /obj/structure/simple_door/bunker,
@@ -29806,7 +29806,7 @@
 /obj/structure/lattice/catwalk,
 /obj/structure/table,
 /obj/effect/decal/remains/robot,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "wni" = (
 /obj/structure/rack/shelf_metal,
@@ -29916,7 +29916,7 @@
 "wrx" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/barricade/bars,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "wrE" = (
 /obj/structure/bed/pod,
@@ -31928,7 +31928,7 @@
 	pixel_x = 12;
 	pixel_y = 0
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/sewers)
 "ydc" = (
 /obj/structure/table,

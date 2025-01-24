@@ -9,6 +9,12 @@
 
 #define isweakref(D) (istype(D, /datum/weakref))
 
+#define ismovableatom(A) ismovable(A)
+
+#define isdatum(thing) (istype(thing, /datum))
+
+#define isimage(thing) (istype(thing, /image))
+
 //Turfs
 //#define isturf(A) (istype(A, /turf)) This is actually a byond built-in. Added here for completeness sake.
 
@@ -189,8 +195,6 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 
 //Objects
 #define isobj(A) istype(A, /obj) //override the byond proc because it returns true on children of /atom/movable that aren't objs
-
-#define ismovableatom(A) istype(A, /atom/movable)
 
 #define isitem(A) (istype(A, /obj/item))
 

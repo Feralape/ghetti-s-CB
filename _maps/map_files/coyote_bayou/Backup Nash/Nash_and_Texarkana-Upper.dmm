@@ -46338,7 +46338,7 @@
 	},
 /obj/structure/lattice/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building)
 "xyw" = (
 /obj/effect/decal/cleanable/dirt/dust{

@@ -109,7 +109,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	icon = 'icons/turf/pool.dmi';
 	icon_state = "pool_tile"
 	},
@@ -472,7 +472,7 @@
 	dir = 5;
 	color = "#413527"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal)
 "bf" = (
 /turf/closed/wall/f13/wood/interior,
@@ -847,7 +847,7 @@
 	dir = 4;
 	color = "#413527"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal)
 "cg" = (
 /obj/structure/destructible/tribal_torch/wall/lit{
@@ -1059,7 +1059,7 @@
 	color = "#695E56"
 	},
 /obj/structure/pondlily_big,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "cu" = (
 /obj/structure/chair/booth{
@@ -2334,7 +2334,7 @@
 	pixel_y = 19
 	},
 /obj/structure/pondlily_big,
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -5179,7 +5179,7 @@
 	pixel_y = 15
 	},
 /obj/structure/chair/bench,
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -8448,7 +8448,7 @@
 /obj/structure/flora/ausbushes/ppflowers{
 	randomize_xy = 0
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -8861,7 +8861,7 @@
 /turf/open/floor/wood_common,
 /area/f13/wasteland/city/newboston/outdoors)
 "tQ" = (
-/turf/open/water{
+/turf/open/liquid/water{
 	icon = 'icons/turf/pool.dmi';
 	icon_state = "pool_tile"
 	},
@@ -8871,7 +8871,7 @@
 /obj/structure/flora/ausbushes/ppflowers{
 	randomize_xy = 0
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -9923,7 +9923,7 @@
 /area/f13/bar/heaven)
 "wt" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -10415,7 +10415,7 @@
 	dir = 6
 	},
 /obj/structure/pondlily_small,
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -11478,7 +11478,7 @@
 	pixel_y = 7;
 	randomize_xy = 0
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -12903,7 +12903,7 @@
 	color = "#695E56"
 	},
 /obj/structure/pondlily_small,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "Di" = (
 /obj/effect/turf_decal/siding/wood,
@@ -13016,7 +13016,7 @@
 "Dt" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/pondlily_small,
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -13322,7 +13322,7 @@
 	pixel_y = 3;
 	pixel_x = 2
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	name = "spring water"
 	},
 /area/f13/building/tribal)
@@ -14824,7 +14824,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/turf/open/water{
+/turf/open/liquid/water{
 	icon = 'icons/turf/pool.dmi';
 	icon_state = "pool_tile"
 	},
@@ -16607,7 +16607,7 @@
 	dir = 8;
 	light_color = "#f4e3b0"
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal)
 "Lj" = (
 /obj/structure/table/wood,
@@ -19237,7 +19237,7 @@
 	pixel_y = 3;
 	pixel_x = 2
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/building/tribal/cave)
 "Rd" = (
 /obj/item/storage/box/gloves,

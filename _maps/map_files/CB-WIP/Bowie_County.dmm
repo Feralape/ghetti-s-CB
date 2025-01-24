@@ -1947,7 +1947,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 6
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "gD" = (
 /obj/structure/flora/rock/pile/largejungle{
@@ -2388,7 +2388,7 @@
 	},
 /area/f13/wasteland)
 "id" = (
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "ie" = (
 /obj/structure/flora/tree/jungle/small,
@@ -3041,7 +3041,7 @@
 	dir = 5
 	},
 /obj/structure/barricade/wooden,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "kL" = (
 /obj/effect/turf_decal/weather/dirt{
@@ -6597,7 +6597,7 @@
 /area/f13/wasteland)
 "xs" = (
 /obj/effect/turf_decal/weather/dirt,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "xu" = (
 /obj/structure/flora/grass/wasteland,
@@ -6652,7 +6652,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 1
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "xB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7813,7 +7813,7 @@
 /area/f13/wasteland)
 "BK" = (
 /obj/structure/barricade/bars,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "BL" = (
 /obj/structure/car/rubbish4,
@@ -8096,7 +8096,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 10
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "CP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8594,7 +8594,7 @@
 	dir = 10
 	},
 /obj/structure/barricade/wooden,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "Ey" = (
 /obj/structure/fluff/rails{
@@ -8789,7 +8789,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 4
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "Fg" = (
 /obj/effect/landmark/start/redwaterSlave,
@@ -9025,7 +9025,7 @@
 "FS" = (
 /obj/effect/turf_decal/weather/dirt,
 /obj/structure/barricade/wooden,
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "FT" = (
 /obj/structure/fence/wooden,
@@ -10398,7 +10398,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 9
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "KE" = (
 /obj/machinery/hydroponics/soil{
@@ -13690,7 +13690,7 @@
 /obj/effect/turf_decal/weather/dirt{
 	dir = 5
 	},
-/turf/open/water,
+/turf/open/liquid/water,
 /area/f13/wasteland)
 "Wf" = (
 /obj/structure/fence{
