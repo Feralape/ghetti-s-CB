@@ -59,6 +59,7 @@
 /atom/movable/screen/ghost/move_ghost_up/Click()
 	var/mob/dead/observer/G = usr
 	G.up()
+	G.ghost_up()
 
 /atom/movable/screen/ghost/move_ghost_down
 	name = "Move down"
@@ -67,7 +68,8 @@
 /atom/movable/screen/ghost/move_ghost_down/Click()
 	var/mob/dead/observer/G = usr
 	G.down()
-
+	G.ghost_down()
+	
 /datum/hud/ghost/New(mob/owner)
 	..()
 	var/atom/movable/screen/using

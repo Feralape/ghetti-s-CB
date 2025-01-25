@@ -5,7 +5,7 @@
 
 /datum/map_config
 	// Metadata
-	var/config_filename = "_maps/pahrump-everything.json"
+	var/config_filename = "_maps/boxstation.json"
 	var/defaulted = TRUE  // set to FALSE by LoadConfig() succeeding
 	// Config from maps.txt
 	var/config_max_users = 0
@@ -15,163 +15,52 @@
 	var/max_rounds_played = 0
 	var/admin_only = FALSE
 
-
 	// Config actually from the JSON - should default to Box
-	var/map_name = "Yuma"
-	var/map_path = "map_files/Nash_and_Texarkana"
-	var/map_file = list("Dungeons.dmm", "Texarkana_underground.dmm", "Nash_and_Texarkana.dmm", "Nash_and_Texarkana-Upper.dmm", "Nash_and_Texarkana-Upper-2.dmm", "Redwater.dmm", "Redwater-Upper.dmm", "Ashdown.dmm", "Garland-City.dmm", "Newboston.dmm", "Newboston-Upper.dmm")
-	var/list/added_jobs = list()     //Overrides the "none" faction using job name
-	var/list/removed_jobs = list()   //Removes the "none" faction using job name - can also use #all# (case sensitive)
+	var/map_name = "Box Station"
+	var/map_path = "map_files/BoxStation"
+	var/map_file = "BoxStation.dmm"
+	/// Persistence key: Defaults to ckey(map_name). If set to "NO_PERSIST", this map will have NO persistence.
+	var/persistence_key
 
-	var/traits = list(
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
-						ZTRAIT_UP = 1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = null
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
-						ZTRAIT_DUNGEON = 1,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_X = 2,
-						Z_FORCE_Y = 2,
-						Z_FORCE_Z = 0
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
-						ZTRAIT_STATION = 1,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_X = 2,
-						Z_FORCE_Y = 2,
-						Z_FORCE_Z = 1,
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/transparent/openspace,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_X = 2,
-						Z_FORCE_Y = 2,
-						Z_FORCE_Z = 2,
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/transparent/openspace,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						ZTRAIT_ABOVE = 1,
-						Z_FORCE_X = 2,
-						Z_FORCE_Y = 2,
-						Z_FORCE_Z = 3
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
-						ZTRAIT_STATION = 1,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_SOUTH = 1,
-						Z_FORCE_X = 2,
-						Z_FORCE_Y = 1,
-						Z_FORCE_Z = 1
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/transparent/openspace,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_X = 2,
-						Z_FORCE_Y = 1,
-						Z_FORCE_Z = 2
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
-						ZTRAIT_STATION = 1,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_NORTH = 1,
-						Z_FORCE_X = 2,
-						Z_FORCE_Y = 3,
-						Z_FORCE_Z = 1
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
-						ZTRAIT_STATION = 1,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_EAST = 1,
-						Z_FORCE_X = 3,
-						Z_FORCE_Y = 2,
-						Z_FORCE_Z = 1
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/indestructible/ground/inside/mountain,
-						ZTRAIT_STATION = 1,
-						ZTRAIT_UP = 1,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						Z_FORCE_X = 1,
-						Z_FORCE_Y = 2,
-						Z_FORCE_Z = 1,
-						),
-					list(
-						ZTRAIT_GRAVITY = 1,
-						ZTRAIT_BASETURF = /turf/open/transparent/openspace,
-						ZTRAIT_DOWN = -1,
-						ZTRAIT_NOPARALLAX = 1,
-						ZTRAIT_LINKAGE = CROSSLINKED,
-						ZTRAIT_ABOVE = 1,
-						Z_FORCE_X = 1,
-						Z_FORCE_Y = 2,
-						Z_FORCE_Z = 2,
-						),
-					)
-	var/space_ruin_levels = 0
-	var/space_empty_levels = 0
-	var/station_ruin_budget = 0 // can be set to manually override the station ruins budget on maps that don't support station ruins, stopping the error from being unable to place the ruins.
+	var/traits = null
+	var/space_ruin_levels = 4
+	var/space_empty_levels = 1
+	var/station_ruin_budget = -1 // can be set to manually override the station ruins budget on maps that don't support station ruins, stopping the error from being unable to place the ruins.
 
-	var/minetype// = "lavaland" // we don't want lavaland
+	var/minetype = "lavaland"
 
 	var/maptype = MAP_TYPE_STATION //This should be used to adjust ingame behavior depending on the specific type of map being played. For instance, if an overmap were added, it'd be appropriate for it to only generate with a MAP_TYPE_SHIP
 
-	var/announcertype = "standard" //Determines the announcer the map uses. standard uses the default announcer, classic, but has a random chance to use other similarly-themed announcers, like medibot
-
 	var/allow_custom_shuttles = TRUE
 	var/shuttles = list(
-		"cargo" = "cargo_pahrump",
+		"cargo" = "cargo_box",
 		"ferry" = "ferry_fancy",
-		"emergency" = "emergency_pahrump")
+		"whiteship" = "whiteship_box",
+		"emergency" = "emergency_box")
 
-	var/year_offset = 200 //The offset of ingame year from the actual IRL year. You know you want to make a map that takes place in the 90's. Don't lie.
+	var/year_offset = 540 //The offset of ingame year from the actual IRL year. You know you want to make a map that takes place in the 90's. Don't lie.
 
 	// "fun things"
 	/// Orientation to load in by default.
 	var/orientation = SOUTH		//byond defaults to placing everyting SOUTH.
+
+	/// Jobs whitelist - if this is not empty, ONLY these jobs are allowed. Overrides blacklist.
+	var/list/job_whitelist
+	/// Jobs blacklist - if this is not empty, jobs in this aren't allowed.
+	var/list/job_blacklist
+	/// Job spawn position mod - type = number
+	var/list/job_override_spawn_positions
+	/// Job total position mod - type = number
+	var/list/job_override_total_positions
+	/// Add these accesses to jobs - type = list()
+	var/list/job_access_add
+	/// Remove these accesses from jobs - type = list()
+	var/list/job_access_remove
+	/// Override job accesses - type = list() - overrides everything else
+	var/list/job_access_override
+
+	var/list/added_jobs = list()     //Overrides the "none" faction using job name
+	var/list/removed_jobs = list()
 
 /proc/load_map_config(filename = "data/next_map.json", default_to_box, delete_after, error_if_missing = TRUE)
 	var/datum/map_config/config = new
@@ -191,7 +80,7 @@
 			log_world("map_config not found: [filename]")
 		return
 
-	var/json = wrap_file(filename)
+	var/json = file(filename)
 	if(!json)
 		log_world("Could not open map_config: [filename]")
 		return
@@ -214,6 +103,16 @@
 	map_path = json["map_path"]
 
 	map_file = json["map_file"]
+
+	persistence_key = ckey(map_name)
+
+	var/json_persistence_key = json["persistence_key"]
+	if(json_persistence_key)
+		if(json_persistence_key == "NO_PERSIST")
+			persistence_key = null
+		else
+			persistence_key = json_persistence_key
+
 	// "map_file": "BoxStation.dmm"
 	if (istext(map_file))
 		if (!fexists("_maps/[map_path]/[map_file]"))
@@ -229,15 +128,6 @@
 		log_world("map_file missing from json!")
 		return
 
-	if (islist(json["shuttles"]))
-		var/list/L = json["shuttles"]
-		for(var/key in L)
-			var/value = L[key]
-			shuttles[key] = value
-	else if ("shuttles" in json)
-		log_world("map_config shuttles is not a list!")
-		return
-
 	if (islist(json["added_jobs"]))
 		var/list/J = json["added_jobs"]
 		for(var/key in J)
@@ -245,13 +135,22 @@
 	else if ("added_jobs" in json)
 		log_world("map_config added jobs is not a list! fuck!!")
 		return
-
+		
 	if (islist(json["removed_jobs"]))
 		var/list/J = json["removed_jobs"]
 		for(var/key in J)
 			LAZYADD(removed_jobs,key)
 	else if ("removed_jobs" in json)
 		log_world("map_config removed jobs is not a list!")
+		return
+
+	if (islist(json["shuttles"]))
+		var/list/L = json["shuttles"]
+		for(var/key in L)
+			var/value = L[key]
+			shuttles[key] = value
+	else if ("shuttles" in json)
+		log_world("map_config shuttles is not a list!")
 		return
 
 	traits = json["traits"]
@@ -297,15 +196,75 @@
 	if ("maptype" in json)
 		maptype = json["maptype"]
 
-	if ("announcertype" in json)
-		announcertype = json["announcertype"]
-
 	if ("orientation" in json)
 		orientation = json["orientation"]
 		if(!(orientation in GLOB.cardinals))
 			orientation = SOUTH
 
 	allow_custom_shuttles = json["allow_custom_shuttles"] != FALSE
+
+	if("job_whitelist" in json)
+		job_whitelist = list()
+		for(var/path in json["job_whitelist"])
+			var/type = text2path(path)
+			if(!path)
+				log_config("map datum [config_filename] failed to validate path [path] in job overrides.")
+				continue
+			job_whitelist += type
+
+	if("job_blacklist" in json)
+		job_blacklist = list()
+		for(var/path in json["job_blacklist"])
+			var/type = text2path(path)
+			if(!path)
+				log_config("map datum [config_filename] failed to validate path [path] in job overrides.")
+				continue
+			job_blacklist += type
+
+	if("job_override_spawn_positions" in json)
+		job_override_spawn_positions = list()
+		for(var/path in json["job_override_spawn_positions"])
+			var/type = text2path(path)
+			if(!path)
+				log_config("map datum [config_filename] failed to validate path [path] in job overrides.")
+				continue
+			job_override_spawn_positions += type
+
+	if("job_override_total_positions" in json)
+		job_override_total_positions = list()
+		for(var/path in json["job_override_total_positions"])
+			var/type = text2path(path)
+			if(!path)
+				log_config("map datum [config_filename] failed to validate path [path] in job overrides.")
+				continue
+			job_override_total_positions += type
+
+	if("job_access_add" in json)
+		job_access_add = list()
+		for(var/path in json["job_acces_add"])
+			var/type = text2path(path)
+			if(!path)
+				log_config("map datum [config_filename] failed to validate path [path] in job overrides.")
+				continue
+			job_access_add[type] = json["job_access_add"]
+
+	if("job_access_remove" in json)
+		job_access_remove = list()
+		for(var/path in json["job_acces_add"])
+			var/type = text2path(path)
+			if(!path)
+				log_config("map datum [config_filename] failed to validate path [path] in job overrides.")
+				continue
+			job_access_remove[type] = json["job_access_remove"]
+
+	if("job_access_override" in json)
+		job_access_override = list()
+		for(var/path in json["job_acces_add"])
+			var/type = text2path(path)
+			if(!path)
+				log_config("map datum [config_filename] failed to validate path [path] in job overrides.")
+				continue
+			job_access_override[type] = json["job_access_override"]
 
 	defaulted = FALSE
 	return TRUE
@@ -333,9 +292,15 @@
 	jsonlist["year_offset"] = year_offset
 	jsonlist["minetype"] = minetype
 	jsonlist["maptype"] = maptype
-	jsonlist["announcertype"] = announcertype
 	jsonlist["orientation"] = orientation
 	jsonlist["allow_custom_shuttles"] = allow_custom_shuttles
+	jsonlist["job_whitelist"] = job_whitelist
+	jsonlist["job_blacklist"] = job_blacklist
+	jsonlist["job_override_spawn_positions"] = job_override_spawn_positions
+	jsonlist["job_override_total_positions"] = job_override_total_positions
+	jsonlist["job_access_add"] = job_access_add
+	jsonlist["job_access_remove"] = job_access_remove
+	jsonlist["job_access_override"] = job_access_override
 	if(fexists("data/next_map.json"))
 		fdel("data/next_map.json")
 	var/F = file("data/next_map.json")
