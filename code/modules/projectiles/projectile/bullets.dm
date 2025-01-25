@@ -21,6 +21,19 @@
 	hitsound_wall = "ricochet"
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
 	sharpness = SHARP_POINTY
+	//gotta figure out if this was a good idea later -vide
+	embedding = list(
+		embed_chance=5,
+		fall_chance=4,
+		jostle_chance=1,
+		ignore_throwspeed_threshold=TRUE,
+		pain_stam_pct=0.5,
+		pain_mult=4,
+		jostle_pain_mult=4,
+		rip_time=10,
+		embed_chance_turf_mod=100,
+		projectile_payload = /obj/item/shrapnel/bullet/dropdel
+		)
 
 /obj/item/projectile/bullet/smite
 	name = "divine retribution"

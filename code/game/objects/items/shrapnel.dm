@@ -19,6 +19,10 @@
 	icon_state = "s-casing"
 	item_flags = NONE
 
+//using for every usual bullet, dropdel to cleanup.
+/obj/item/shrapnel/bullet/dropdel
+	item_flags = DROPDEL
+
 /obj/item/shrapnel/bullet/c38 // .38 round
 	name = "\improper .38 bullet"
 

@@ -187,10 +187,12 @@
 /obj/item/bodypart/proc/try_dismember(wounding_type, wounding_dmg, wound_bonus, bare_wound_bonus)
 	if(wounding_dmg < DISMEMBER_MINIMUM_DAMAGE)
 		return
+	if(get_damage() < max_damage) //cant delimb without fucking up this bodypart first.
+		return
 
-	var/base_chance = wounding_dmg + (get_damage() / max_damage * 40) // how much damage we dealt with this blow, + 40% of the damage percentage we already had on this bodypart
-	if(locate(/datum/wound/blunt) in wounds) //we'll add 10% more for fractured bones
-		base_chance += 10
+	var/base_chance = wounding_dmg
+	if(locate(/datum/wound/blunt) in wounds) //we'll add 20% more for fractured bones
+		base_chance += 20
 
 	if(!prob(base_chance))
 		return

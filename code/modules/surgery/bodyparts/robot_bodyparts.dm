@@ -242,6 +242,8 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 50
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 /obj/item/bodypart/r_arm/robot/surplus
 	name = "surplus prosthetic right arm"
@@ -250,6 +252,8 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 50
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 /obj/item/bodypart/l_leg/robot/surplus
 	name = "surplus prosthetic left leg"
@@ -258,6 +262,8 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 50
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 /obj/item/bodypart/r_leg/robot/surplus
 	name = "surplus prosthetic right leg"
@@ -266,6 +272,8 @@
 	brute_reduction = 0
 	burn_reduction = 0
 	max_damage = 50
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 // Upgraded Surplus lims - Better then robotic lims
 /obj/item/bodypart/l_arm/robot/surplus_upgraded
@@ -275,6 +283,8 @@
 	brute_reduction = 5
 	burn_reduction = 5
 	max_damage = 70
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 /obj/item/bodypart/r_arm/robot/surplus_upgraded
 	name = "reinforced surplus prosthetic right arm"
@@ -283,6 +293,8 @@
 	brute_reduction = 5
 	burn_reduction = 5
 	max_damage = 70
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 /obj/item/bodypart/l_leg/robot/surplus_upgraded
 	name = "reinforced surplus prosthetic left leg"
@@ -291,6 +303,8 @@
 	brute_reduction = 5
 	burn_reduction = 5
 	max_damage = 70
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 /obj/item/bodypart/r_leg/robot/surplus_upgraded
 	name = "reinforced surplus prosthetic right leg"
@@ -299,6 +313,8 @@
 	brute_reduction = 5
 	burn_reduction = 5
 	max_damage = 70
+	incoming_stam_mult = 0
+	body_damage_coeff = 0 //so a disabled robotic limb wont crit our ass.
 
 #undef ROBOTIC_LIGHT_BRUTE_MSG
 #undef ROBOTIC_MEDIUM_BRUTE_MSG
