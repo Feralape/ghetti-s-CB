@@ -31,7 +31,7 @@
 	message = "chokes!"
 	message_param = "chokes on the %t."
 	emote_type = EMOTE_AUDIBLE
-	// sound = 'sound/f13effects/sunsetsounds/choke.ogg' Turned off due to upset tummies
+	sound = 'sound/f13effects/sunsetsounds/choke.ogg'
 
 /datum/emote/living/cross
 	key = "cross"
@@ -315,6 +315,24 @@
 			return 'sound/effects/female_gasp.ogg'
 		else
 			return 'sound/effects/male_gasp.ogg'
+
+/datum/emote/living/drown
+	key = "drown"
+	key_third_person = "drowns"
+	message = "drowns!"
+	message_param = "drowns at $t."
+	emote_type = EMOTE_AUDIBLE
+	stat_allowed = UNCONSCIOUS
+
+/datum/emote/living/drown/get_sound(mob/living/M)
+	var/pickedsound
+	if(ishuman(M))
+		if(M.gender == FEMALE)
+			pickedsound = pick(list('sound/voice/human/female/drown (1).ogg','sound/voice/human/female/drown (2).ogg','sound/voice/human/female/drown (3).ogg'))
+			return pickedsound
+		else
+			pickedsound = pick(list('sound/voice/human/male/drown (1).ogg','sound/voice/human/male/drown (2).ogg','sound/voice/human/male/drown (3).ogg'))
+			return pickedsound
 
 /datum/emote/living/giggle
 	key = "giggle"

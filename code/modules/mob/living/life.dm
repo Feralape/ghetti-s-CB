@@ -48,6 +48,9 @@
 		log_game("Z-TRACKING: [src] of type [src.type] has a Z-registration despite not having a client.")
 		update_z(null)
 
+	if(istype(loc, /turf/open/water))
+		handle_inwater()
+
 /**
  * Handles biological life processes like chemical metabolism, breathing, etc
  * Returns TRUE or FALSE based on if we were interrupted. This is used by overridden variants to check if they should stop.
@@ -153,12 +156,10 @@
 	else
 		ExtinguishMob()
 		return
-	/*
 	var/datum/gas_mixture/G = loc.return_air() // Check if we're standing in an oxygenless environment
 	if(!G.get_moles(GAS_O2, 1))
 		ExtinguishMob() //If there's no oxygen in the tile we're on, put out the fire
 		return
-	*/
 	var/turf/location = get_turf(src)
 	location.hotspot_expose(700, 10, 1)
 
@@ -243,3 +244,14 @@
 		else //Everything else
 			heal_reservoir += (rand(10,50)/100)//0.1 to 0.5
 			heal_reservoir = min(heal_reservoir,heal_max)
+
+/mob/living/proc/handle_inwater()
+	ExtinguishMob()
+
+/mob/living/carbon/handle_inwater()
+	..()
+	if(!(mobility_flags & MOBILITY_STAND))
+		if(HAS_TRAIT(src, TRAIT_NOBREATH) || HAS_TRAIT(src, TRAIT_WATERBREATHING))
+			return TRUE
+		adjustOxyLoss(5)
+		emote("drown")

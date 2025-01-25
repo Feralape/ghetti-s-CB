@@ -1,9 +1,9 @@
 /turf/open/liquid //Basic liquid turf parent
 	name = "liquid"
 	///How high up on the mob water overlays sit
-	var/mob_liquid_height = 11
+	var/mob_liquid_height = 12
 	///How far down the mob visually drops down when in water
-	var/mob_liquid_depth = -5
+	var/mob_liquid_depth = -6
 
 ///Returns the number that represents how submerged an AM is by a turf and its contents
 /turf/proc/get_submerge_height(turf_only = FALSE)
@@ -31,7 +31,7 @@
 /turf/open/liquid/water
 	gender = PLURAL
 	name = "water"
-	desc = "Shallow water."
+	desc = "clean water."
 	icon = 'icons/turf/floors.dmi'
 	icon_state = "riverwater_motion"
 	baseturfs = /turf/open/indestructible/ground/inside/mountain
@@ -52,6 +52,27 @@
 
 // Fortuna edit. Below is Largely ported from citadels HRP branch
 
+/turf/open/liquid/water/shallow
+	name = "water"
+	desc = "Shallow water."
+	slowdown = 1.5
+	mob_liquid_height = 8
+	mob_liquid_depth = -3
+
+/turf/open/liquid/water/deep
+	name = "water"
+	desc = "Deep water."
+	slowdown = 2.5
+	mob_liquid_height = 18
+	mob_liquid_depth = -9
+
+/turf/open/liquid/water/ultradeep
+	name = "water"
+	desc = "Very deep water."
+	slowdown = 3
+	mob_liquid_height = 24
+	mob_liquid_depth = -12
+
 /turf/open/liquid/water/Initialize()
 	. = ..()
 	update_icon()
@@ -71,8 +92,10 @@
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(oldloc, /turf/open/liquid/water))
-			to_chat(L, span_warning("You get drenched in water!"))
+		if(!istype(oldloc, type) && mob_liquid_depth < -3)
+			playsound(AM, 'sound/effects/waterenter.ogg', 100, FALSE)
+		else
+			playsound(AM, pick('sound/effects/watermove (1).ogg','sound/effects/watermove (2).ogg'), 100, FALSE)
 	AM.water_act(5)
 	..()
 
@@ -94,8 +117,6 @@
 		L.update_water()
 		if(L.check_submerged() <= 0)
 			return
-		if(!istype(newloc, /turf/open/liquid/water))
-			to_chat(L, span_warning("You climb out of \the [src]."))
 
 /turf/open/liquid/water/AltClick(mob/user)
 	. = ..()
