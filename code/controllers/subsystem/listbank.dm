@@ -130,7 +130,7 @@ SUBSYSTEM_DEF(listbank)
 	name = "box of tasty things"
 	desc = "A box of tasty things."
 
-/obj/item/storage/debug_box/debug_tastes/PopulateContents()
+/*/obj/item/storage/debug_box/debug_tastes/PopulateContents()
 	new /obj/item/storage/box/party_pouch(src)
 	new /obj/item/storage/box/party_pouch(src)
 	new /obj/item/storage/box/party_pouch(src)
@@ -139,6 +139,8 @@ SUBSYSTEM_DEF(listbank)
 	new /obj/item/storage/box/party_pouch/drinks(src)
 	new /obj/item/storage/box/party_pouch/drinks(src)
 	new /obj/item/storage/box/party_pouch/drinks(src)
+*/
+
 
 /datum/controller/subsystem/listbank/proc/catalogue_minerals(datum/thing, list/input, unique, init)
 	if(!LAZYLEN(input))

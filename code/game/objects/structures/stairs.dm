@@ -113,6 +113,15 @@
 		leaving.Bump(src)
 		return COMPONENT_ATOM_BLOCK_EXIT
 
+/obj/structure/stairs/Uncross(atom/movable/AM, turf/newloc)
+	if(!newloc || !AM)
+		return ..()
+	if(!isobserver(AM) && isTerminator() && (get_dir(src, newloc) == dir))
+		stair_ascend(AM)
+		return FALSE
+	return ..()
+
+
 /obj/structure/stairs/Cross(atom/movable/AM)
 	if(isTerminator() && (get_dir(src, AM) == dir))
 		return FALSE
@@ -140,6 +149,16 @@
 		climber.pulling?.move_from_pull(climber, loc, climber.glide_size)
 		for(var/mob/living/buckled as anything in climber.buckled_mobs)
 			buckled.pulling?.move_from_pull(buckled, loc, buckled.glide_size)
+	if(istype(target) && !target.can_zFall(climber, null, get_step_multiz(target, DOWN)))			//Don't throw them into a tile that will just dump them back down.
+		if(isliving(climber))
+			var/mob/living/L = climber
+			var/pulling = L.pulling
+			if(pulling)
+				L.pulling.forceMove(target)
+			L.forceMove(target)
+			L.start_pulling(pulling)
+		else
+			climber.forceMove(target)
 
 /obj/structure/stairs/vv_edit_var(var_name, var_value)
 	. = ..()

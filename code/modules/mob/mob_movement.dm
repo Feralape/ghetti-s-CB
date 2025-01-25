@@ -472,7 +472,8 @@
 	layer -= MOB_LAYER_SHIFT_INCREMENT
 	var/layer_priority = (layer - MOB_LAYER) * 100 // Just for text feedback
 	to_chat(src, span_notice("Your layer priority is now [layer_priority]."))
-	
+
+/*	
 /mob/verb/up()
 	set name = "Move Upwards"
 	set category = "IC"
@@ -495,6 +496,7 @@
 	if(zMove(UP, z_move_flags = ZMOVE_FLIGHT_FLAGS|ZMOVE_FEEDBACK|ventcrawling_flag))
 		to_chat(src, span_notice("You move upwards."))
 
+
 /mob/verb/down()
 	set name = "Move Down"
 	set category = "IC"
@@ -503,3 +505,28 @@
 	if(zMove(DOWN, z_move_flags = ZMOVE_FLIGHT_FLAGS|ZMOVE_FEEDBACK|ventcrawling_flag))
 		to_chat(src, span_notice("You move down."))
 	return FALSE
+*/
+
+
+/mob/verb/up()
+	set name = "Move Upwards"
+	set category = "IC"
+
+	if(zMove(UP, TRUE))
+		to_chat(src, "<span class='notice'>You move upwards.</span>")
+
+/mob/verb/down()
+	set name = "Move Down"
+	set category = "IC"
+
+	if(zMove(DOWN, TRUE))
+		to_chat(src, "<span class='notice'>You move down.</span>")
+
+/mob/proc/ghost_up()
+	if(zMove(UP, TRUE))
+		to_chat(src, span_notice("I move upwards."))
+
+///Moves a mob down a z level
+/mob/proc/ghost_down()
+	if(zMove(DOWN, TRUE))
+		to_chat(src, span_notice("I move down."))

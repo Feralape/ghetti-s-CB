@@ -5,6 +5,11 @@
 	intact = 0
 	density = 1
 	opacity = 1
+
+	var/destination_z
+	var/destination_x
+	var/destination_y
+
 /*lonestar edit. don't need space. so dont initialize it.
 	initial_temperature = TCMB
 	thermal_conductivity = 0

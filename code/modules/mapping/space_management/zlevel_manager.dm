@@ -30,6 +30,4 @@
 /datum/controller/subsystem/mapping/proc/get_level(z)
 	if (z_list && z >= 1 && z <= z_list.len)
 		return z_list[z]
-
-	if(initialized) // prevents new_player mobs from runtiming the server when joining before the mapping is initiated, for some reason they FALL???
-		CRASH("Unmanaged z-level [z]! maxz = [world.maxz], z_list.len = [z_list ? z_list.len : "null"]")
+	CRASH("Unmanaged z-level [z]! maxz = [world.maxz], z_list.len = [z_list ? z_list.len : "null"]")
