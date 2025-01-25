@@ -15,7 +15,7 @@
 	if(HAS_TRAIT(C, TRAIT_NODISMEMBER))
 		return FALSE
 	var/obj/item/bodypart/affecting = C.get_bodypart(BODY_ZONE_CHEST)
-	affecting.receive_damage(clamp(brute_dam/2 * affecting.body_damage_coeff, 15, 50), clamp(burn_dam/2 * affecting.body_damage_coeff, 0, 50), wound_bonus=CANT_WOUND) //Damage the chest based on limb's existing damage
+	affecting.receive_damage(clamp(brute_dam/2 * affecting.body_damage_coeff, 15, 50), clamp(burn_dam/2 * affecting.body_damage_coeff, 0, 50)) //Damage the chest based on limb's existing damage
 	if(!silent)
 		C.visible_message(span_danger("<B>[C]'s [name] is violently dismembered!</B>"))
 	C.emote("scream")
@@ -188,8 +188,8 @@
 	if(wounding_dmg < DISMEMBER_MINIMUM_DAMAGE)
 		return
 
-	var/base_chance = wounding_dmg + (get_damage() / max_damage * 50) // how much damage we dealt with this blow, + 50% of the damage percentage we already had on this bodypart
-	if(locate(/datum/wound/blunt/critical) in wounds) // we only require a severe bone break, but if there's a critical bone break, we'll add 10% more
+	var/base_chance = wounding_dmg + (get_damage() / max_damage * 40) // how much damage we dealt with this blow, + 40% of the damage percentage we already had on this bodypart
+	if(locate(/datum/wound/blunt) in wounds) //we'll add 10% more for fractured bones
 		base_chance += 10
 
 	if(!prob(base_chance))

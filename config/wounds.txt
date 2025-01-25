@@ -4,4 +4,4 @@
 WOUND_EXPONENT 1
 
 ## wound damage multiplier (injury rolls get limb damage multiplied by this, added)
-WOUND_DAMAGE_MULTIPLIER 0
+WOUND_DAMAGE_MULTIPLIER 0.333

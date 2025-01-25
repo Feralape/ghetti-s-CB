@@ -269,10 +269,13 @@
 	var/easy_dismember = HAS_TRAIT(owner, TRAIT_EASYDISMEMBER) // if we have easydismember, we don't reduce damage when redirecting damage to different types (slashing weapons on mangled/skinless limbs attack at 100% instead of 50%)
 
 	if(wounding_type == WOUND_BLUNT)
-		if(sharpness == SHARP_EDGED)
-			wounding_type = WOUND_SLASH
-		else if(sharpness == SHARP_POINTY)
-			wounding_type = WOUND_PIERCE
+		switch(sharpness)
+			if(SHARP_NONE)
+				wounding_type = WOUND_BLUNT
+			if(SHARP_EDGED)
+				wounding_type = WOUND_SLASH
+			if(SHARP_POINTY)
+				wounding_type = WOUND_PIERCE
 
 	//Handling for bone only/flesh only(none right now)/flesh and bone targets
 	switch(bio_state)
@@ -284,7 +287,7 @@
 			else if(wounding_type == WOUND_PIERCE)
 				wounding_type = WOUND_BLUNT
 				wounding_dmg *= (easy_dismember ? 1 : 0.75)
-			if((mangled_state & BODYPART_MANGLED_BONE) && try_dismember(wounding_type, wounding_dmg, wound_bonus, bare_wound_bonus))
+			if(try_dismember(wounding_type, wounding_dmg, wound_bonus, bare_wound_bonus))
 				return
 		// note that there's no handling for BIO_JUST_FLESH since we don't have any that are that right now (slimepeople maybe someday)
 		// standard humanoids
@@ -297,8 +300,7 @@
 					wounding_dmg *= 0.5 // edged weapons pass along 50% of their wounding damage to the bone since the power is spread out over a larger area
 				if(wounding_type == WOUND_PIERCE && !easy_dismember)
 					wounding_dmg *= 0.75 // piercing weapons pass along 75% of their wounding damage to the bone since it's more concentrated
-				wounding_type = WOUND_BLUNT
-			else if(mangled_state == BODYPART_MANGLED_BOTH && try_dismember(wounding_type, wounding_dmg, wound_bonus, bare_wound_bonus))
+			else if(try_dismember(wounding_type, wounding_dmg, wound_bonus, bare_wound_bonus))
 				return
 
 	// now we have our wounding_type and are ready to carry on with wounds and dealing the actual damage
@@ -366,7 +368,7 @@
 			else if(wounding_type == WOUND_PIERCE)
 				wounding_type = WOUND_BLUNT
 				phantom_wounding_dmg *= (easy_dismember ? 1 : 0.75)
-			if((mangled_state & BODYPART_MANGLED_BONE) && try_dismember(wounding_type, phantom_wounding_dmg, wound_bonus, bare_wound_bonus))
+			if(try_dismember(wounding_type, phantom_wounding_dmg, wound_bonus, bare_wound_bonus))
 				return
 		// note that there's no handling for BIO_JUST_FLESH since we don't have any that are that right now (slimepeople maybe someday)
 		// standard humanoids
@@ -379,8 +381,7 @@
 					phantom_wounding_dmg *= 0.5 // edged weapons pass along 50% of their wounding damage to the bone since the power is spread out over a larger area
 				if(wounding_type == WOUND_PIERCE && !easy_dismember)
 					phantom_wounding_dmg *= 0.75 // piercing weapons pass along 75% of their wounding damage to the bone since it's more concentrated
-				wounding_type = WOUND_BLUNT
-			else if(mangled_state == BODYPART_MANGLED_BOTH && try_dismember(wounding_type, phantom_wounding_dmg, wound_bonus, bare_wound_bonus))
+			else if(try_dismember(wounding_type, phantom_wounding_dmg, wound_bonus, bare_wound_bonus))
 				return
 
 	check_wounding(wounding_type, phantom_wounding_dmg, wound_bonus, bare_wound_bonus)
