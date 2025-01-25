@@ -1690,7 +1690,7 @@
 "Ul" = (/obj/structure/closet/cabinet,/obj/effect/spawner/lootdrop/f13/armor/clothes,/obj/effect/spawner/lootdrop/f13/armor/clothes,/obj/effect/spawner/lootdrop/f13/weapon/gun/ballistic/low,/turf/open/floor/f13/wood,/area/space)
 "Um" = (/obj/structure/table/reinforced,/obj/machinery/button/door{id = "followersadminshutters"; name = "desk shutters"; pixel_x = 6},/obj/machinery/button/door{id = "fadmin"; name = "Door lockdown button"; pixel_x = -5},/turf/open/floor/f13{icon_state = "bluerustysolid"},/area/space)
 "Un" = (/obj/structure/flora/tree/tall{icon_state = "tree_3"; pixel_y = 12},/obj/structure/flora/grass/wasteland{icon_state = "tall_grass_4"; layer = 6},/turf/open/indestructible/ground/outside/road{icon_state = "hole"},/area/space)
-"Up" = (/obj/structure/flora/grass/wasteland{icon_state = "tall_grass_7"},/turf/open/water,/area/space)
+"Up" = (/obj/structure/flora/grass/wasteland{icon_state = "tall_grass_7"},/turf/open/liquid/water,/area/space)
 "Uq" = (/turf/open/floor/wood_common/f13/old,/area/space)
 "Us" = (/obj/structure/flora/grass/wasteland{icon_state = "tall_grass_2"; layer = 6; pixel_x = -6; pixel_y = 13},/turf/open/indestructible/ground/inside/mountain,/area/space)
 "Ut" = (/obj/structure/filingcabinet,/turf/open/floor/f13{icon_state = "purplefull"},/area/space)

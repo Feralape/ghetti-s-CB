@@ -48,7 +48,7 @@
 		log_game("Z-TRACKING: [src] of type [src.type] has a Z-registration despite not having a client.")
 		update_z(null)
 
-	if(istype(loc, /turf/open/water))
+	if(istype(loc, /turf/open/liquid/water))
 		handle_inwater()
 
 /**

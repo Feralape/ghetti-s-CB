@@ -9,11 +9,11 @@ GLOBAL_LIST_EMPTY(cursed_minds)
  *
  */
 
-/turf/open/water/cursed_spring
-	baseturfs = /turf/open/water/cursed_spring
+/turf/open/liquid/water/cursed_spring
+	baseturfs = /turf/open/liquid/water/cursed_spring
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 
-/turf/open/water/cursed_spring/Entered(atom/movable/thing, atom/oldLoc)
+/turf/open/liquid/water/cursed_spring/Entered(atom/movable/thing, atom/oldLoc)
 	. = ..()
 	if(!isliving(thing))
 		return
@@ -33,5 +33,5 @@ GLOBAL_LIST_EMPTY(cursed_minds)
  * Deletes minds from the cursed minds list after their deletion
  *
  */
-/turf/open/water/cursed_spring/proc/remove_from_cursed(datum/mind/M)
+/turf/open/liquid/water/cursed_spring/proc/remove_from_cursed(datum/mind/M)
 	GLOB.cursed_minds -= M

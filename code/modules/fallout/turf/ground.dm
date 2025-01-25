@@ -301,7 +301,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 		icon_state = "wasteland[rand(1,31)]"
 	for(var/direction in GLOB.cardinals)
 		var/turf/turf_to_check = get_step(src, direction)
-		if(istype(turf_to_check, /turf/open/water))
+		if(istype(turf_to_check, /turf/open/liquid/water))
 			var/obj/effect/overlay/desert_side/DS = new /obj/effect/overlay/desert_side(src)
 			switch(direction)
 				if(NORTH)
@@ -575,7 +575,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 		plantShrooms()
 	for(var/direction in GLOB.cardinals)
 		var/turf/turf_to_check = get_step(src, direction)
-		if(istype(turf_to_check, /turf/open/water))
+		if(istype(turf_to_check, /turf/open/liquid/water))
 			var/obj/effect/overlay/rockfloor_side/DS = new /obj/effect/overlay/rockfloor_side(src)
 			switch(direction)
 				if(NORTH)
