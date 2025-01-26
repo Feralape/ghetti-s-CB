@@ -2,6 +2,10 @@
 "a" = (
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
+"j" = (
+/obj/structure/stairs/north,
+/turf/open/floor/plating/f13/outside/desert,
+/area/f13/wasteland)
 "q" = (
 /obj/effect/landmark/start/f13/wastelander/den,
 /turf/open/indestructible/ground/outside/desert,
@@ -18,10 +22,6 @@
 /obj/effect/landmark/start/f13/wastelander,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
-"D" = (
-/obj/structure/stairs/north,
-/turf/open/indestructible/ground/outside/desert,
-/area/f13/wasteland)
 "F" = (
 /obj/effect/landmark/start/f13/wastelander/clubworker,
 /turf/open/floor/plating/f13/outside/desert,
@@ -29,12 +29,26 @@
 "J" = (
 /turf/open/transparent/openspace,
 /area/f13/wasteland)
-"P" = (
-/obj/structure/stairs/north,
+"L" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "bl"
+	},
 /turf/open/floor/plating/f13/outside/desert,
 /area/f13/wasteland)
 "Q" = (
 /obj/effect/landmark/start/f13/wastelander/gar,
+/turf/open/indestructible/ground/outside/desert,
+/area/f13/wasteland)
+"T" = (
+/obj/structure/ladder/unbreakable{
+	height = 2;
+	id = "bl"
+	},
+/turf/open/floor/plating/f13/outside/desert,
+/area/f13/wasteland)
+"U" = (
+/obj/structure/stairs/north,
 /turf/open/indestructible/ground/outside/desert,
 /area/f13/wasteland)
 "Z" = (
@@ -895,7 +909,7 @@ a
 a
 a
 a
-D
+U
 a
 a
 a
@@ -1001,7 +1015,7 @@ a
 a
 a
 a
-D
+U
 a
 a
 a
@@ -3799,9 +3813,9 @@ J
 J
 J
 J
+L
 Z
-Z
-P
+j
 Z
 F
 F
@@ -6400,7 +6414,7 @@ J
 J
 J
 Z
-Z
+T
 Z
 J
 J

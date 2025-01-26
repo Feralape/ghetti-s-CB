@@ -3,7 +3,9 @@
 /// The weather on the lower ladder is dangerous
 #define DOWN_LADDER_WEATHER_IS_DANGEROUS (1<<1)
 
+
 // Basic ladder. By default links to the z-level above/below.
+
 /obj/structure/ladder
 	name = "ladder"
 	desc = "A sturdy metal ladder."
@@ -185,69 +187,55 @@
 		visible_message(span_danger("[src] is torn to pieces by the gravitational pull!"))
 		qdel(src)
 
-/obj/structure/ladder/proc/travel(mob/user, going_up = TRUE, is_ghost = FALSE)
-	var/obj/structure/ladder/ladder = going_up ? up : down
-	if(!ladder)
-		to_chat(user, span_warning("there's nothing that way!"))
-		return
-
+/obj/structure/ladder/proc/travel(going_up, mob/user, is_ghost, obj/structure/ladder/ladder)
 	if(!is_ghost)
-		user.visible_message("[user] begins to climb [going_up ? "up" : "down"] [src].", span_notice("You begin to climb [going_up ? "up" : "down"] [src]."))
+		show_fluff_message(going_up, user)
+		ladder.add_fingerprint(user)
 
-	if(!do_after(user, timetouse, target = src))
-		in_use = FALSE
-		return
+	var/turf/T = get_turf(ladder)
+	var/atom/movable/AM
+	if(user.pulling)
+		AM = user.pulling
+		AM.forceMove(T)
+	user.forceMove(T)
+	if(AM)
+		user.start_pulling(AM)
 
-	var/response = SEND_SIGNAL(user, COMSIG_LADDER_TRAVEL, src, ladder, going_up)
-	if(response & LADDER_TRAVEL_BLOCK)
-		return
-
-	var/turf/target = get_turf(ladder)
-	user.zMove(target = target, z_move_flags = ZMOVE_CHECK_PULLEDBY|ZMOVE_ALLOW_BUCKLED|ZMOVE_INCLUDE_PULLED)
+	//reopening ladder radial menu ahead
+	T = get_turf(user)
+	var/obj/structure/ladder/ladder_structure = locate() in T
+	if (ladder_structure && (up && down))
+		ladder_structure.use(user)
 
 /obj/structure/ladder/proc/use(mob/user, is_ghost=FALSE)
 	if (!is_ghost && !in_range(src, user))
 		return
 
-	if(!up && !down)
-		to_chat(user, span_warning("[src] doesn't seem to lead anywhere!"))
-		return
+	var/list/tool_list = list(
+		"Up" = image(icon = 'icons/testing/turf_analysis.dmi', icon_state = "red_arrow", dir = NORTH),
+		"Down" = image(icon = 'icons/testing/turf_analysis.dmi', icon_state = "red_arrow", dir = SOUTH)
+		)
+
+	if (up && down)
+		var/result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src, PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
+		if (!is_ghost && !in_range(src, user))
+			return  // nice try
+		switch(result)
+			if("Up")
+				travel(TRUE, user, is_ghost, up)
+			if("Down")
+				travel(FALSE, user, is_ghost, down)
+			if("Cancel")
+				return
+	else if(up)
+		travel(TRUE, user, is_ghost, up)
+	else if(down)
+		travel(FALSE, user, is_ghost, down)
+	else
+		to_chat(user, "<span class='warning'>[src] doesn't seem to lead anywhere!</span>")
 
 	if(!is_ghost)
 		add_fingerprint(user)
-
-	var/uhoh_weather = is_other_side_dangerous()
-	var/both_ways = (up && down)
-
-	if(!uhoh_weather && !both_ways)
-		if(up)
-			travel(user, TRUE, is_ghost)
-		if(down)
-			travel(user, FALSE, is_ghost)
-		return
-
-	var/list/tool_list = list()
-	if(up)
-		tool_list["Up"] = image(icon = 'icons/testing/turf_analysis.dmi', icon_state = "red_arrow", dir = NORTH)
-		if(CHECK_BITFIELD(uhoh_weather, UP_LADDER_WEATHER_IS_DANGEROUS))
-			user.show_message(span_danger("The weather looks really dangerous up there!"))
-	if(down)
-		tool_list["Down"] = image(icon = 'icons/testing/turf_analysis.dmi', icon_state = "red_arrow", dir = SOUTH)
-		if(CHECK_BITFIELD(uhoh_weather, DOWN_LADDER_WEATHER_IS_DANGEROUS))
-			user.show_message(span_danger("The weather looks really dangerous down there!"))
-	if(!LAZYLEN(tool_list))
-		to_chat(user, span_warning("Well that's awkward, [src] couldn't generate a menu! This is probably a bug, please call 1-800-IMCODER"))
-		return
-	var/result = show_radial_menu(user, src, tool_list, custom_check = CALLBACK(src,PROC_REF(check_menu), user), require_near = TRUE, tooltips = TRUE)
-	if (!is_ghost && !in_range(src, user))
-		return  // nice try
-	switch(result)
-		if("Up")
-			travel(user, TRUE, is_ghost)
-		if("Down")
-			travel(user, FALSE, is_ghost)
-		if("Cancel")
-			return
 
 /obj/structure/ladder/proc/is_other_side_dangerous()
 	if(up)

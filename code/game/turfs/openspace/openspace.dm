@@ -92,7 +92,7 @@ Prevents players on higher Zs from seeing into buildings they arent meant to.
 /turf/open/transparent/openspace/Entered(atom/movable/AM)
 	. = ..()
 	if(AM.set_currently_z_moving(CURRENTLY_Z_FALLING))
-		zFall(AM, falling_from_move = TRUE)
+		zFall(AM)
 
 /turf/open/transparent/openspace/can_have_cabling()
 	if(locate(/obj/structure/lattice/catwalk, src))
