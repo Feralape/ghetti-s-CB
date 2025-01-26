@@ -185,7 +185,7 @@
 			return buckled.zMove(dir, target, z_move_flags) // Return value is a loc.
 	return ..()
 
-/mob/living/canZMove(direction, turf/start, turf/destination, z_move_flags = ZMOVE_FLIGHT_FLAGS, mob/living/rider)
+/*/mob/living/canZMove(direction, turf/start, turf/destination, z_move_flags = ZMOVE_FLIGHT_FLAGS, mob/living/rider)
 	if(z_move_flags & ZMOVE_INCAPACITATED_CHECKS && incapacitated())
 		if(z_move_flags & ZMOVE_FEEDBACK)
 			to_chat(rider || src, span_warning("[rider ? src : "You"] can't do that right now!"))
@@ -208,3 +208,6 @@
 			if(z_move_flags & ZMOVE_FEEDBACK)
 				to_chat(src, span_warning("Unbuckle from [buckled] first."))
 			return FALSE
+*/
+/mob/living/canZMove(dir, turf/target)
+	return can_zTravel(target, dir) && (movement_type & FLYING)

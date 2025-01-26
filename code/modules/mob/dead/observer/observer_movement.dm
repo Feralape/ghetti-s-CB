@@ -2,7 +2,7 @@
 	set name = "Move Upwards"
 	set category = "IC"
 
-	if(zMove(UP, z_move_flags = ZMOVE_FEEDBACK))
+	if(zMove(UP))
 		to_chat(src, span_notice("You move upwards."))
 
 

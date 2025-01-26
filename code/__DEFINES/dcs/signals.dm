@@ -218,9 +218,6 @@
 #define COMSIG_AREA_EXITED "area_exited" 							//from base of area/Exited(): (atom/movable/M)
 
 // /turf signals
-#define COMSIG_TURF_CHANGE "turf_change"						//from base of turf/ChangeTurf(): (path, list/new_baseturfs, flags, list/transferring_comps)
-#define COMSIG_TURF_HAS_GRAVITY "turf_has_gravity"				//from base of atom/has_gravity(): (atom/asker, list/forced_gravities)
-#define COMSIG_TURF_MULTIZ_NEW "turf_multiz_new"				//from base of turf/New(): (turf/source, direction)
 #define COMSIG_TURF_IRRADIATE "turf_irradiate"					//used by radpuddles to check and update a turf's radiation
 #define COMSIG_TURF_CHECK_RADIATION "turf_is_radioactive"				//returns whether a turf is radioactive or not
 
@@ -238,8 +235,7 @@
 	#define COMPONENT_MOVABLE_BLOCK_PRE_MOVE 1
 #define COMSIG_MOVABLE_MOVED "movable_moved"					//from base of atom/movable/Moved(): (/atom, dir)
 #define COMSIG_MOVABLE_CROSS "movable_cross"					//from base of atom/movable/Cross(): (/atom/movable)
-#define COMSIG_MOVABLE_CROSSED "movable_crossed"                //from base of atom/movable/Crossed(): (/atom/movable)
-#define COMSIG_MOVABLE_UNCROSS "movable_uncross"				//from base of atom/movable/Uncross(): (/atom/movable)
+#define COMSIG_MOVABLE_CROSSED "movable_crossed"                //from base of atom/movable/Crossed(): (/atom/movable)		//from base of atom/movable/Uncross(): (/atom/movable)
 	#define COMPONENT_MOVABLE_BLOCK_UNCROSS 1
 #define COMSIG_MOVABLE_UNCROSSED "movable_uncrossed"            //from base of atom/movable/Uncrossed(): (/atom/movable)
 #define COMSIG_MOVABLE_BUMP "movable_bump"						//from base of atom/movable/Bump(): (/atom)
@@ -268,14 +264,8 @@
 #define COMSIG_MOVABLE_DISPOSING "movable_disposing"			//called when the movable is added to a disposal holder object for disposal movement: (obj/structure/disposalholder/holder, obj/machinery/disposal/source)
 #define COMSIG_MOVABLE_TELEPORTED "movable_teleported"			//from base of do_teleport(): (channel, turf/origin, turf/destination)
 #define COMSIG_MOVABLE_CHASM_DROP "movable_chasm_drop"			//from base of /datum/component/chasm/drop() (/datum/component/chasm)
-
-#define COMSIG_MOVABLE_CROSSED "movable_crossed"                //from base of atom/movable/Crossed(): (/atom/movable)
+              //from base of atom/movable/Crossed(): (/atom/movable)
 #define COMSIG_MOVABLE_UNCROSS "movable_uncross"				//from base of atom/movable/Uncross(): (/atom/movable)
-	#define COMPONENT_MOVABLE_BLOCK_UNCROSS 1
-#define COMSIG_MOVABLE_UNCROSSED "movable_uncrossed"            //from base of atom/movable/Uncrossed(): (/atom/movable)
-	#define HEARING_MESSAGE_MODE 7
-#define COMSIG_MOVABLE_CHASM_DROP "movable_chasm_drop"			//from base of /datum/component/chasm/drop() (/datum/component/chasm)
-
 // /mind signals
 #define  COMSIG_PRE_MIND_TRANSFER "pre_mind_transfer"			//from base of mind/transfer_to() before it's done: (new_character, old_character)
 	#define COMPONENT_STOP_MIND_TRANSFER 1						//stops the mind transfer from happening.
