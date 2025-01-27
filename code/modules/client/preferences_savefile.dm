@@ -483,6 +483,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//permanent tattoos
 	WRITE_FILE(S["permanent_tattoos"], permanent_tattoos)
+
+	WRITE_FILE(S["bank_funds"], bank_funds)
 	return 1
 
 /datum/preferences/proc/load_character(slot)
@@ -864,6 +866,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["side_waddle_time"]	>> side_waddle_time
 
 	READ_FILE(S["matchmaking_prefs"], matchmaking_prefs)
+	READ_FILE(S["bank_funds"], bank_funds)
 
 	// !! COYOTE SAVE FILE STUFF !!
 	S["profilePicture"] >> profilePicture // Profile picklies
@@ -1245,6 +1248,15 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	return 1
 
+/datum/preferences/proc/save_character_persistence(silent = FALSE)
+	var/savefile/S = new /savefile(path)
+	if(!S)
+		return 0
+	if(!silent)
+		to_chat(parent, span_info("Your banked funds are saved, you now have <b>[bank_funds]</b> in your account."))
+	S.cd = "/character[default_slot]"
+	WRITE_FILE(S["bank_funds"], bank_funds)
+
 /datum/preferences/proc/save_character()
 	if(!path)
 		return 0
@@ -1529,6 +1541,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	//permanent tattoos
 	WRITE_FILE(S["faved_interactions"], safe_json_encode(faved_interactions))
+
+	WRITE_FILE(S["bank_funds"], bank_funds)
 
 	return 1
 

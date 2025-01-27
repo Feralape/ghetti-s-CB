@@ -264,6 +264,7 @@
 /obj/item/stack/f13Cash/denarius
 	name = "silver coin"
 	latin = 0
+	value = CASH_DEN
 	singular_name = "Sliver Coin" // -us or -i
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "denarius"
@@ -322,7 +323,7 @@
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "aureus"
 	flavor_desc = 	"A golden coin used by aristocrats and upper class-men. Quite rare... a sight to behold, indeed. Also super shiny! Worth 100 copper coins, or 10 silver coins."
-	value = CASH_AUR * CASH_CAP
+	value = CASH_AUR
 	merge_type = /obj/item/stack/f13Cash/aureus
 	pitch = -100
 
@@ -364,7 +365,7 @@
 	max_amount = 15000
 	icon = 'icons/obj/economy.dmi'
 	icon_state = "ncr" /* 10 points to whoever writes flavour text for each bill */
-	value = CASH_NCR * CASH_CAP * 0
+	value = CASH_NCR
 	flippable = FALSE
 	merge_type = /obj/item/stack/f13Cash/ncr
 	pitch = 0
