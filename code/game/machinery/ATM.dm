@@ -1,3 +1,4 @@
+//basically simplified roguetown banking without treasury connection, by vide noir.
 GLOBAL_LIST_EMPTY(bank_accounts)
 
 /obj/machinery/computer/atm
@@ -24,9 +25,9 @@ GLOBAL_LIST_EMPTY(bank_accounts)
 			say("Your balance is NEGATIVE.")
 			return
 		var/list/choicez = list()
-		if(amt > 100)
+		if(amt >= 100)
 			choicez += "GOLD"
-		if(amt > 10)
+		if(amt >= 10)
 			choicez += "SILVER"
 		choicez += "COPPER"
 		var/selection = input(user, "Make a Selection", src) as null|anything in choicez
