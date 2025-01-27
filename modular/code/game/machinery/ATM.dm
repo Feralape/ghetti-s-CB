@@ -190,3 +190,12 @@ GLOBAL_LIST_EMPTY(bank_accounts)
 	if(user)
 		user.put_in_hands(G)
 	playsound(T, 'sound/misc/coindispense.ogg', 100, FALSE, -1)
+
+/datum/preferences/proc/save_character_persistence(silent = FALSE)
+	var/savefile/S = new /savefile(path)
+	if(!S)
+		return 0
+	if(!silent)
+		to_chat(parent, span_info("Your banked funds are saved, you now have <b>[bank_funds]</b> in your account."))
+	S.cd = "/character[default_slot]"
+	WRITE_FILE(S["bank_funds"], bank_funds)
