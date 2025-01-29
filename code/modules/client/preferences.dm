@@ -387,6 +387,9 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	/// How fast the mob wobbles side to side.
 	var/side_waddle_time = 2
 
+	///banked funds between rounds.
+	var/bank_funds = 0
+
 /datum/preferences/New(client/C)
 	parent = C
 
