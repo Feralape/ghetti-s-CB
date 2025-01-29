@@ -30,7 +30,7 @@ GLOBAL_LIST_EMPTY(bank_accounts)
 		if(amt >= 10)
 			choicez += "SILVER"
 		choicez += "COPPER"
-		var/selection = input(user, "Make a Selection", src) as null|anything in choicez
+		var/selection = input(user, "You have [H.client.prefs.bank_funds] in your account.", src) as null|anything in choicez
 		if(!selection)
 			return
 		amt = GLOB.bank_accounts[H]
@@ -96,7 +96,7 @@ GLOBAL_LIST_EMPTY(bank_accounts)
 		GLOB.bank_accounts[accowner] = initial_deposit
 	else
 		GLOB.bank_accounts[accowner] = 0
-	client.prefs.save_character_persistence(TRUE)
+	client.prefs.save_banked_funds(TRUE)
 	return TRUE
 
 ///@param amt: The amount of money to deposit.
@@ -115,8 +115,8 @@ GLOBAL_LIST_EMPTY(bank_accounts)
 	return TRUE
 
 /obj/machinery/computer/atm/proc/sync_bank_persistence(mob/living/carbon/human/character)
-	character.client.prefs.bank_funds = GLOB.bank_accounts[character] 
-	character.client.prefs.save_character_persistence()
+	character.client.prefs.bank_funds = GLOB.bank_accounts[character]
+	character.client.prefs.save_banked_funds()
 
 /obj/machinery/computer/atm/proc/withdraw_money_account(amt, target)
 	if(!amt)
@@ -191,11 +191,18 @@ GLOBAL_LIST_EMPTY(bank_accounts)
 		user.put_in_hands(G)
 	playsound(T, 'sound/misc/coindispense.ogg', 100, FALSE, -1)
 
-/datum/preferences/proc/save_character_persistence(silent = FALSE)
+/datum/preferences/proc/save_banked_funds(silent = FALSE)
 	var/savefile/S = new /savefile(path)
 	if(!S)
 		return 0
 	if(!silent)
-		to_chat(parent, span_info("Your banked funds are saved, you now have <b>[bank_funds]</b> in your account."))
-	S.cd = "/character[default_slot]"
+		to_chat(parent, span_info("Your banked funds are saved, you now have <b>[bank_funds]</b> currency."))
 	WRITE_FILE(S["bank_funds"], bank_funds)
+
+/mob/living/carbon/human/Login()
+	. = ..()
+	if(!(src in GLOB.bank_accounts))
+		if(client.prefs.bank_funds)
+			init_bank_account(src, client.prefs.bank_funds)
+		else
+			init_bank_account(src, 50) //make sure they got a bank account

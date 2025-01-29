@@ -485,6 +485,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["permanent_tattoos"], permanent_tattoos)
 
 	WRITE_FILE(S["bank_funds"], bank_funds)
+	WRITE_FILE(S["bank_items"], bank_items)
 	return 1
 
 /datum/preferences/proc/load_character(slot)
@@ -867,6 +868,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 
 	READ_FILE(S["matchmaking_prefs"], matchmaking_prefs)
 	READ_FILE(S["bank_funds"], bank_funds)
+	READ_FILE(S["bank_items"], bank_items)
 
 	// !! COYOTE SAVE FILE STUFF !!
 	S["profilePicture"] >> profilePicture // Profile picklies
@@ -1534,6 +1536,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["faved_interactions"], safe_json_encode(faved_interactions))
 
 	WRITE_FILE(S["bank_funds"], bank_funds)
+	WRITE_FILE(S["bank_items"], bank_items)
 
 	return 1
 
