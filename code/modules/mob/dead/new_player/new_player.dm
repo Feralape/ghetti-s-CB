@@ -828,6 +828,7 @@
 	if(.)
 		new_character.key = key		//Manually transfer the key to log them in
 		new_character.stop_sound_channel(CHANNEL_LOBBYMUSIC)
+		new_character.update_fov_angles()
 		new_character = null
 		qdel(src)
 
@@ -909,5 +910,3 @@
 
 	// Add verb for re-opening the interview panel, and re-init the verbs for the stat panel
 	add_verb(src, /mob/dead/new_player/proc/open_interview)
-
-

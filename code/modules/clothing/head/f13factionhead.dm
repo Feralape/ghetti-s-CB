@@ -57,6 +57,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_DT_T1)
 	flags_inv = HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	slowdown = 0
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/raider/supafly
 	name = "supa-fly raider helmet"

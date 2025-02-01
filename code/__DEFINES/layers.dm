@@ -31,6 +31,9 @@
 #define CHAT_PLANE -1 //We don't want heard messages to be hidden by FoV.
 #define CHAT_LAYER 12.1 //Legacy, it doesn't matter that much because we are displayed above the game plane anyway.
 
+#define WEATHER_EFFECT_PLANE -4
+#define GAME_PLANE_FOV_HIDDEN -3
+#define GAME_PLANE_UPPER -4
 #define BLACKNESS_PLANE 0 //To keep from conflicts with SEE_BLACKNESS internals
 
 #define SPACE_LAYER 1.8
