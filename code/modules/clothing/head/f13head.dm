@@ -60,6 +60,7 @@
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
 	salvage_loot = list(/obj/item/stack/crafting/armor_plate = 3)
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/combat/dark
 	color = "#302E2E" // Dark Grey
@@ -280,6 +281,7 @@
 	/// Used to track next tool required to salvage the suit
 	var/salvage_step = 0
 	armor = ARMOR_VALUE_PA
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/power_armor/ComponentInitialize()
 	. = ..()
@@ -549,6 +551,7 @@
 	strip_delay = 30
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/f13
 	flags_inv = HIDEHAIR
@@ -617,6 +620,7 @@
 	force = 20
 	hitsound = 'sound/items/trayhit1.ogg'
 	flags_inv = HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/f13/cowboy
 	name = "cowboy hat"
@@ -661,6 +665,7 @@
 	flags_cover = HEADCOVERSEYES
 	flags_inv = HIDEMASK|HIDEEARS|HIDEHAIR
 	strip_delay = 10
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/motorcycle/Initialize()
 	. = ..()
@@ -768,6 +773,7 @@
 	desc = "It's a fancy two-tone metal helmet. It's been lined with additional plating and given a fresh coat of paint."
 	icon_state = "riderw"
 	item_state = "riderw"
+	block2add = FOV_BEHIND
 
 //Soft caps
 /obj/item/clothing/head/soft/f13
@@ -815,6 +821,7 @@
 	icon_state = "rigscustom_helmet"
 	item_state = "rigscustom_helmet"
 	icon = 'icons/fallout/clothing/hats.dmi'
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/ncr/rangercombat/pricecustom
 	name = "spider riot helmet"
@@ -864,6 +871,7 @@
 	icon_state = "welding_fire"
 	item_state = "welding"
 	tint = 1
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/atombeliever
 	name = "believer headdress"
@@ -872,6 +880,7 @@
 	item_state = "atombeliever"
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/f13/flatranger
 	name = "gambler ranger hat"
@@ -884,6 +893,7 @@
 	desc = "The hide of a deadly green gecko affixed over a reinforced legion helmet. Its ghastly appearance serves as an intimidating gesture to those who do not yet fear the Lizard King."
 	icon_state = "diohelmet"
 	item_state = "diohelmet"
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/herbertranger
 	name = "weathered desert ranger helmet"
@@ -895,6 +905,7 @@
 	resistance_flags = LAVA_PROOF | FIRE_PROOF
 	dynamic_hair_suffix = ""
 	dynamic_fhair_suffix = ""
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/marlowhat
 	name = "boss of the plains hat"
@@ -936,12 +947,14 @@
 	desc = "A bright yellow visor in a timelessly infamous shape makes this helmet immediately recognizable. It's non-ballistic, and it's power unit for the HUD has been long since removed."
 	icon_state = "stealthhelmet"
 	item_state = "stealthhelmet"
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/glasses/f13/tribaleyepatch
 	name = "bandage eyepatch"
 	desc = "A set of heavy bandages wrapped around the head. Made to protect the eye from whatever injury occured."
 	icon_state = "eyepatch_white_r"
 	item_state = "eyepatch_white_r"
+	block2add = FOV_RIGHT
 
 /obj/item/clothing/head/helmet/skull/bone
 	name = "Reinforced skull helmet"
@@ -961,6 +974,7 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR|HIDEFACIALHAIR|HIDEFACE
 	armor = ARMOR_VALUE_LIGHT
 	armor_tokens = list(ARMOR_MODIFIER_UP_MELEE_T3, ARMOR_MODIFIER_DOWN_BULLET_T1, ARMOR_MODIFIER_DOWN_LASER_T1, ARMOR_MODIFIER_UP_ENV_T2, ARMOR_MODIFIER_UP_DT_T1)
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/f13/ninja
 	name = "ninja hood"
@@ -970,6 +984,7 @@
 	item_state = "s-ninja_mask"
 	flags_inv = HIDEEARS|HIDEHAIR|HIDEFACIALHAIR
 	armor = ARMOR_VALUE_LIGHT
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/hat/polis
 	name = "police officer's hat"

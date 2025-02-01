@@ -665,3 +665,9 @@
 #define CURRENT_LIVING_ANTAGS	"living_antags_list"
 #define CURRENT_DEAD_PLAYERS	"dead_players_list"
 #define CURRENT_OBSERVERS		"current_observers_list"
+
+//for vision cone
+#define FOV_DEFAULT 	           	(1<<0)
+#define FOV_RIGHT 	            	(1<<1)
+#define FOV_LEFT 	            	(1<<2)
+#define FOV_BEHIND 	 	          	(1<<3) //180

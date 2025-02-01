@@ -132,6 +132,7 @@
 	if(new_character.client)
 		LAZYCLEARLIST(new_character.client.recent_examines)
 		new_character.client.init_verbs() // re-initialize character specific verbs
+	new_character.update_fov_angles()
 	current.update_atom_languages()
 
 //CIT CHANGE - makes arousal update when transfering bodies
