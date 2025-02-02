@@ -794,6 +794,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_ENV_T1)
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/chinastealthhelm
 	name = "Chinese Stealth helmet"

@@ -11,7 +11,7 @@
 	max_integrity = 150
 	pixel_x = -16
 	layer = FLY_LAYER
-	plane = MOB_PLANE
+	plane = OBJITEM_PLANE
 	var/log_amount = 10
 
 /obj/structure/flora/tree/Bumped(atom/movable/AM)

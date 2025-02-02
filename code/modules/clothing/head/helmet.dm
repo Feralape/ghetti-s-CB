@@ -103,6 +103,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_BULLET_T2)
 	can_flashlight = 1
 	dog_fashion = null
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/alt/Initialize()
 	. = ..()
@@ -116,6 +117,7 @@
 	armor = ARMOR_VALUE_LIGHT
 	dog_fashion = null
 	slowdown = ARMOR_SLOWDOWN_NONE * ARMOR_SLOWDOWN_GLOBAL_MULT
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/kevlarhelmet/rus1
 	name = "Modern Russian helmet"
@@ -390,6 +392,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/evaspartan2
 	name = "M-87 'EVA' assault helmet 'Icebreaker' "
@@ -403,6 +406,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/evaspartan3
 	name = "M-87 'EVA' assault helmet 'Leo Patriot' "
@@ -416,6 +420,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 
 /obj/item/clothing/head/gungnirspartan
@@ -430,6 +435,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/gungnirspartan2
 	name = "M-87 'Odin' assault helmet 'Icebreaker' "
@@ -443,6 +449,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 
 /obj/item/clothing/head/droptrooper
@@ -457,6 +464,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/droptrooper/ice
 	name = "M-87 Luchtmobiele Brigade assault helmet"
@@ -483,6 +491,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/droptrooper/arghelmet
 	name = "ARG ATLAS Helmet"
@@ -496,6 +505,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/droptrooper/custompahelmet
 	name = "Custom fitted MidWestern B.O.S helmet"
@@ -510,6 +520,7 @@
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
 	var/requires_training = FALSE
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/droptrooper/arghelmet/two
 	name = "ARG ARES Helmet"
@@ -523,6 +534,7 @@
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDESNOUT | HIDEHAIR
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/kevlarhelmet/steelfrench
 	name = "French Adrian helmet"
@@ -563,6 +575,7 @@
 	armor = ARMOR_VALUE_LIGHT
 	dog_fashion = null
 	slowdown = ARMOR_SLOWDOWN_NONE * ARMOR_SLOWDOWN_GLOBAL_MULT
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/medievalhelmets/oldgerman
 	name = "German sallet helmet"
@@ -671,6 +684,7 @@
 	clothing_flags = STOPSPRESSUREDAMAGE
 	strip_delay = 80
 	dog_fashion = null
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/swat/nanotrasen
 	name = "\improper SWAT helmet"
@@ -724,6 +738,7 @@
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEHAIR
 	flags_cover = HEADCOVERSEYES
 	dog_fashion = null
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/redtaghelm
 	name = "red laser tag helmet"
@@ -733,6 +748,7 @@
 	item_state = "redtaghelm"
 	// Offer about the same protection as a hardhat.
 	dog_fashion = null
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/unmchelmet
 	name = "Standard issue UNMC helmet"
@@ -744,6 +760,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_BOMB_T1)
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/kevlarhelmet/toxinfil
 	name = "Gen 3 Leo MIRAGE Helmet"
@@ -754,6 +771,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_ENV_T1)
 	icon_state = "custominfil"
 	item_state = "custominfil"
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/unmchelmet/medic
 	name = "Standard issue UNMC Medical Helmet"
@@ -763,6 +781,7 @@
 	flags_inv = HIDEHAIR
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	
 /obj/item/clothing/head/helmet/retrohazmathelmet
 	name = "Old Hazmat helmet"
 	desc = "A old style hazmat helmet. It's a bit well worn and the visor has a crack on it. But other than that, it seems to still work."
@@ -773,6 +792,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_ENV_T4)
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/unmcstealthhelmet
 	name = "American infiltrator helmet"
@@ -784,6 +804,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_ENV_T1)
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/chinastealthhelm
 	name = "Chinese Stealth helmet"
@@ -795,6 +816,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_ENV_T1)
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/unmcwinterhelmet
 	name = "Winter UNMC Helmet"
@@ -806,6 +828,7 @@
 	armor_tokens = list(ARMOR_MODIFIER_UP_BOMB_T1)
 	mob_overlay_icon = 'icons/fallout/onmob/clothes/helmet.dmi'
 	icon = 'icons/fallout/clothing/helmets.dmi'
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/blbandit
 	name = "bandit mask"
@@ -816,6 +839,7 @@
 	item_state = "banditmask"
 	flags_inv = HIDESNOUT
 	armor = ARMOR_VALUE_LIGHT
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/blpsycho
 	name = "psycho mask"
@@ -826,6 +850,7 @@
 	item_state = "psychomask"
 	flags_inv = HIDESNOUT
 	armor = ARMOR_VALUE_LIGHT
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/borderlandshelm
 	name = "borderlands helmet template"
@@ -834,6 +859,7 @@
 	icon = 'icons/fallout/clothing/helmets.dmi'
 	flags_inv = HIDEMASK | HIDEEYES | HIDEHAIR | HIDEFACIALHAIR | HIDEFACE | HIDESNOUT
 	armor = ARMOR_VALUE_MEDIUM
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/borderlandshelm/bandit
 	name = "bandit helmet"
@@ -885,6 +911,7 @@
 	strip_delay = 80
 	dog_fashion = null
 	mutantrace_variation = STYLE_MUZZLE
+	block2add = FOV_BEHIND
 
 
 /obj/item/clothing/head/helmet/knight/Initialize(mapload)
@@ -927,6 +954,7 @@
 	item_state = "skull"
 	strip_delay = 100
 	mutantrace_variation = STYLE_MUZZLE
+	block2add = FOV_BEHIND
 
 /obj/item/clothing/head/helmet/infiltrator
 	name = "insidious helmet"
@@ -941,6 +969,7 @@
 	dynamic_fhair_suffix = ""
 	strip_delay = 80
 	mutantrace_variation = STYLE_MUZZLE
+	block2add = FOV_BEHIND
 
 //LightToggle
 

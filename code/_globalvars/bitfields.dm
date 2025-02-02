@@ -310,5 +310,11 @@ GLOBAL_LIST_INIT(bitfields, list(
 		"VIS_INHERIT_ID" = VIS_INHERIT_ID,
 		"VIS_UNDERLAY" = VIS_UNDERLAY,
 		"VIS_HIDE" = VIS_HIDE
-	)
+	),
+	"fovangle" = list (
+		"FOV_DEFAULT" = FOV_DEFAULT,
+		"FOV_RIGHT" = FOV_RIGHT,
+		"FOV_LEFT" = FOV_LEFT,
+		"FOV_BEHIND" = FOV_BEHIND
+		)
 	))
