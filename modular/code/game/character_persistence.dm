@@ -11,7 +11,7 @@
 /obj/machinery/computer/itemvault/attacked_by(obj/item/I, mob/living/user, attackchain_flags, damage_multiplier, damage_addition, damage_override)
 	if(user.mind && isliving(user))
 		if(I) //the number should help storing multiples
-			var/user/client/prefs/bank_items/bankedshit = user.client.prefs.bank_items
+			var/list/bankedshit = user.client.prefs.bank_items
 			if(istype(I, /obj/item/storage))
 				say("You can not store containers here.")
 				playsound(get_turf(src), 'sound/vox/denied.ogg', 50)
@@ -37,7 +37,7 @@
 /obj/machinery/computer/itemvault/attack_hand(mob/user)
 	. = ..()
 	if(user.mind && isliving(user))
-		var/user/client/prefs/bank_items/bankedshit = user.client.prefs.bank_items
+		var/list/bankedshit = user.client.prefs.bank_items
 		if(bankedshit && bankedshit.len)
 			var/item = input(user, "What will I take?", "VAULT") as null|anything in bankedshit
 			if(item)
