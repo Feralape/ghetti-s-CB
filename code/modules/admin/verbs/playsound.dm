@@ -55,7 +55,8 @@
 /client/proc/play_web_sound()
 	set category = "Admin.Fun"
 	set name = "Play Internet Sound"
-	if(!check_rights(R_SOUNDS))
+
+	if(!check_rights(R_SOUNDS) && !(src in GLOB.radio_operators))
 		return
 
 	var/ytdl = CONFIG_GET(string/invoke_youtubedl)

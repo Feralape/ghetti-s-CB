@@ -389,6 +389,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	///banked funds between rounds.
 	var/bank_funds = 0
+	var/list/bank_items = list()
 
 /datum/preferences/New(client/C)
 	parent = C

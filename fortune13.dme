@@ -3823,6 +3823,7 @@
 #include "interface\skin.dmf"
 #include "modular\code\game\machinery\ATM.dm"
 #include "modular\code\modules\fov.dm"
+#include "modular\code\game\character_persistence.dm"
 #include "modular_citadel\code\datums\components\souldeath.dm"
 #include "modular_citadel\code\datums\status_effects\chems.dm"
 #include "modular_citadel\code\game\objects\cit_screenshake.dm"
