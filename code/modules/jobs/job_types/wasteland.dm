@@ -1310,6 +1310,7 @@ Raider
 
 	access = list(ACCESS_TCOMSAT)
 	minimal_access = list(ACCESS_TCOMSAT)
+
 /datum/outfit/job/wasteland/f13radioop
 	name = "Radio Operator"
 	jobtype = /datum/job/wasteland/f13radioop
@@ -1329,6 +1330,8 @@ Raider
 		/obj/item/clothing/mask/chameleon
 		)
 
+GLOBAL_LIST_EMPTY(radio_operators)
+
 /datum/outfit/job/wasteland/f13wastelander/pre_equip(mob/living/carbon/human/H)
 	..()
 	uniform = pick(
@@ -1336,7 +1339,9 @@ Raider
 		/obj/item/clothing/under/f13/brahminm, \
 		/obj/item/clothing/under/f13/lumberjack, \
 		/obj/item/clothing/under/f13/roving)
-
+	to_chat(H, span_red("Use the play-internet-sound verb carefully, you may get job banned or worse on misuse."))
+	add_verb(H, /client/proc/play_web_sound)
+	GLOB.radio_operators += src
 
 /datum/job/wasteland/f13wastelander/ashdown
 	title = "Ashdown Citizen"
