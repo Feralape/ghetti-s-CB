@@ -1,4 +1,4 @@
-#define BED_HEAL_BONUS 0.02
+#define BED_HEAL_BONUS 2
 
 // To trigger the sleeping tickies when the player is sleeping
 /datum/status_effect/incapacitating/sleeping/tick()
@@ -15,8 +15,6 @@
 
 // Definition!
 /datum/component/sleeping_regeneration
-	var/maxHealAmount = 0.02 // idfk
-
 // We want to check to make sure the component is a /mob/living, if it isnt, this component is incompatible.
 /datum/component/sleeping_regeneration/Initialize(...)
 	if(!isliving(parent))
@@ -60,14 +58,18 @@
 	if(!damagedParts.len) // We're done here!
 		return
 
-	// get a heal amount from 0 to the maxHealAmount.
-	var/healAmount = rand(0,maxHealAmount)
+	var/healAmount = rand(0,2)
 
 	var/turf/hereiam = get_turf(L)
 	var/obj/buckled_obj = (L.buckled || (locate(/obj/structure/bed) in hereiam))
 	if(buckled_obj && istype(buckled_obj, /obj/structure/bed))
 		if(!is_type_in_list(get_area(L), GLOB.outdoor_areas))
 			healAmount += BED_HEAL_BONUS
+
+	if(istype(L, /mob/living/carbon/human))
+		var/mob/living/carbon/human/hoomanguy = L
+		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_FIGHTER))
+			healAmount *= 2
 
 	var/healbots = isrobotic(L)
 

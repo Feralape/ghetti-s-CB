@@ -1279,8 +1279,14 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 	// Check if the user is behind the target
 	if(get_dir(user, M) == M.dir && isliving(M))
 		damage_multiplier = backstab_multiplier // Apply the backstab multiplier
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/hoomanguy = user
+		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_ROGUE))
+			damage_multiplier *= 2
+			to_chat(user, "<span class='notice'>You backstab [M] for horrific damage!</span>")
+		else
+			to_chat(user, "<span class='notice'>You backstab [M]!</span>")
 		playsound(user.loc, 'sound/effects/dismember.ogg', 50, 1, -1) // Play a backstab sound
-		to_chat(user, "<span class='notice'>You backstab [M]!</span>")
 	. = ..()
 
 /obj/item/MouseDrop(mob/over, src_location, over_location)

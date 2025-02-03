@@ -74,14 +74,9 @@
 
 //mob traits
 /// Forces the user to stay unconscious.
-#define TRAIT_ADV_SEEKER	"adventure_seeker"
-#define TRAIT_ADV_ER		"adventurer"
-#define TRAIT_ADV_LFG			"looking_for_group"
-#define TRAIT_ADV_SOLO			"solo"
 #define TRAIT_ADV_GUNNER		"gunner"
 #define TRAIT_ADV_FIGHTER		"fighter"
 #define TRAIT_ADV_TANK			"tank"
-#define TRAIT_ADV_BRUISER		"bruiser"
 #define TRAIT_ADV_ROGUE			"rogue"
 #define TRAIT_ADV_HEALER		"healer"
 #define TRAIT_KNOCKEDOUT		"knockedout"

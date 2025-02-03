@@ -883,6 +883,10 @@ ATTACHMENTS
 /obj/item/gun/proc/weapondraw(obj/item/gun/G, mob/living/user) // Eventually, this will be /obj/item/weapon and guns will be /obj/item/weapon/gun/etc. SOON.tm
 	user.visible_message(span_danger("[user] grabs \a [G]!")) // probably could code in differences as to where you're picking it up from and so forth. later.
 	var/time_till_gun_is_ready = max(draw_time,(user.AmountWeaponDrawDelay()))
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/hoomanguy = user
+		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_GUNNER))
+			time_till_gun_is_ready *= 0.5 || 0
 	if(allow_quickdraw)
 		allow_quickdraw = FALSE
 		time_till_gun_is_ready = 0

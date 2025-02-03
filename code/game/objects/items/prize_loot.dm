@@ -13,6 +13,11 @@
 
 /obj/item/lockpick_set/proc/use_pick(mob/user)
 	uses_left--
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/hoomanguy = user
+		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_ROGUE))
+			user.show_message("Your skilled hands carefully work with the locıkpicks without damaging them.")
+			return
 	switch(uses_left)
 		if(1)
 			if(user)

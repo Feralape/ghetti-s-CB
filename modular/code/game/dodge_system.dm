@@ -3,6 +3,8 @@
 //armor stiffness based dodge system by vide noir
 //since armor defines are retarded here I gotta use stiffness to simplify.
 /mob/living/carbon/human/bullet_act(obj/item/projectile/P, def_zone)
+	if(has_quirk(src, TRAIT_ADV_TANK) && wear_suit.stiffness >= MEDIUM_STIFFNESS)
+		return ..()
 	if(stat == CONSCIOUS && !buckled) //are we awake and unbuckled?
 		//dodge is good against single shots, but probably wont save you from an automatic.
 		//i like to not rely shit too much on RNG although it might be good in this case.
@@ -16,7 +18,10 @@
 				if(HEAVY_STIFFNESS to 3)
 					hitchance -= 0 //+0% chance to dodge.
 		else
-			hitchance -= 50 //No armor, +60% chance to dodge.
+			hitchance -= 60 //No armor, +60% chance to dodge.
+
+		if(has_quirk(src, TRAIT_ADV_ROGUE) && wear_suit.stiffness <= LIGHT_STIFFNESS)
+			hitchance -= rand(5,10) //Rogue dodge bonus.
 
 		if(last_move_time > world.time - 1 SECONDS)
 			hitchance -= rand(5,10) //You're harder to hit if you're moving.

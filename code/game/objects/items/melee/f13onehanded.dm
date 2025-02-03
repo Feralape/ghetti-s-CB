@@ -168,6 +168,7 @@
 	armor = ARMOR_VALUE_GENERIC_ITEM
 	var/bayonet = FALSE	//Can this be attached to a gun?
 	bare_wound_bonus = 5
+	backstab_multiplier = 2
 	custom_materials = list(/datum/material/iron=6000)
 	resistance_flags = FIRE_PROOF
 	attack_speed = CLICK_CD_MELEE * 0.85 //6.8

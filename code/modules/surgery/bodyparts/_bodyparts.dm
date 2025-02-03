@@ -1170,6 +1170,9 @@
 	if(!istype(current_gauze, /obj/item/stack/medical/gauze))
 		return
 	var/heal_amt = current_gauze.heal_per_tick
+	if(owner.has_quirk(owner, TRAIT_ADV_HEALER))
+		heal_amt *= 2
+
 	var/bleed_healing = current_gauze.bandage_power * (istype(current_suture) ? SUTURE_AND_BANDAGE_BONUS : 1)
 	covering_heal_nutrition_mod(bleed_healing, heal_amt)
 
@@ -1307,6 +1310,8 @@
 	if(!istype(current_suture, /obj/item/stack/medical/suture))
 		return
 	var/heal_amt = current_suture.heal_per_tick
+	if(owner.has_quirk(owner, TRAIT_ADV_HEALER))
+		heal_amt *= 2
 	var/bleed_healing = current_suture.suture_power * (istype(current_gauze) ? SUTURE_AND_BANDAGE_BONUS : 1)
 	covering_heal_nutrition_mod(bleed_healing, heal_amt)
 

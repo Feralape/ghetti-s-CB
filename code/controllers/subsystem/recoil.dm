@@ -439,7 +439,17 @@ SUBSYSTEM_DEF(recoil)
 	if(HAS_TRAIT(shooter,TRAIT_PANICKED_ATTACKER))
 		return 100 // lol
 	if(HAS_TRAIT(shooter, SPREAD_CONTROL))
-		mult *= 0.75 // Spread control! used by power armor
+		mult *= 0.5 // Spread control! used by power armor
+	else if(HAS_TRAIT(shooter,TRAIT_NICE_SHOT)) // halves your inaccuracy!
+		mult *= 0.75 // Nice shot!
+	if(HAS_TRAIT(shooter,TRAIT_NEARSIGHT)) //Yes.
+		mult *= 2 //You're slightly less accurate because you can't see well - as an upside, lasers don't suffer these penalties! - jk they do
+	if(HAS_TRAIT(shooter,TRAIT_POOR_AIM)) //You really shouldn't try this at home.
+		mult *= 3//This is cripplingly bad. Trust me.
+	if(HAS_TRAIT(shooter,TRAIT_FEV)) //You really shouldn't try this at home.
+		mult *= 5 //YOU AINT HITTING SHIT BROTHA. REALLY.
+	if(HAS_TRAIT(shooter, TRAIT_CRIT_SHOT))
+		return 0
 	return mult
 
 /datum/mob_recoil/proc/get_scoot_factor()

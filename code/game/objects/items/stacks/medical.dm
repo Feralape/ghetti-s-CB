@@ -274,7 +274,7 @@
 			user.visible_message(
 				span_warning("[user] begins applying \a [src] to [target]'s [target_part]..."),
 				span_warning("You begin applying \a [src] to [user == target ? "your" : "[target]'s"] [target_part]..."))
-/*			if(is_skilled && is_skilled != NO_SKILLS_REQUIRED)
+			if(is_skilled && is_skilled != NO_SKILLS_REQUIRED)
 				switch(needed_trait)
 					if(TRAIT_SURGERY_LOW)
 						if(is_skilled == USER_HAS_THE_SKILLS)
@@ -290,7 +290,7 @@
 						if(is_skilled == USER_HAS_THE_SKILLS)
 							user.show_message(span_green("It's an advanced procedure, but well within your skillset!"))
 						else
-							user.show_message(span_green("[target] is a well versed surgeon, and that fact steadies your hand!")) */
+							user.show_message(span_green("[target] is a well versed surgeon, and that fact steadies your hand!"))
 
 		if("end")
 			if(isnull(bandage_code))
@@ -378,8 +378,7 @@
 
 /// Returns if the user is skilled enough to use this thing effectively (unused, currently)
 /obj/item/stack/medical/proc/is_skilled_enough(mob/user, mob/target)
-	return NO_SKILLS_REQUIRED
-/* 	if(!needed_trait)
+	if(!needed_trait)
 		return NO_SKILLS_REQUIRED
 	if(HAS_TRAIT(user, needed_trait))
 		return USER_HAS_THE_SKILLS
@@ -401,7 +400,7 @@
 			if(HAS_TRAIT(user, TRAIT_SURGERY_HIGH))
 				return USER_HAS_THE_SKILLS
 			if(HAS_TRAIT(target, TRAIT_SURGERY_HIGH))
-				return VICTIM_HAS_THE_SKILLS */
+				return VICTIM_HAS_THE_SKILLS
 
 
 /obj/item/stack/medical/get_belt_overlay()
@@ -418,7 +417,6 @@
 	icon_state = "brutepack"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	//needed_trait = TRAIT_SURGERY_LOW
 	heal_brute = 30
 	heal_burn = 30
 	heal_mobs = 40
@@ -434,7 +432,6 @@
 	icon_state = "brutepack"
 	lefthand_file = 'icons/mob/inhands/equipment/medical_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/medical_righthand.dmi'
-	//needed_trait = TRAIT_SURGERY_LOW
 	infinite_uses = TRUE
 	needs_reservoir = TRUE
 	too_dry = "Your tongue is too dry to keep licking. A break will help. Drinking some water would help too."
@@ -592,7 +589,6 @@
 	bandage_power = BANDAGE_BEST_WOUND_CLOSURE
 	max_bandage_healing = BANDAGE_BEST_WOUND_MAX
 	is_bandage = TRUE
-	//needed_trait = TRAIT_SURGERY_LOW
 	//absorption_rate = 0.4
 	//absorption_capacity = 15
 	covering_lifespan = BANDAGE_GOOD_MAX_DURATION
@@ -668,7 +664,7 @@
 	gender = PLURAL
 	singular_name = "suture"
 	icon_state = "suture"
-	//needed_trait = TRAIT_SURGERY_MID
+	needed_trait = TRAIT_SURGERY_MID
 	covering_hitpoints = 3
 	self_delay = 80
 	other_delay = 60
@@ -696,7 +692,7 @@
 	name = "improvised sutures"
 	icon_state = "suture_imp"
 	desc = "A set of improvised sutures consisting of clothing thread and a sewing needle. Liable to tear up your flesh, but will eventually close up minor bleeds. Medical training won't help you with this."
-	//needed_trait = null
+	needed_trait = null
 	covering_hitpoints = 1
 	hurt_brute = 8 // Owie
 	self_delay = 100
@@ -726,7 +722,7 @@
 	name = "advanced medicated sutures"
 	icon_state = "suture_purp"
 	desc = "An advanced suture and ultra-sharp needle, both infused with specialized coagulants and painkillers that make for a quick and painless wound treatment. It's very delicate and requires extensive medical training to use effectively."
-	//needed_trait = TRAIT_SURGERY_HIGH
+	needed_trait = TRAIT_SURGERY_HIGH
 	covering_hitpoints = 5
 	self_delay = 80
 	other_delay = 60

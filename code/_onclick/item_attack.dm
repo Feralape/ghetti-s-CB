@@ -13,6 +13,10 @@
 		if(!CHECK_MOBILITY(L, MOBILITY_USE) && !(attackchain_flags & ATTACK_IS_PARRY_COUNTERATTACK))
 			to_chat(L, span_warning("You are unable to swing [src] right now!"))
 			return
+		if(istype(L, /mob/living/carbon/human))
+			var/mob/living/carbon/human/hoomanguy = L
+			if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_FIGHTER))
+				damage_multiplier *= 1.3
 		if(SEND_SIGNAL(src, COMSIG_ITEM_ATTACKCHAIN, user, target, params) & COMPONENT_ITEM_NO_ATTACK)
 			return
 		if(min_reach && GET_DIST_EUCLIDEAN(user, target) < min_reach)

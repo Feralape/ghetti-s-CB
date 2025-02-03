@@ -1623,7 +1623,7 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 	name = "Silent Step"
 	desc = "Your steps just make no noise, or maybe everyone elses buttcheeks are just that loud?"
 	mob_trait = TRAIT_SILENT_STEP
-	value = 32
+	value = 18 //you can literally walk instead and have the same effect.
 	category = "Movement Quirks"
 	mechanics = "Your footsteps never make noise."
 	conflicts = list(
@@ -1632,15 +1632,15 @@ GLOBAL_LIST_INIT(weapons_of_texarkana, list(
 	)
 	gain_text = span_notice("Your footsteps fade away.")
 	lose_text = span_danger("You're pretty sure that's the sound of your asscheeks clapping, but it might be footsteps.")
-	medical_record_text = "Patient appears to always walk on their toes."
+	medical_record_text = "Patient appears to walk innately quiet."
 	locked =  FALSE
 
 /datum/quirk/deadeye
 	name = "Dead Eye"
-	desc = "When you hit your target, you frequently hit your target's vital points more often than not."
+	desc = "When you hit your target (and you nearly always do.), you frequently hit your target's vital points more often than not."
 	value = 65
 	category = "Ranged Quirks"
-	mechanics = "You have advantage on all random ranged damage rolls. (roll twice and take the highest). \
+	mechanics = "Your shots are of perfect accuracy and can bounce off surfaces and to targets (even yourself), on top of that you have advantage on all random ranged damage rolls. (roll twice and take the highest). \
 				On top of that your shots have better chances of hitting simple mobs on their vital spots, aiming your shots on the head, arms and legs trigger gimmicks \
 				more often. Gimmicks that vary between stunning a mob temporarely to dealing more damage."
 	conflicts = list(

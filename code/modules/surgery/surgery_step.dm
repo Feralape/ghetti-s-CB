@@ -60,7 +60,12 @@
 		speed_mod = tool.toolspeed //faster tools mean faster surgeries, but also less experience.
 	if(user.mind)
 		speed_mod = user.mind.action_skill_mod(/datum/skill/numerical/surgery, speed_mod, THRESHOLD_UNTRAINED, FALSE)
+	if(istype(user, /mob/living/carbon/human))
+		var/mob/living/carbon/human/hoomanguy = user
+		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_HEALER))
+			speed_mod *= -2
 	var/delay = time * speed_mod
+	delay = max(1, speed_mod)
 	if(do_after(user, delay, target = target))
 		var/prob_chance = 100
 		if(implement_type)	//this means it isn't a require hand or any item step.

@@ -89,6 +89,11 @@
 		return FALSE
 	var/totaldamage = P.damage
 	var/staminadamage = P.stamina
+	if(istype(src, /mob/living/carbon/human))
+		var/mob/living/carbon/human/hoomanguy = src
+		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_TANK) && hoomanguy.wear_suit.stiffness >= MEDIUM_STIFFNESS) //30% reduction for tanks ig
+			totaldamage *= 0.7
+			staminadamage *= 0.7
 	var/final_percent = 0
 	if(P.original != src || P.firer != src) //try to block or reflect the bullet, can't do so when shooting oneself
 		var/list/returnlist = list()

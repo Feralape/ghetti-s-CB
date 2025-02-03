@@ -79,6 +79,10 @@
 
 /datum/symptom/heal/starlight/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
 	var/heal_amt = actual_power
+
+	if(M.has_quirk(M, TRAIT_ADV_HEALER))
+		heal_amt *= 2
+
 	if(M.getToxLoss() && prob(5))
 		to_chat(M, span_notice("Your skin tingles as the starlight seems to heal you."))
 
@@ -199,6 +203,9 @@
 /datum/symptom/heal/darkness/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
 	var/heal_amt = 2 * actual_power
 
+	if(M.has_quirk(M, TRAIT_ADV_HEALER))
+		heal_amt *= 2
+
 	var/list/parts = M.get_damaged_bodyparts(1,1)
 
 	if(!parts.len)
@@ -295,6 +302,9 @@
 /datum/symptom/heal/coma/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
 	var/heal_amt = 4 * actual_power
 
+	if(M.has_quirk(M, TRAIT_ADV_HEALER))
+		heal_amt *= 2
+
 	var/list/parts = M.get_damaged_bodyparts(1,1)
 
 	if(!parts.len)
@@ -352,6 +362,9 @@
 
 /datum/symptom/heal/water/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
 	var/heal_amt = 2 * actual_power
+
+	if(M.has_quirk(M, TRAIT_ADV_HEALER))
+		heal_amt *= 2
 
 	var/list/parts = M.get_damaged_bodyparts(1,1) //more effective on burns
 
@@ -412,6 +425,9 @@
 
 /datum/symptom/heal/plasma/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
 	var/heal_amt = 4 * actual_power
+
+	if(M.has_quirk(M, TRAIT_ADV_HEALER))
+		heal_amt *= 2
 
 	if(prob(5))
 		to_chat(M, span_notice("You feel yourself absorbing plasma inside and around you..."))
@@ -481,6 +497,9 @@
 
 /datum/symptom/heal/radiation/Heal(mob/living/carbon/M, datum/disease/advance/A, actual_power)
 	var/heal_amt = actual_power
+
+	if(M.has_quirk(M, TRAIT_ADV_HEALER))
+		heal_amt *= 2
 
 	if(cellular_damage)
 		M.adjustCloneLoss(-heal_amt * 0.5)

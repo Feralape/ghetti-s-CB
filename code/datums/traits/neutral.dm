@@ -982,106 +982,53 @@
 	mob_trait = TRAIT_ERPFLIRTY
 	human_only = FALSE
 
-
-//Adventure Traits
-
-/datum/quirk/advseeker
-	name = "Adventure Seeking"
-	desc = "You keep an eye out for the type of person who sees this swampy wasteland as a way to grow famous and rich.  Preferably both."
-	value = 0
-	category = "Perceptive Quirks"
-	mechanics = "This is a flag quirk that lets you see what other peoples builds are for going out and doing adventure, letting you more easily build your groups strenghths up and check weaknesses."
-	conflicts = list()
-	mob_trait = TRAIT_ADV_SEEKER
-	human_only = FALSE
-
-/datum/quirk/adver
-	name = "Adventurer"
-	desc = "You are one of those people who go about in search of what was in hopes of making what is bigger and better. Or maybe you just focus on making money. It's your call."
-	value = 0
-	category = "Adventure Quirks"
-	mechanics = "You're really always on call for a wild time. Wanna go kill some robots later?"
-	conflicts = list()
-	mob_trait = TRAIT_ADV_ER
-	human_only = FALSE
-
-/datum/quirk/advlfg
-	name = "Adventurer - Looking for Group"
-	desc = "The wasteland calls to you, and you hope that others hear its call as well. As such, you prefer to explore with a friend, or maybe even friends."
-	value = 0
-	category = "Adventure Quirks"
-	mechanics = "This is the flag to tell others that you are really down for going out at any time!"
-	conflicts = list()
-	mob_trait = TRAIT_ADV_LFG
-	human_only = FALSE
-
-/datum/quirk/advsolo
-	name = "Adventurer - Not Looking for Group"
-	desc = "The wasteland calls to you, and you're your own ride and die. No need to bring others along in your book."
-	value = 0
-	category = "Adventure Quirks"
-	mechanics = "This is the flag to tell others that you aren't really looking for adventure today."
-	conflicts = list()
-	mob_trait = TRAIT_ADV_SOLO
-	human_only = FALSE
-
 /datum/quirk/advgunner
 	name = "Adventurer - Class: Gunner"
-	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Gunner at heart. Be it long gun, smg, or even black powder you're happiest with slinging lead, arrows, rocks, or the like. Generally staying somewhat back from combat."
-	value = 0
+	desc = "Be it long gun, smg, or even black powder you're happiest with slinging lead, arrows, rocks, or the like. Generally staying somewhat back from combat."
+	value = 5
 	category = "Adventure Quirks"
-	mechanics = "Not a skygunner though, no airplanes around here. Yet."
-	conflicts = list()
+	mechanics = "You have 20% less spread and and you can ready your weapons significantly faster."
+	conflicts = list(/datum/quirk/advrogue, /datum/quirk/advtank, /datum/quirk/advfighter, /datum/quirk/advhealer)
 	mob_trait = TRAIT_ADV_GUNNER
 	human_only = FALSE
 
 /datum/quirk/advfighter
 	name = "Adventurer - Class: Fighter"
-	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Fighter at heart. Using Melee weapons, though not usually a shield, you can do a good job of keeping critters away from friends and probably do decent damage."
-	value = 0
+	desc = "Using Melee weapons, though not usually a shield, you can do a good job of keeping critters away from friends and probably do decent damage."
+	value = 5
 	category = "Adventure Quirks"
-	mechanics = "No, you don't get an extra 'feat' for taking this."
-	conflicts = list()
+	mechanics = "You deal 30% more damage in melee and you heal two times as much while sleeping."
+	conflicts = list(/datum/quirk/advrogue, /datum/quirk/advtank, /datum/quirk/advgunner, /datum/quirk/advhealer)
 	mob_trait = TRAIT_ADV_FIGHTER
 	human_only = FALSE
 
 /datum/quirk/advtank
 	name = "Adventurer - Class: Tank"
-	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Tank at heart. What matters most to you is your shield, and ability to block monsters from getting past you as best you can, while others do the real damage."
-	value = 0
+	desc = "What matters most to you is your shield, and ability to block monsters from getting past you as best you can, while others do the real damage."
+	value = 5
 	category = "Adventure Quirks"
-	mechanics = "No promises about your team actually using you as a shield, you know how it is man."
-	conflicts = list()
+	mechanics = "Armor is 30% more effective while wearing medium or heavier armor, whether against bullets or melee, you do not dodge."
+	conflicts = list(/datum/quirk/advrogue, /datum/quirk/advfighter, /datum/quirk/advgunner, /datum/quirk/advhealer)
 	mob_trait = TRAIT_ADV_TANK
-	human_only = FALSE
-
-/datum/quirk/advbruiser
-	name = "Adventurer - Class: Bruiser"
-	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Bruiser at heart. Two handed weapons are your jam (and jam smasher, for that matter.) With little focus on keeping yourself, or others, safe. Which means you can focus on smashing things as fast as possible."
-	value = 0
-	category = "Adventure Quirks"
-	mechanics = "Bruise em', smash em', stick em' in a stew."
-	conflicts = list()
-	mob_trait = TRAIT_ADV_BRUISER
 	human_only = FALSE
 
 /datum/quirk/advrogue
 	name = "Adventurer - Class: Rogue"
-	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Rogue at heart. Carrying tools and offering options that the other classes may not consider. Like lockpicks, or EMP grenades. This lets others know you're focused on playing smarter, not harder."
-	value = 0
+	desc = "Carrying tools and offering options that the other classes may not consider. Like lockpicks, or EMP grenades. This lets others know you're focused on playing smarter, not harder."
+	value = 5
 	category = "Adventure Quirks"
-	mechanics = "If you pray for extra backstab damage I promise I'll only smite you three times. ~Fenny"
-	conflicts = list()
+	mechanics = "You deal double backstab damage, You can dodge bullets slightly better while wearing light armor or less. And your lockpicks do not break in your hands."
+	conflicts = list(/datum/quirk/advtank, /datum/quirk/advfighter, /datum/quirk/advgunner, /datum/quirk/advhealer)
 	mob_trait = TRAIT_ADV_ROGUE
 	human_only = FALSE
 
 /datum/quirk/advhealer
 	name = "Adventurer - Class: Healer"
-	desc = "While this offers no mechanical boons this tag lets other adventurers know you're a Healer at heart. Be it with consumables or the innate healing quirks this tag lets others know you're focused on keeping them up and in the fight. That doesn't mean you can't defend yourself though."
-	value = 0
+	desc = "Be it with consumables or the innate healing quirks this tag lets others know you're focused on keeping them up and in the fight. That doesn't mean you can't defend yourself though."
+	value = 5
 	category = "Adventure Quirks"
-	mechanics = "Doesn't actually require you to take the quirk for being a bottom, believe it or not."
-	conflicts = list()
+	mechanics = "You perform surgeries twice as fast and apply healing with double efficency. You likely still need medical skills from elsewhere though."
+	conflicts = list(/datum/quirk/advrogue, /datum/quirk/advtank, /datum/quirk/advfighter, /datum/quirk/advgunner)
 	mob_trait = TRAIT_ADV_HEALER
 	human_only = FALSE
 
