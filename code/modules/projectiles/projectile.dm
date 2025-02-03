@@ -18,6 +18,7 @@
 	movement_type = FLYING
 	animate_movement = NO_STEPS
 	hitsound = 'sound/weapons/pierce.ogg'
+	var/miss_sound = "bullet_miss"
 	appearance_flags = PIXEL_SCALE
 	var/hitsound_wall = ""
 
