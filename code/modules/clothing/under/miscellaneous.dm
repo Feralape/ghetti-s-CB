@@ -1810,6 +1810,3 @@
 	body_parts_covered = CHEST|GROIN|ARMS
 	can_adjust = FALSE
 
-
-
-

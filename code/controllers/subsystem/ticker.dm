@@ -49,7 +49,7 @@ SUBSYSTEM_DEF(ticker)
 
 	/// Deciseconds to add to world.time for station time.
 	var/gametime_offset = 216000
-	var/station_time_rate_multiplier = 6		//factor of station time progressal vs real time.
+	var/station_time_rate_multiplier = 16		//factor of station time progressal vs real time.
 	var/timezone_offset_positive = 0            //add time for a timezone offset
 	var/timezone_offset_negative = 216000       //remove time for a timezone offset (UTC to CT)
 

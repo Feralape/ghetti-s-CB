@@ -3,6 +3,25 @@
 /turf
 	var/baseturf_icon
 	var/baseturf_dir = 0
+	var/edge_icon
+	var/list/turf_types_to_check = list() // Add more turf types as needed
+
+/turf/proc/CheckAdjacentTurfs(turf_types)
+    for(var/direction in GLOB.cardinals)
+        var/turf/turf_to_check = get_step(src, direction)
+        for(var/turf_type in turf_types)
+            if(istype(turf_to_check, turf_type))
+                var/obj/effect/overlay/edge = new edge_icon(src)
+                switch(direction)
+                    if(NORTH)
+                        edge.pixel_y = 32
+                    if(SOUTH)
+                        edge.pixel_y = -32
+                    if(EAST)
+                        edge.pixel_x = 32
+                    if(WEST)
+                        edge.pixel_x = -32
+                edge.dir = dir = turn(direction, 180)
 
 /turf/open/indestructible/ground
 	icon = 'icons/fallout/turfs/ground.dmi'
@@ -58,6 +77,9 @@
 	return TRUE
 
 //////////////////////////////////////////////////////////////////////
+/turf/Initialize()
+	CheckAdjacentTurfs(turf_types_to_check)
+	. = ..()
 
 /turf/open/indestructible/ground/outside
 	sunlight_state = SUNLIGHT_SOURCE
@@ -65,6 +87,7 @@
 /turf/open/indestructible/ground/outside/Initialize()
 	. = ..()
 	flags_2 |= GLOBAL_LIGHT_TURF_2
+
 
 #define GRASS_SPONTANEOUS 		  	2
 #define GRASS_WEIGHT			  	8
@@ -256,6 +279,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	turf_types_to_check = list(/turf/open/liquid/water)
 	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
 	var/pit_sand = 1
 	// TODO: REWRITE PITS ENTIRELY
@@ -266,6 +290,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	var/pitcontents // Lazylist of pit contents. TODO: Replace with mypit.contents?
 	var/obj/dugpit/mypit
 	var/unburylevel = 0
+	edge_icon = /obj/effect/overlay/desert_side
 
 //For sculpting with more precision, the random picking does not work very well. Slowdown 0.5 instead of 1. No random armor or gunpowder or titanium. Use directions for control. - Pebbles
 /turf/open/indestructible/ground/outside/desert/sonora
@@ -299,20 +324,9 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 		salvage = new derp()
 	if(icon_state != "wasteland")
 		icon_state = "wasteland[rand(1,31)]"
-	for(var/direction in GLOB.cardinals)
-		var/turf/turf_to_check = get_step(src, direction)
-		if(istype(turf_to_check, /turf/open/liquid/water))
-			var/obj/effect/overlay/desert_side/DS = new /obj/effect/overlay/desert_side(src)
-			switch(direction)
-				if(NORTH)
-					DS.pixel_y = 32
-				if(SOUTH)
-					DS.pixel_y = -32
-				if(EAST)
-					DS.pixel_x = 32
-				if(WEST)
-					DS.pixel_x = -32
-			DS.dir = dir = turn(direction, 180)
+	
+
+
 
 /turf/open/indestructible/ground/outside/desert/harsh/Initialize()
 	. = ..()
@@ -348,7 +362,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 /turf/open/indestructible/ground/outside/dirt
 	name = "dirt"
 	icon = 'icons/fallout/turfs/dirt.dmi'
-	icon_state = "dirtfull"
+	icon_state = "dirtfull_dark"
 //	step_sounds = list("human" = "dirtfootsteps")
 //	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
 //	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
@@ -357,10 +371,24 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	edge_icon = /obj/effect/overlay/dirt_side
+	turf_types_to_check = list(/turf/open/liquid/water,
+	/turf/open/indestructible/ground/inside/mountain)
+
+/obj/effect/overlay/dirt_side
+	name = "dirt"
+	icon = 'icons/fallout/turfs/dirt.dmi'
+	icon_state = "dirtedge"
+	density = FALSE
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	plane = FLOOR_PLANE
+	layer = ABOVE_OPEN_TURF_LAYER
+	anchored = TRUE
+	resistance_flags = INDESTRUCTIBLE
 
 /turf/open/indestructible/ground/outside/dirt/Initialize()
 	. = ..()
-	if(icon_state == "dirtfull")
+	if(icon_state == "dirtfull_dark")
 		if(SSweather.snowy_time)
 			name = "snow"
 			icon = 'icons/fallout/turfs/dirt.dmi'
@@ -563,6 +591,8 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon_state = "rockfloor1"
 	icon = 'icons/fallout/turfs/mining.dmi'
 	footstep = FOOTSTEP_SAND
+	edge_icon = /obj/effect/overlay/rockfloor_side
+	turf_types_to_check = list(/turf/open/liquid/water)
 //	allowed_plants = list(/obj/item/seeds/glow)
 //	step_sounds = list("human" = "erikafootsteps")
 
@@ -573,20 +603,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 			(locate(/obj/structure) in src) || \
 			(locate(/obj/machinery) in src) ))
 		plantShrooms()
-	for(var/direction in GLOB.cardinals)
-		var/turf/turf_to_check = get_step(src, direction)
-		if(istype(turf_to_check, /turf/open/liquid/water))
-			var/obj/effect/overlay/rockfloor_side/DS = new /obj/effect/overlay/rockfloor_side(src)
-			switch(direction)
-				if(NORTH)
-					DS.pixel_y = 32
-				if(SOUTH)
-					DS.pixel_y = -32
-				if(EAST)
-					DS.pixel_x = 32
-				if(WEST)
-					DS.pixel_x = -32
-			DS.dir = turn(direction, 180)
+
 
 /obj/effect/overlay/rockfloor_side
 	name = "cave"
@@ -681,6 +698,12 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	footstep = FOOTSTEP_GRAVEL
 	barefootstep = FOOTSTEP_GRAVEL
 	clawfootstep = FOOTSTEP_GRAVEL
+	edge_icon = /obj/effect/overlay/gravel/edge
+	turf_types_to_check = list(/turf/open/indestructible/ground/outside/dirt, 
+	/turf/open/liquid/water,
+	/turf/open/indestructible/ground/inside/mountain,
+	/turf/open/indestructible/ground/outside/desert
+	)
 
 /turf/open/indestructible/ground/outside/gravel/alt
 	name = "gravel"
@@ -798,10 +821,45 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "grass_dark"
 
+/turf/open/indestructible/ground/outside/civ/grass
+	name = "grass"
+	icon = 'icons/fallout/turfs/civfloor.dmi'
+	icon_state = "grass0"
+	edge_icon = /obj/effect/overlay/grass/edge
+	turf_types_to_check = list(/turf/open/indestructible/ground/outside/dirt, 
+	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/gravel, 
+	/turf/open/liquid/water,
+	/turf/open/indestructible/ground/inside/mountain)
+
 /turf/open/indestructible/ground/outside/civ/grass0
 	name = "grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "grass0"
+
+
+/obj/effect/overlay/grass/edge
+	name = "grass edge"
+	icon = 'icons/fallout/turfs/civfloor.dmi'
+	icon_state = "grassedge"
+	density = FALSE
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	plane = FLOOR_PLANE
+	layer = ABOVE_OPEN_TURF_LAYER
+	anchored = TRUE
+	resistance_flags = INDESTRUCTIBLE
+
+
+/obj/effect/overlay/drygrass/edge
+	name = "grass edge"
+	icon = 'icons/fallout/turfs/civfloor.dmi'
+	icon_state = "grassedge_dry"
+	density = FALSE
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	plane = FLOOR_PLANE
+	layer = ABOVE_OPEN_TURF_LAYER
+	anchored = TRUE
+	resistance_flags = INDESTRUCTIBLE
 
 /turf/open/indestructible/ground/outside/civ/grass1
 	name = "grass"
@@ -822,6 +880,13 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	name = "dry grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "dry_grass"
+	edge_icon = /obj/effect/overlay/drygrass/edge
+	turf_types_to_check = list(/turf/open/indestructible/ground/outside/dirt,
+	/turf/open/indestructible/ground/outside/civ/grass, 
+	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/gravel, 
+	/turf/open/liquid/water,
+	/turf/open/indestructible/ground/inside/mountain)
 
 /turf/open/indestructible/ground/outside/civ/drygrass0
 	name = "dry grass"
