@@ -367,3 +367,7 @@
 #undef DRILL_SHOUTING
 #undef DRILL_YELLING
 #undef DRILL_CANADIAN
+
+/obj/item/clothing/head/beret/rimwatch
+	desc = "A special beret with the Rimwatch insignia emblazoned on it."
+	icon_state = "officerberet"

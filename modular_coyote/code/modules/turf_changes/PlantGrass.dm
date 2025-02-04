@@ -84,6 +84,9 @@
 /turf/open/indestructible/ground/outside/grass_s
 	spawnPlants = TRUE
 
+/turf/open/indestructible/ground/outside/civ/grass
+	spawnPlants = TRUE
+	
 /turf/open/indestructible/ground/outside/desert
 	spawnPlants = TRUE
 

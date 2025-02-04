@@ -29,6 +29,8 @@ GLOBAL_DATUM_INIT(openspace_backdrop_one_for_all_but_higher, /atom/movable/opens
 	var/can_cover_up = TRUE
 	var/can_build_on = TRUE
 	sunlight_state = 1
+	edge_icon = /obj/effect/overlay/rockfloor_side
+	turf_types_to_check = list(/turf/open/indestructible/ground)
 
 /turf/open/transparent/openspace/airless
 	initial_gas_mix = AIRLESS_ATMOS

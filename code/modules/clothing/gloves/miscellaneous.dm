@@ -259,3 +259,4 @@
 	icon_state = "long_fingerless"
 	item_state = "long_fingerless"
 
+

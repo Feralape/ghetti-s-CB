@@ -8,7 +8,7 @@ GLOBAL_LIST_INIT(engineering_positions, list(
 
 GLOBAL_LIST_INIT(medical_positions, list(
 	"Chief Medical Officer",
-	"Medical Doctor",
+//	"Medical Doctor",
 	"Geneticist",
 	"Virologist",
 	"Paramedic",
@@ -19,7 +19,7 @@ GLOBAL_LIST_INIT(medical_positions, list(
 GLOBAL_LIST_INIT(science_positions, list(
 	"Research Director",
 	"Scientist",
-	"Roboticist",
+//	"Roboticist",
 	))
 
 GLOBAL_LIST_INIT(supply_positions, list(
@@ -344,6 +344,19 @@ GLOBAL_LIST_INIT(heavensnight_positions, list(
 	"Club Worker",
 ))
 
+//Outpost
+GLOBAL_LIST_INIT(outpost_positions, list(
+	"Medical Doctor",
+	"Roboticist",
+	"Researcher",
+	"Technician",
+	"Trader",
+	"Dock Worker",
+	"Rimwatch Officer",
+	"Rimwatch Ranger",
+	"Rimwatch Marshall",
+))
+
 /// TODO: Take all these horrible string-based roflcopters and have them 
 // job categories for rendering the late join menu
 GLOBAL_LIST_INIT(position_categories, list(
@@ -355,6 +368,7 @@ GLOBAL_LIST_INIT(position_categories, list(
 	EXP_TYPE_WASTELAND = list("jobs" = wasteland_positions, "color" = "#5a5a5a"),
 	// EXP_TYPE_ENCLAVE = list("jobs" = enclave_positions, "color" = "#323232"),
 	// EXP_TYPE_KHAN = list("jobs" = khan_positions, "color" = "#006666"),
+	"Outpost" = list("jobs" = outpost_positions, "color" = "#1223b9"),
 	"New Boston" = list("jobs" = oasis_positions, "color" = "#d7b088"),
 	"Den" = list("jobs" = den_positions, "color" = "#d7b088"),
 	"Guild" = list("jobs" = guild_positions, "color" = "#d45b3d"),

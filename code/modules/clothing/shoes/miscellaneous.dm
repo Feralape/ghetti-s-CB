@@ -111,7 +111,7 @@
 
 /obj/item/clothing/shoes/jackboots
 	name = "jackboots"
-	desc = "A pair of Vault-tec Security combat boots for combat scenarios or combat situations. All combat, all the time."
+	desc = "A pair of simple combat boots for combat scenarios or combat situations. All combat, all the time."
 	icon_state = "jackboots"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/equipment/security_righthand.dmi'

@@ -164,6 +164,20 @@
 	loop_delay = 0
 	volume = SOUND_LOOP_VOL_RANGE(70, 100)
 
+/datum/looping_sound/ambient/seagulls
+	chance = 40
+	vary = FALSE
+	vary_direction = TRUE
+	volume = SOUND_LOOP_VOL_RANGE(40, 65)
+	direct = TRUE
+	loop_delay = 30 SECONDS
+	mid_sounds = list(
+		SOUND_LOOP_ENTRY('sound/ambience/seag1.ogg', 3 SECONDS, 1),
+		SOUND_LOOP_ENTRY('sound/ambience/seag2.ogg', 3 SECONDS, 1),
+		SOUND_LOOP_ENTRY('sound/ambience/seag3.ogg', 3 SECONDS, 1),
+	)
+
+
 //////////////
 //End Birds//
 /////////////
@@ -372,6 +386,17 @@
 		SOUND_LOOP_ENTRY('sound/f13ambience/enclave_vault.ogg', 12 SECONDS, 1),
 	)
 
+/datum/looping_sound/ambient/underground_lab
+	chance = 100
+	vary = FALSE
+	volume = SOUND_LOOP_VOL_RANGE(100, 100)
+	direct = TRUE
+	loop_delay = 0
+	mid_sounds = list(
+		SOUND_LOOP_ENTRY('sound/f13ambience/vaulttec_vault.ogg', 6 SECONDS, 1),
+		SOUND_LOOP_ENTRY('sound/f13ambience/enclave_vault.ogg', 12 SECONDS, 1),
+	)
+
 /datum/looping_sound/ambient/sewers
 	chance = 100
 	vary = FALSE
@@ -545,3 +570,31 @@
 		SOUND_LOOP_ENTRY('sound/f13ambience/creek_07.ogg', 2 SECONDS, 10),
 		SOUND_LOOP_ENTRY('sound/f13ambience/creek_08.ogg', 2 SECONDS, 10),
 		)
+
+/datum/looping_sound/soundrock/shore
+	chance = 100
+	vary = TRUE
+	extra_range = SOUND_DISTANCE(15)
+	volume = SOUND_LOOP_VOL_RANGE(70, 70)
+	direct = FALSE // sound rocks need non-direct set
+	loop_delay = 0
+	mid_sounds = list(
+		SOUND_LOOP_ENTRY('sound/f13ambience/shore01.ogg', 17 SECONDS, 10),
+		SOUND_LOOP_ENTRY('sound/f13ambience/shore02.ogg', 14 SECONDS, 10),
+		SOUND_LOOP_ENTRY('sound/f13ambience/shore03.ogg', 17 SECONDS, 10),
+		SOUND_LOOP_ENTRY('sound/f13ambience/shore04.ogg', 17 SECONDS, 10),
+		SOUND_LOOP_ENTRY('sound/f13ambience/shore05.ogg', 15 SECONDS, 10),
+		)
+
+/datum/looping_sound/ambient/telecomm
+	chance = 100
+	vary = FALSE
+	vary_direction = TRUE
+	volume = SOUND_LOOP_VOL_RANGE(100, 100)
+	direct = TRUE
+	loop_delay = 5 SECONDS
+	mid_sounds = list(
+		SOUND_LOOP_ENTRY('sound/ambience/ambitech.ogg', 11 SECONDS, 1),
+		SOUND_LOOP_ENTRY('sound/ambience/ambitech2.ogg', 56 SECONDS, 1),
+		SOUND_LOOP_ENTRY('sound/ambience/ambitech3.ogg', 8 SECONDS, 1),
+	)

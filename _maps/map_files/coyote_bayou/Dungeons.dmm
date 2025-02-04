@@ -25227,7 +25227,7 @@
 /obj/machinery/camera/autoname{
 	dir = 8;
 	name = "Armory Camera";
-	network = list("BoS");
+	network = list("");
 	pixel_x = -1
 	},
 /obj/effect/decal/cleanable/dirt,
