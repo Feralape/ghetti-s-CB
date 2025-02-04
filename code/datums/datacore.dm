@@ -162,6 +162,9 @@
 		if(rank in GLOB.wasteland_positions)
 			waster[name] = rank
 			department = 1
+		if(rank in GLOB.outpost_positions)
+			waster[name] = rank
+			department = 1
 		if(rank in GLOB.den_positions)
 			den[name] = rank
 			department = 1
