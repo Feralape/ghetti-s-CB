@@ -1,6 +1,6 @@
 /*
 /atom/movable/screen/feral
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 
 /atom/movable/screen/feral/toggle
 	name = "toggle"

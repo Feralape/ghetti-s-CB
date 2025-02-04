@@ -65,13 +65,13 @@
 
 /atom/movable/screen/craft
 	name = "crafting menu"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "craft"
 	screen_loc = ui_crafting
 
 /atom/movable/screen/area_creator
 	name = "create new area"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "area_edit"
 	screen_loc = ui_building
 
@@ -86,7 +86,7 @@
 
 /atom/movable/screen/language_menu
 	name = "language menu"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "talk_wheel"
 	screen_loc = ui_language_menu
 
@@ -244,7 +244,7 @@
 
 /atom/movable/screen/drop
 	name = "drop"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "act_drop"
 	layer = HUD_LAYER
 	plane = HUD_PLANE
@@ -356,7 +356,7 @@
 
 /atom/movable/screen/mov_intent
 	name = "run/walk toggle"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "running"
 
 /atom/movable/screen/mov_intent/Click()
@@ -376,7 +376,7 @@
 
 /atom/movable/screen/pull
 	name = "stop pulling"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "pull"
 
 /atom/movable/screen/pull/Click()
@@ -392,7 +392,7 @@
 
 /atom/movable/screen/resist
 	name = "resist"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "act_resist"
 	layer = HUD_LAYER
 	plane = HUD_PLANE
@@ -404,7 +404,7 @@
 
 /atom/movable/screen/rest
 	name = "rest"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "act_rest"
 	layer = HUD_LAYER
 	plane = HUD_PLANE
@@ -425,7 +425,7 @@
 
 /atom/movable/screen/throw_catch
 	name = "throw/catch"
-	icon = 'icons/fallout/UI/screen_fallout2.dmi'
+	icon = 'icons/mob/screen_midnight.dmi'
 	icon_state = "act_throw_off"
 
 /atom/movable/screen/throw_catch/Click()
