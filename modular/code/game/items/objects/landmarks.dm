@@ -12,6 +12,14 @@
 	name = "Medical Doctor"
 	icon_state = "doctor"
 
+/obj/effect/landmark/start/frontier/roboticist
+	name = "Roboticist"
+	icon_state = "roboticist"
+
+/obj/effect/landmark/start/frontier/researcher
+	name = "Researcher"
+	icon_state = "researcher"
+
 /obj/effect/landmark/start/frontier/technician
 	name = "Technician"
 	icon_state = "technician"

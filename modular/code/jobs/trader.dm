@@ -3,6 +3,7 @@
 	title = "Trader"
 	flag = QUARTERMASTER
 	department_flag = CIVILIAN
+	faction = FACTION_OUTPOST
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the CTN and the Governor."
@@ -75,6 +76,7 @@
 	title = "Dock Worker"
 	flag = CARGOTECH
 	department_flag = CIVILIAN
+	faction = FACTION_OUTPOST
 	total_positions = 2
 	spawn_positions = 2
 	supervisors = "the trader."

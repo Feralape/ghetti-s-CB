@@ -5,7 +5,7 @@
 	title = "Medical Doctor"
 	flag = DOCTOR
 	department_flag = MEDSCI
-	faction = "Followers"
+	faction = FACTION_OUTPOST
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "Generally speaking your only actual supervisor is your own judgement."
@@ -70,7 +70,7 @@
 	title = "Roboticist"
 	flag = ROBOTICIST
 	department_flag = MEDSCI
-	faction = "Followers"
+	faction = FACTION_OUTPOST
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Generally speaking your only actual supervisor is your own judgement."
@@ -109,10 +109,10 @@
 
 
 /datum/job/frontier/researcher
-	title = "Outpost Researcher"
+	title = "Researcher"
 	flag = SCIENTIST
 	department_flag = MEDSCI
-	faction = "outpost"
+	faction = FACTION_OUTPOST
 	total_positions = 1
 	spawn_positions = 1
 	supervisors = "Generally speaking your only actual supervisor is your own judgement."
@@ -127,7 +127,7 @@
 	minimal_access = list(ACCESS_OUTPOST, ACCESS_SCIENCE)
 
 /datum/outfit/job/frontier/researcher
-	name =	"Outpost Researcher"
+	name =	"Researcher"
 	jobtype =	/datum/job/frontier/researcher
 	id =		/obj/item/card/id/dogtag/medlab
 	ears =		/obj/item/radio/headset/headset_outpost/medlab

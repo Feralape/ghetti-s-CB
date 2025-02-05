@@ -55,7 +55,7 @@
 	dir = 1
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "aE" = (
@@ -66,14 +66,20 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "aG" = (
 /obj/machinery/chem_master,
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
+"aH" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 8
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "aI" = (
 /obj/structure/chair/sofa/left{
 	color = "#475340";
@@ -84,6 +90,12 @@
 "aJ" = (
 /turf/open/floor/circuit/telecomms/mainframe,
 /area/f13/tcoms)
+"aK" = (
+/obj/machinery/mineral/wasteland_vendor/ammo,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/supply_depot)
 "aS" = (
 /obj/structure/toilet{
 	dir = 4;
@@ -126,13 +138,28 @@
 	},
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/cantina)
-"by" = (
-/turf/closed/wall/f13/store,
-/area/frontier/outdoor/wilderness)
+"bv" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 4
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "bC" = (
 /obj/structure/table/wood/poker,
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/cantina)
+"bD" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "bI" = (
 /obj/machinery/mech_bay_recharge_port,
 /turf/open/floor/f13{
@@ -208,6 +235,10 @@
 	icon_state = "darkrusty"
 	},
 /area/frontier/indoor/guardkeep)
+"cs" = (
+/obj/item/reagent_containers/glass/bucket,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "cv" = (
 /obj/structure/table,
 /obj/item/storage/box/rxglasses,
@@ -251,13 +282,14 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/frontier/outdoor/colony)
 "cT" = (
-/obj/structure/stairs/north{
-	dir = 2
-	},
-/turf/open/floor/f13{
-	icon_state = "floorrusty"
-	},
+/turf/open/transparent/glass/reinforced,
 /area/frontier/indoor/research)
+"cX" = (
+/obj/structure/curtain,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "cY" = (
 /obj/machinery/light,
 /turf/open/floor/f13{
@@ -268,7 +300,7 @@
 /obj/structure/railing{
 	color = "#A47449"
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "db" = (
 /obj/structure/window/fulltile/wood,
@@ -315,6 +347,9 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/supply_depot)
+"dr" = (
+/turf/closed/wall/f13/supermart,
+/area/frontier/indoor/cave)
 "dt" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -374,9 +409,6 @@
 /area/frontier/indoor/govenors_office)
 "dY" = (
 /obj/effect/landmark/start/f13/barkeep,
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -418,6 +450,13 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/colony)
+"eo" = (
+/obj/effect/turf_decal/bot,
+/obj/machinery/power/port_gen/pacman/super{
+	anchored = 1
+	},
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "ep" = (
 /obj/structure/railing{
 	dir = 8;
@@ -427,8 +466,16 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/colony)
+"eq" = (
+/obj/structure/railing{
+	dir = 1;
+	color = "#bb3333"
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "ev" = (
-/obj/machinery/power/smes/engineering,
 /obj/effect/turf_decal/stripes/line{
 	dir = 9
 	},
@@ -438,6 +485,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/power/smes,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -533,7 +581,7 @@
 	},
 /obj/item/pen,
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "ff" = (
@@ -542,6 +590,14 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/clinic)
+"fi" = (
+/obj/item/watertank,
+/obj/structure/rack/shelf_metal,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "fl" = (
 /obj/structure/table,
 /obj/item/storage/box/syringes{
@@ -552,15 +608,30 @@
 	pixel_y = 3
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
+"fm" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "rampdowntop"
+	},
+/area/frontier/outdoor/colony)
 "fn" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/closed/wall/r_wall,
 /area/frontier/indoor/guardkeep)
+"ft" = (
+/obj/structure/sink/kitchen{
+	dir = 4;
+	pixel_x = -15
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "fu" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/shaker,
@@ -604,6 +675,18 @@
 	},
 /turf/open/floor/plating/wooden2,
 /area/frontier/outdoor/colony)
+"fM" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 4
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
+"fN" = (
+/obj/structure/rack,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "fP" = (
 /obj/structure/chair/sofa/corner,
 /obj/machinery/light{
@@ -646,14 +729,9 @@
 /turf/open/floor/wood_fancy/wood_fancy_light,
 /area/frontier/indoor/govenors_office)
 "gj" = (
-/obj/machinery/power/port_gen/pacman/super{
-	anchored = 1
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/obj/item/wrench,
-/obj/item/stack/cable_coil/ten,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -664,7 +742,7 @@
 	dir = 4
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "go" = (
@@ -740,7 +818,7 @@
 	color = "#A47449";
 	dir = 1
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "gR" = (
 /obj/machinery/telecomms/broadcaster/preset_right,
@@ -803,6 +881,25 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/bar,
 /area/frontier/indoor/govenors_office)
+"hA" = (
+/obj/structure/railing{
+	pixel_y = 2
+	},
+/obj/structure/railing{
+	dir = 8;
+	plane = -1
+	},
+/turf/open/transparent/openspace,
+/area/frontier/indoor/guardkeep)
+"hB" = (
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/indoor/clinic)
 "hC" = (
 /turf/open/floor/f13{
 	color = "#ffe9de";
@@ -838,7 +935,7 @@
 /area/frontier/indoor/cantina)
 "hR" = (
 /obj/structure/fence/door,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "hU" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -854,6 +951,21 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/clinic)
+"hX" = (
+/obj/machinery/computer/cargo/request,
+/obj/structure/railing{
+	color = "#bb3333";
+	dir = 4
+	},
+/obj/structure/railing{
+	color = "#bb3333";
+	dir = 8;
+	pixel_x = -2
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "ia" = (
 /obj/machinery/computer/telecomms/server{
 	dir = 4;
@@ -863,6 +975,12 @@
 	dir = 10
 	},
 /area/f13/tcoms)
+"ih" = (
+/obj/machinery/mineral/wasteland_vendor/supermedical,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "ii" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -910,15 +1028,8 @@
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/frontier/outdoor/colony)
 "it" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/simple_door/bunker,
-/turf/open/floor/f13{
-	color = "#818181";
-	icon_state = "floorrustysolid"
-	},
-/area/frontier/indoor/generator_room)
+/turf/open/indestructible/ground/outside/civ/drygrass,
+/area/frontier/outdoor/wilderness)
 "iv" = (
 /obj/structure/railing,
 /obj/effect/landmark/start/f13/deputy,
@@ -949,6 +1060,17 @@
 	icon_state = "dark"
 	},
 /area/frontier/indoor/guardkeep)
+"iM" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 8
+	},
+/obj/effect/overlay/junk/oldpipes{
+	alpha = 185;
+	layer = 8;
+	name = "ceiling piping"
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "iO" = (
 /obj/structure/table/glass,
 /turf/open/floor/wood_wide,
@@ -959,6 +1081,22 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/colony)
+"ji" = (
+/obj/item/shovel/spade,
+/obj/item/cultivator,
+/obj/structure/rack/shelf_metal,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
+"jj" = (
+/obj/structure/table/reinforced,
+/obj/structure/barricade/barswindow{
+	layer = 3.5;
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "jk" = (
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -997,6 +1135,10 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/outdoor/colony/roof)
+"jJ" = (
+/obj/structure/chair/office/light,
+/turf/open/floor/plasteel/white,
+/area/frontier/indoor/research)
 "jN" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
@@ -1062,6 +1204,13 @@
 	icon_state = "horizontalinnermain0"
 	},
 /area/frontier/indoor/colony)
+"kw" = (
+/obj/machinery/mineral/wasteland_vendor/special,
+/obj/structure/window/reinforced,
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "kC" = (
 /obj/effect/landmark/start/f13/followersseniorscientist,
 /turf/open/floor/f13{
@@ -1109,6 +1258,16 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/indoor/supply_depot)
+"lg" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 8
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "lm" = (
 /obj/structure/table/wood,
 /turf/open/floor/f13/wood{
@@ -1192,12 +1351,34 @@
 /obj/effect/turf_decal/vg_decals/numbers/zero,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/outdoor/colony/roof)
+"lV" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
+"lX" = (
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "lY" = (
-/obj/effect/turf_decal/loading_area,
+/obj/machinery/workbench/advanced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/supply_depot)
+"lZ" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 8
+	},
+/obj/machinery/seed_extractor,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/research)
 "md" = (
 /obj/structure/filingcabinet/chestdrawer,
 /turf/open/floor/f13{
@@ -1212,6 +1393,17 @@
 	icon_state = "freezerfloor"
 	},
 /area/frontier/indoor/colony)
+"mh" = (
+/obj/effect/overlay/junk/oldpipes{
+	alpha = 185;
+	layer = 8;
+	name = "ceiling piping"
+	},
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 1
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "mk" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1277,6 +1469,12 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/colony)
+"mD" = (
+/obj/structure/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/plasteel/white,
+/area/frontier/indoor/research)
 "mF" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/rack/shelf_metal,
@@ -1293,6 +1491,14 @@
 	icon_state = "dark"
 	},
 /area/frontier/indoor/guardkeep)
+"mK" = (
+/obj/effect/overlay/junk/oldpipes{
+	alpha = 185;
+	layer = 8;
+	name = "ceiling piping"
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "mM" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/barswindow,
@@ -1357,6 +1563,16 @@
 	},
 /turf/open/floor/plasteel,
 /area/frontier/indoor/research)
+"nm" = (
+/obj/machinery/mineral/wasteland_vendor/weapons,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "nn" = (
 /obj/structure/stairs/north{
 	dir = 4
@@ -1382,7 +1598,7 @@
 	pixel_x = 2
 	},
 /obj/machinery/smartfridge/bottlerack/seedbin,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "nH" = (
 /obj/effect/turf_decal/stripes/line{
@@ -1450,12 +1666,24 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/f13/tcoms)
+"nZ" = (
+/obj/item/storage/box/disks_plantgene,
+/obj/structure/rack/shelf_metal,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "oa" = (
 /obj/structure/railing/wooden_fencing{
 	dir = 1
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/frontier/outdoor/colony)
+"oc" = (
+/obj/machinery/door/airlock/research,
+/obj/structure/sign/warning/biohazard{
+	pixel_x = -31
+	},
+/turf/open/floor/plasteel/white,
+/area/frontier/indoor/research)
 "oh" = (
 /turf/closed/indestructible/rock,
 /area/f13/tcoms)
@@ -1467,6 +1695,12 @@
 	icon_state = "rampdowntop"
 	},
 /area/frontier/indoor/generator_room)
+"oo" = (
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 4
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "or" = (
 /obj/structure/table/wood,
 /obj/machinery/light{
@@ -1616,6 +1850,13 @@
 	},
 /turf/open/floor/plating/f13,
 /area/frontier/indoor/guardkeep)
+"pF" = (
+/obj/machinery/vending/wardrobe/engi_wardrobe,
+/turf/open/floor/f13{
+	dir = 4;
+	icon_state = "yellowsiding"
+	},
+/area/frontier/indoor/generator_room)
 "pG" = (
 /obj/machinery/telecomms/server/presets/medical,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -1649,6 +1890,14 @@
 /obj/machinery/telecomms/receiver/preset_left,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
 /area/f13/tcoms)
+"qa" = (
+/obj/structure/stairs/north{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/colony)
 "qb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/loading_area{
@@ -1663,6 +1912,16 @@
 	},
 /turf/open/floor/circuit,
 /area/frontier/outdoor/colony)
+"qe" = (
+/obj/machinery/mineral/wasteland_vendor/crafting,
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "qg" = (
 /turf/closed/wall/f13/store,
 /area/frontier/indoor/clinic)
@@ -1671,7 +1930,7 @@
 	name = "riverbed soil";
 	yieldmod = 1.3
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "qt" = (
 /obj/structure/chair/sofa/right{
@@ -1689,6 +1948,12 @@
 	icon_state = "floorrustysolid"
 	},
 /area/frontier/indoor/colony)
+"qE" = (
+/obj/structure/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/frontier/indoor/research)
 "qG" = (
 /obj/structure/stairs/east{
 	color = "#6F4F40";
@@ -1727,6 +1992,16 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/research)
+"rb" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "rl" = (
 /obj/structure/chair/sofa/corner{
 	dir = 4
@@ -1744,7 +2019,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "rs" = (
@@ -1759,6 +2034,11 @@
 "ry" = (
 /turf/open/transparent/openspace,
 /area/frontier/indoor/colony)
+"rz" = (
+/turf/open/floor/f13{
+	icon_state = "rampdowntop"
+	},
+/area/frontier/outdoor/colony)
 "rE" = (
 /obj/machinery/light{
 	dir = 1
@@ -1862,7 +2142,7 @@
 	pixel_x = 8
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "sq" = (
@@ -1893,6 +2173,15 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/indoor/supply_depot)
+"sD" = (
+/obj/machinery/light{
+	light_color = "#e8eaff"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "sF" = (
 /obj/machinery/telecomms/server/presets/khans,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -1917,6 +2206,25 @@
 	icon_state = "horizontaltopbordertop0"
 	},
 /area/frontier/indoor/colony)
+"sP" = (
+/obj/structure/closet/crate/footlocker{
+	anchored = 1;
+	pixel_x = 5
+	},
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/obj/effect/spawner/lootdrop/f13/seedspawner,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "sQ" = (
 /obj/structure/filingcabinet,
 /turf/open/floor/f13{
@@ -2009,7 +2317,7 @@
 	pixel_x = 2
 	},
 /obj/structure/reagent_dispensers/compostbin,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "tF" = (
 /obj/machinery/power/terminal{
@@ -2017,6 +2325,10 @@
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
+	},
+/obj/machinery/light{
+	dir = 8;
+	light_color = "#e8eaff"
 	},
 /turf/open/floor/f13{
 	color = "#818181";
@@ -2083,6 +2395,18 @@
 	},
 /turf/open/floor/plasteel,
 /area/f13/tcoms)
+"uo" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/structure/stairs/north{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/colony)
 "uq" = (
 /turf/closed/wall/f13/tunnel,
 /area/frontier/indoor/govenors_office)
@@ -2093,6 +2417,14 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/frontier/indoor/cantina)
+"uu" = (
+/obj/structure/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "uv" = (
 /obj/structure/railing{
 	dir = 4
@@ -2138,6 +2470,12 @@
 	icon_state = "dark"
 	},
 /area/frontier/indoor/gatehouse)
+"uM" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "uO" = (
 /turf/open/floor/wood_wide,
 /area/frontier/indoor/govenors_office)
@@ -2226,6 +2564,10 @@
 	icon_state = "darkredfull"
 	},
 /area/frontier/indoor/guardkeep)
+"vO" = (
+/obj/machinery/door/airlock/research,
+/turf/open/floor/plasteel/white,
+/area/frontier/indoor/research)
 "vP" = (
 /obj/structure/barricade/bars{
 	max_integrity = 800;
@@ -2289,6 +2631,15 @@
 	},
 /turf/closed/wall/r_wall,
 /area/frontier/indoor/gatehouse)
+"wp" = (
+/obj/effect/overlay/junk/oldpipes/vent{
+	alpha = 185;
+	desc = "This looks to have, at one time, filled the room with some sort of chemical. Nasty.";
+	layer = 8;
+	name = "emergency exhaust"
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "wt" = (
 /turf/open/floor/wood_fancy/wood_fancy_dark,
 /area/frontier/indoor/govenors_office)
@@ -2307,7 +2658,7 @@
 	name = "Followers Clinic"
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "wy" = (
@@ -2362,6 +2713,12 @@
 	},
 /turf/open/floor/wood_wide,
 /area/frontier/indoor/govenors_office)
+"xd" = (
+/obj/effect/landmark/start/frontier/rimwatch_officer,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/colony)
 "xh" = (
 /obj/effect/landmark/start/frontier/rimwatch_ranger,
 /turf/open/floor/f13{
@@ -2411,7 +2768,7 @@
 	name = "riverbed soil";
 	yieldmod = 1.3
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "xE" = (
 /obj/effect/landmark/start/f13/radiooperator,
@@ -2429,6 +2786,16 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/clinic)
+"xJ" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_y = 2
+	},
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/indoor/guardkeep)
 "xK" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/railing{
@@ -2462,6 +2829,12 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
+/area/frontier/indoor/research)
+"xS" = (
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/closed/wall/f13/store,
 /area/frontier/indoor/research)
 "xU" = (
 /obj/structure/sink/kitchen{
@@ -2528,6 +2901,14 @@
 	icon_state = "darkrustysolid"
 	},
 /area/frontier/indoor/guardkeep)
+"yp" = (
+/obj/item/seeds/wheat,
+/obj/item/seeds/cotton,
+/obj/item/seeds/poppy/broc,
+/obj/item/seeds/xander,
+/obj/structure/rack/shelf_metal,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "ys" = (
 /obj/effect/turf_decal/delivery,
 /turf/open/floor/f13{
@@ -2565,6 +2946,15 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/indoor/supply_depot)
+"yH" = (
+/obj/structure/railing{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/indoor/colony)
 "yK" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -2651,6 +3041,16 @@
 	},
 /turf/open/floor/circuit,
 /area/frontier/indoor/supply_depot)
+"zo" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 1
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "zr" = (
 /turf/open/transparent/openspace,
 /area/frontier/indoor/guardkeep)
@@ -2664,6 +3064,15 @@
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
+	},
+/area/frontier/indoor/generator_room)
+"zC" = (
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/door/airlock/hatch,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/generator_room)
 "zE" = (
@@ -2690,15 +3099,24 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/generator_room)
+"zJ" = (
+/obj/structure/stairs/north{
+	dir = 2
+	},
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/research)
 "zK" = (
-/obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating/f13,
+/obj/structure/cable,
+/obj/machinery/door/airlock/research,
+/turf/open/floor/plasteel/white,
 /area/frontier/indoor/research)
 "zL" = (
 /turf/closed/wall/r_wall,
@@ -2707,13 +3125,21 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
-/obj/structure/closet/crate,
+/obj/structure/closet/crate{
+	name = "uranium crate"
+	},
 /obj/item/stack/sheet/mineral/uranium/fifty,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
 	},
 /area/frontier/indoor/generator_room)
+"zQ" = (
+/obj/effect/landmark/start/frontier/roboticist,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/colony)
 "zR" = (
 /obj/structure/window/fulltile/wood_window{
 	icon_state = "storewindowvertical";
@@ -2746,6 +3172,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/frontier/indoor/research)
+"Ay" = (
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/indoor/colony)
 "Az" = (
 /obj/structure/closet/cabinet{
 	name = "wardrobe"
@@ -2767,6 +3199,17 @@
 	color = "#999999"
 	},
 /area/frontier/indoor/gatehouse)
+"AK" = (
+/obj/structure/railing{
+	dir = 1;
+	pixel_y = 2
+	},
+/obj/structure/railing{
+	dir = 8;
+	plane = -1
+	},
+/turf/open/transparent/openspace,
+/area/frontier/indoor/guardkeep)
 "AL" = (
 /obj/structure/curtain/directional/south,
 /turf/open/floor/f13{
@@ -2879,7 +3322,7 @@
 /area/frontier/indoor/guardkeep)
 "BX" = (
 /obj/structure/sink/well,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "Ch" = (
 /obj/machinery/vending/wardrobe/medi_wardrobe/free,
@@ -2900,6 +3343,10 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/colony)
+"Cn" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/research)
 "Cs" = (
 /turf/open/transparent/openspace,
 /area/frontier/indoor/clinic)
@@ -2979,6 +3426,13 @@
 	},
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/cantina)
+"Da" = (
+/obj/effect/turf_decal/bot_white,
+/obj/machinery/iv_drip,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "De" = (
 /turf/closed/wall/r_wall/f13superstore{
 	icon_state = "supermart0"
@@ -3035,12 +3489,19 @@
 	icon_state = "darkrustysolid"
 	},
 /area/frontier/indoor/colony)
+"Dx" = (
+/turf/open/indestructible/ground/outside/dirt_noplants,
+/area/frontier/outdoor/colony)
 "Dz" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
 /area/f13/tcoms)
+"DF" = (
+/obj/machinery/biogenerator,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "DJ" = (
 /obj/machinery/telecomms/receiver/preset_right,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -3098,6 +3559,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/outdoor/colony/roof)
+"El" = (
+/obj/machinery/mineral/wasteland_vendor/general,
+/obj/structure/window/reinforced,
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "Em" = (
 /obj/machinery/light{
 	dir = 4
@@ -3223,6 +3691,16 @@
 	icon_state = "oakfloor1"
 	},
 /area/frontier/indoor/guardkeep)
+"Fx" = (
+/obj/structure/fermenting_barrel,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
+"Fy" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "FB" = (
 /obj/structure/chair/comfy/green{
 	dir = 4
@@ -3239,6 +3717,17 @@
 "FK" = (
 /turf/closed/wall/f13/store,
 /area/frontier/outdoor/colony)
+"FQ" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner,
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 4
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "FW" = (
 /obj/machinery/telecomms/server/presets/security,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -3261,6 +3750,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/frontier/indoor/research)
+"Gw" = (
+/obj/machinery/light{
+	light_color = "#e8eaff"
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/colony)
 "Gz" = (
 /obj/machinery/vending/wardrobe/chem_wardrobe/free,
 /turf/open/floor/f13{
@@ -3348,6 +3845,20 @@
 	icon_state = "darkrustysolid"
 	},
 /area/frontier/indoor/guardkeep)
+"Hh" = (
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/research)
+"Hm" = (
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/indoor/cantina)
 "Ho" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -3355,10 +3866,6 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/cable{
-	icon_state = "0-2"
-	},
-/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/circuit/f13_blue,
 /area/frontier/indoor/colony)
 "Hq" = (
@@ -3374,10 +3881,25 @@
 	icon_state = "freezerfloor"
 	},
 /area/frontier/indoor/guardkeep)
+"Hr" = (
+/obj/structure/sign/warning/biohazard{
+	pixel_x = -1
+	},
+/turf/closed/wall/f13/supermart,
+/area/frontier/indoor/research)
 "Hs" = (
 /obj/machinery/processor,
 /turf/open/floor/plasteel/cafeteria,
 /area/frontier/indoor/cantina)
+"Ht" = (
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	dir = 1;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/indoor/clinic)
 "Hw" = (
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -3387,14 +3909,11 @@
 	},
 /area/frontier/indoor/gatehouse)
 "Hz" = (
-/obj/structure/stairs/north{
-	dir = 4
-	},
 /obj/structure/railing{
 	dir = 1;
 	pixel_y = 2
 	},
-/turf/open/indestructible/ground/outside/civ/grass,
+/turf/closed/wall/f13/store,
 /area/frontier/indoor/colony)
 "HD" = (
 /turf/closed/wall/f13/store,
@@ -3407,7 +3926,7 @@
 /obj/structure/railing{
 	color = "#A47449"
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "HH" = (
 /obj/structure/table/wood,
@@ -3437,9 +3956,22 @@
 	pixel_y = -5
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
+"HW" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 8
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "HZ" = (
 /obj/structure/railing{
 	dir = 4
@@ -3485,9 +4017,11 @@
 /turf/open/floor/plasteel,
 /area/frontier/indoor/research)
 "Iy" = (
-/obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating/f13,
-/area/frontier/indoor/supply_depot)
+/obj/structure/bed,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "Iz" = (
 /obj/structure/bed,
 /turf/open/floor/f13{
@@ -3497,6 +4031,11 @@
 "ID" = (
 /turf/open/transparent/openspace,
 /area/frontier/outdoor/colony/roof)
+"IH" = (
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "IK" = (
 /obj/structure/closet/secure_closet/chemical,
 /obj/machinery/light{
@@ -3551,6 +4090,13 @@
 "Jf" = (
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/colony)
+"Jj" = (
+/obj/item/wrench,
+/obj/item/stack/cable_coil/ten,
+/obj/item/multitool,
+/obj/item/crowbar,
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "Jn" = (
 /obj/structure/railing{
 	dir = 4
@@ -3605,7 +4151,7 @@
 /obj/structure/table,
 /obj/item/reagent_containers/dropper,
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "JE" = (
@@ -3615,6 +4161,16 @@
 	},
 /turf/open/floor/plating/wooden3,
 /area/frontier/indoor/cantina)
+"JF" = (
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/research)
 "JQ" = (
 /turf/closed/wall/f13/tunnel,
 /area/frontier/outdoor/colony)
@@ -3694,7 +4250,10 @@
 /turf/open/floor/plating/wooden3,
 /area/frontier/indoor/cantina)
 "Kt" = (
-/obj/machinery/workbench/advanced,
+/obj/machinery/mineral/wasteland_vendor/traderspecial,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3740,10 +4299,30 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/frontier/indoor/research)
+"KW" = (
+/obj/structure/railing{
+	dir = 8;
+	plane = -1
+	},
+/turf/open/floor/f13{
+	icon_state = "rampdowntop"
+	},
+/area/frontier/outdoor/colony)
 "KX" = (
 /obj/machinery/vending/coffee,
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/cantina)
+"KY" = (
+/obj/structure/stairs/north{
+	dir = 2
+	},
+/obj/structure/railing{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/research)
 "KZ" = (
 /obj/structure/closet/secure_closet/security,
 /obj/effect/turf_decal/bot_red,
@@ -3796,7 +4375,7 @@
 	},
 /area/frontier/indoor/guardkeep)
 "Li" = (
-/obj/structure/simple_door/bunker,
+/obj/machinery/door/airlock/engineering,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -3805,7 +4384,7 @@
 /obj/effect/turf_decal/bot_white,
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "Lr" = (
@@ -3847,7 +4426,7 @@
 	pixel_x = 2
 	},
 /obj/structure/legion_extractor,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "LQ" = (
 /obj/structure/table,
@@ -3867,9 +4446,21 @@
 "LY" = (
 /turf/closed/wall/f13/tunnel,
 /area/frontier/indoor/cave)
+"Ma" = (
+/obj/structure/table,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "Mc" = (
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/cantina)
+"Mg" = (
+/obj/item/roller,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "Mn" = (
 /obj/machinery/telecomms/processor/preset_one,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -3878,6 +4469,10 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
+/area/frontier/indoor/generator_room)
+"MB" = (
+/obj/effect/turf_decal/bot,
+/turf/open/floor/plating/f13,
 /area/frontier/indoor/generator_room)
 "MC" = (
 /obj/structure/chair/bench,
@@ -3910,6 +4505,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/indoor/supply_depot)
+"MY" = (
+/obj/machinery/door/airlock/medical/glass,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "MZ" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -3923,12 +4524,6 @@
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/cantina)
 "Nf" = (
-/obj/machinery/vending/wardrobe/engi_wardrobe,
-/obj/effect/turf_decal/bot,
-/obj/machinery/light{
-	dir = 8;
-	light_color = "#e8eaff"
-	},
 /turf/open/floor/f13{
 	dir = 9;
 	icon_state = "yellowsiding"
@@ -3975,6 +4570,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/frontier/outdoor/colony/roof)
+"Nx" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "Nz" = (
 /turf/closed/wall/f13/store{
 	desc = "A pre-War wall made of solid concrete.";
@@ -4044,7 +4646,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
 "Or" = (
@@ -4063,6 +4665,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/frontier/indoor/guardkeep)
+"Ox" = (
+/obj/effect/spawner/structure/window/reinforced,
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/cave)
 "Oz" = (
 /obj/structure/bed/double,
 /obj/item/bedsheet/doublesheetcaptain,
@@ -4119,6 +4725,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/frontier/indoor/research)
+"OW" = (
+/obj/effect/turf_decal/trimline/brown/filled/corner,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "Pc" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -4134,8 +4744,12 @@
 /turf/open/floor/plating/f13,
 /area/frontier/indoor/cantina)
 "Pl" = (
-/obj/machinery/recharge_station,
-/turf/open/floor/plasteel/white,
+/obj/effect/turf_decal/trimline/brown/filled/line{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
 /area/frontier/indoor/research)
 "Pn" = (
 /obj/effect/turf_decal/stripes/line{
@@ -4165,10 +4779,9 @@
 /obj/structure/railing{
 	color = "#A47449"
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "Pv" = (
-/obj/machinery/power/smes/engineering,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
@@ -4178,6 +4791,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/power/smes,
 /turf/open/floor/f13{
 	color = "#818181";
 	icon_state = "floorrustysolid"
@@ -4342,6 +4956,15 @@
 	},
 /turf/closed/wall/f13/store,
 /area/frontier/indoor/supply_depot)
+"QX" = (
+/obj/machinery/light/floor,
+/obj/effect/overlay/junk/oldpipes{
+	alpha = 185;
+	layer = 8;
+	name = "ceiling piping"
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "Rb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -4408,6 +5031,13 @@
 "Rx" = (
 /turf/closed/wall/r_wall,
 /area/f13/tcoms)
+"Rz" = (
+/obj/structure/table/optable,
+/obj/effect/turf_decal/bot_white,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "RB" = (
 /obj/structure/stairs/north{
 	dir = 2
@@ -4481,6 +5111,12 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plasteel,
 /area/frontier/indoor/research)
+"RR" = (
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/outdoor/colony)
 "RT" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/structure/railing{
@@ -4541,9 +5177,15 @@
 "SA" = (
 /obj/structure/closet/secure_closet/chemical,
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
 /area/frontier/indoor/clinic)
+"SB" = (
+/obj/machinery/light/floor,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/frontier/indoor/guardkeep)
 "SG" = (
 /obj/machinery/door/poddoor/shutters/window{
 	id = "armory3"
@@ -4625,12 +5267,37 @@
 	icon_state = "freezerfloor"
 	},
 /area/frontier/indoor/guardkeep)
+"Tw" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "Tz" = (
 /obj/structure/chair/sofa/right{
 	dir = 4
 	},
 /turf/open/floor/wood_wide,
 /area/frontier/indoor/govenors_office)
+"TC" = (
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
+"TF" = (
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 8
+	},
+/obj/effect/overlay/junk/oldpipes{
+	alpha = 185;
+	layer = 8;
+	name = "ceiling piping"
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "TH" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/vg_decals/numbers/zero,
@@ -4652,6 +5319,19 @@
 	},
 /turf/open/floor/plating/wooden3,
 /area/frontier/indoor/cantina)
+"TO" = (
+/obj/machinery/hydroponics/constructable,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/brown/filled/corner{
+	dir = 1
+	},
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "TQ" = (
 /obj/machinery/computer/monitor,
 /turf/open/floor/f13{
@@ -4673,6 +5353,15 @@
 	icon_state = "floorrusty"
 	},
 /area/frontier/indoor/clinic)
+"Ud" = (
+/obj/effect/landmark/start/f13/followersguard,
+/obj/structure/railing{
+	dir = 4
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/colony)
 "Un" = (
 /obj/structure/railing{
 	color = "#A47449";
@@ -4725,10 +5414,11 @@
 /turf/open/floor/plating/f13,
 /area/frontier/indoor/cantina)
 "UJ" = (
-/obj/machinery/mineral/wasteland_vendor/traderspecial,
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/mineral/wasteland_vendor/advcomponents,
+/obj/structure/window/reinforced,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -4772,14 +5462,17 @@
 	},
 /area/frontier/indoor/clinic)
 "Vf" = (
-/turf/closed/wall/f13/tunnel,
-/area/frontier/outdoor/colony/roof)
-"Vi" = (
-/obj/effect/landmark/start/frontier/rimwatch_officer,
+/turf/open/indestructible/ground/outside/gravel,
+/area/frontier/outdoor/wilderness)
+"Vg" = (
+/obj/machinery/light,
 /turf/open/floor/f13{
-	icon_state = "floorrusty"
+	icon_state = "white"
 	},
-/area/frontier/indoor/colony)
+/area/frontier/indoor/clinic)
+"Vi" = (
+/turf/open/indestructible/ground/outside/dirt,
+/area/frontier/outdoor/wilderness)
 "Vt" = (
 /obj/machinery/door/unpowered/securedoor{
 	name = "Clinic";
@@ -4806,6 +5499,12 @@
 	},
 /turf/open/floor/plating/wooden2,
 /area/frontier/indoor/cantina)
+"VA" = (
+/obj/structure/chair/f13chair2,
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/supply_depot)
 "VB" = (
 /turf/closed/wall/r_wall/f13superstore{
 	icon_state = "supermart0"
@@ -4823,6 +5522,15 @@
 	},
 /turf/open/floor/wood_wide,
 /area/frontier/indoor/govenors_office)
+"VO" = (
+/obj/structure/railing{
+	pixel_y = 2
+	},
+/turf/open/floor/f13{
+	dir = 8;
+	icon_state = "rampdowntop"
+	},
+/area/frontier/indoor/guardkeep)
 "VT" = (
 /obj/machinery/shower{
 	dir = 8;
@@ -4832,6 +5540,12 @@
 	icon_state = "white"
 	},
 /area/frontier/indoor/colony)
+"VV" = (
+/obj/machinery/computer/operating,
+/turf/open/floor/f13{
+	icon_state = "white"
+	},
+/area/frontier/indoor/clinic)
 "Wb" = (
 /obj/structure/closet/secure_closet/security,
 /obj/effect/turf_decal/bot_red,
@@ -4886,7 +5600,8 @@
 	},
 /area/frontier/indoor/guardkeep)
 "Wr" = (
-/turf/open/indestructible/ground/outside/dirt,
+/obj/machinery/light/floor,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "Wv" = (
 /obj/structure/railing{
@@ -4921,6 +5636,13 @@
 	dir = 5
 	},
 /area/f13/tcoms)
+"WD" = (
+/obj/machinery/mineral/wasteland_vendor/pipboy,
+/obj/structure/window/reinforced,
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "WF" = (
 /obj/structure/railing,
 /turf/open/floor/f13{
@@ -4968,6 +5690,13 @@
 	},
 /turf/open/floor/plating/wooden3,
 /area/frontier/indoor/cantina)
+"Xv" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/f13,
+/area/frontier/indoor/generator_room)
 "Xx" = (
 /obj/machinery/vending/engivend,
 /obj/effect/turf_decal/bot,
@@ -4996,7 +5725,7 @@
 	color = "#A47449";
 	dir = 8
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "XS" = (
 /obj/structure/cable{
@@ -5023,6 +5752,10 @@
 	icon_state = "outerborder - N"
 	},
 /area/frontier/outdoor/colony)
+"Ya" = (
+/obj/structure/reagent_dispensers/compostbin,
+/turf/open/transparent/glass/reinforced,
+/area/frontier/indoor/research)
 "Yb" = (
 /obj/structure/closet/fridge,
 /turf/open/floor/f13{
@@ -5050,6 +5783,13 @@
 	icon_state = "white"
 	},
 /area/frontier/indoor/colony)
+"Yl" = (
+/obj/machinery/mineral/wasteland_vendor/specialplus,
+/obj/structure/window/reinforced,
+/turf/open/floor/f13{
+	icon_state = "darkrustysolid"
+	},
+/area/frontier/indoor/colony)
 "Yo" = (
 /obj/structure/rug/big/rug_fancy{
 	pixel_y = 22
@@ -5073,6 +5813,9 @@
 	},
 /turf/open/floor/plating,
 /area/f13/tcoms)
+"Yz" = (
+/turf/closed/wall/f13/supermart,
+/area/frontier/indoor/research)
 "YB" = (
 /obj/structure/table/reinforced,
 /obj/structure/barricade/barswindow{
@@ -5108,14 +5851,11 @@
 	},
 /area/frontier/indoor/guardkeep)
 "YI" = (
-/obj/effect/spawner/structure/window/reinforced,
-/obj/structure/cable{
-	icon_state = "0-2"
+/obj/structure/table,
+/obj/machinery/plantgenes{
+	pixel_y = 8
 	},
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/turf/open/floor/plating/f13,
+/turf/open/transparent/glass/reinforced,
 /area/frontier/indoor/research)
 "YN" = (
 /obj/structure/table/wood,
@@ -5142,6 +5882,15 @@
 /obj/structure/simple_door/wood,
 /turf/open/transparent/openspace,
 /area/frontier/indoor/colony)
+"YW" = (
+/obj/machinery/mineral/wasteland_vendor/attachments,
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/turf/open/floor/f13{
+	icon_state = "floorrusty"
+	},
+/area/frontier/indoor/supply_depot)
 "YY" = (
 /obj/machinery/vending/snack/random,
 /turf/open/floor/plating/wooden2,
@@ -5153,7 +5902,7 @@
 	pixel_x = 2
 	},
 /obj/machinery/smartfridge/bottlerack/grownbin,
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "Zo" = (
 /turf/closed/wall/f13/tunnel,
@@ -5223,7 +5972,7 @@
 	dir = 4;
 	pixel_x = 2
 	},
-/turf/open/indestructible/ground/outside/dirt,
+/turf/open/indestructible/ground/outside/dirt_noplants,
 /area/frontier/outdoor/colony)
 "ZU" = (
 /obj/machinery/light,
@@ -137608,8 +138357,8 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
+ID
+ID
 Qs
 Qs
 Qs
@@ -137924,15 +138673,15 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
 Qs
 Qs
 Qs
@@ -138244,17 +138993,17 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
 Qs
 Qs
 Qs
@@ -138566,17 +139315,17 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
+ID
 Qs
 Qs
 Qs
@@ -138888,18 +139637,18 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-LY
+ID
+Yz
+Cn
+Cn
+Cn
+Yz
+Yz
+Yz
+Cn
+Cn
+Ox
+dr
 LY
 LY
 LY
@@ -139209,20 +139958,19 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
-Qs
 ID
 ID
-ID
-ID
-HD
+Cn
+yp
+fi
+ji
+cs
+ft
+cT
+cT
+Fy
+cT
+Yz
 HD
 HD
 HD
@@ -139237,6 +139985,7 @@ HD
 HD
 HD
 LY
+Qs
 Qs
 Qs
 Qs
@@ -139531,20 +140280,19 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
-Qs
-Qs
-Qs
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-HD
+Cn
+Pl
+Pl
+Pl
+Pl
+Pl
+Pl
+Pl
+Pl
+Pl
+Yz
 wS
 Ys
 Ys
@@ -139552,13 +140300,14 @@ wL
 nc
 Dq
 xQ
-Pl
+Dq
 wF
 bI
 wF
 bI
 HD
 LY
+Qs
 Qs
 Qs
 Qs
@@ -139853,23 +140602,22 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-HD
+Cn
+lg
+aH
+TO
+aH
+TO
+aH
+HW
+aH
+Ya
+Yz
 di
 KQ
-GE
+qE
 RE
 kV
 Dq
@@ -139881,6 +140629,7 @@ wF
 NA
 HD
 LY
+Qs
 Qs
 Qs
 Qs
@@ -140175,20 +140924,19 @@ Qs
 Qs
 Qs
 Qs
-Qs
-Qs
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-HD
+Yz
+bv
+cT
+Nx
+cT
+Nx
+cT
+Nx
+OW
+Fx
+Yz
 Ys
 GE
 GE
@@ -140203,6 +140951,7 @@ wF
 ra
 HD
 LY
+Qs
 Qs
 Qs
 Qs
@@ -140499,25 +141248,24 @@ Qs
 Qs
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-HD
+Yz
+mh
+mK
+QX
+mK
+wp
+mK
+QX
+TF
+iM
+Yz
 wa
 Dq
 Dq
 Ki
 ni
 Dq
-Dq
+mD
 Dq
 wF
 wF
@@ -140537,6 +141285,7 @@ Qs
 Qs
 Qs
 Qs
+Qs
 uk
 uk
 uk
@@ -140558,9 +141307,9 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
+it
+it
+it
 uk
 uk
 uk
@@ -140821,18 +141570,17 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-HD
+Yz
+zo
+cT
+lV
+cT
+lV
+cT
+lV
+cT
+cT
+Yz
 Dq
 Dq
 Dq
@@ -140861,6 +141609,7 @@ Qs
 Qs
 Qs
 Qs
+Qs
 uk
 uk
 uk
@@ -140879,12 +141628,12 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -141143,18 +141892,17 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-HD
+Cn
+bD
+fM
+FQ
+fM
+FQ
+fM
+FQ
+fM
+oo
+Yz
 kS
 xZ
 xZ
@@ -141185,6 +141933,7 @@ Qs
 Qs
 Qs
 Qs
+Qs
 uk
 uk
 uk
@@ -141200,13 +141949,13 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -141465,25 +142214,24 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
+Cn
+lZ
+Hh
+Hh
+Hh
+Hh
+Hh
+Hh
+Hh
+Hh
+oc
+Dq
+Dq
+Dq
 wf
 hp
 jR
-cT
+KY
 HD
 jk
 jk
@@ -141509,6 +142257,7 @@ Qs
 Qs
 Qs
 Qs
+Qs
 uk
 uk
 uk
@@ -141522,14 +142271,14 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -141787,25 +142536,24 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
+Cn
+YI
+TC
+DF
+nZ
+cT
+sP
+cT
+TC
+cT
+vO
+Dq
+Dq
+Dq
 wf
 jR
 jR
-cT
+zJ
 HD
 sZ
 jk
@@ -141832,6 +142580,7 @@ Qs
 Qs
 Qs
 Qs
+Qs
 uk
 uk
 uk
@@ -141844,14 +142593,14 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -142109,21 +142858,20 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
-HD
+Yz
+Cn
+Cn
+Cn
+Yz
+Yz
+Yz
+Cn
+Cn
+Cn
+Hr
+JF
 zK
-xZ
-xZ
+zK
 mk
 Qr
 Qr
@@ -142154,6 +142902,7 @@ Qs
 Qs
 Qs
 Qs
+Qs
 uk
 uk
 uk
@@ -142166,14 +142915,14 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -142441,7 +143190,6 @@ ID
 ID
 ID
 ID
-ID
 HD
 oE
 Dq
@@ -142449,7 +143197,7 @@ Dq
 ou
 Dq
 Dq
-Dq
+jJ
 mt
 jk
 jk
@@ -142481,6 +143229,7 @@ Qs
 Qs
 Qs
 Qs
+Qs
 uk
 uk
 uk
@@ -142488,14 +143237,14 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -142763,7 +143512,6 @@ ID
 ID
 ID
 ID
-ID
 HD
 Gm
 xW
@@ -142779,6 +143527,7 @@ jk
 jk
 Bo
 LY
+Qs
 Qs
 Qs
 Qs
@@ -142811,13 +143560,13 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -143085,7 +143834,6 @@ ID
 ID
 ID
 ID
-ID
 HD
 lS
 Nu
@@ -143101,6 +143849,7 @@ jk
 jk
 Bo
 LY
+Qs
 Qs
 Qs
 Qs
@@ -143134,11 +143883,11 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -143407,7 +144156,6 @@ ID
 ID
 ID
 ID
-ID
 HD
 Ix
 At
@@ -143423,6 +144171,7 @@ jk
 jk
 Bo
 LY
+Qs
 Qs
 Qs
 Qs
@@ -143455,6 +144204,13 @@ uk
 uk
 uk
 uk
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -143467,15 +144223,8 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
 uk
 uk
 uk
@@ -143729,12 +144478,11 @@ ID
 ID
 ID
 ID
-ID
 HD
 HD
 HD
 HD
-YI
+xS
 xZ
 xZ
 xZ
@@ -143742,10 +144490,11 @@ dt
 jk
 jk
 jk
-mB
+Gw
 Bo
 LY
 Qs
+Qs
 wl
 wl
 wl
@@ -143778,6 +144527,14 @@ uk
 uk
 uk
 uk
+it
+it
+it
+it
+Vi
+uk
+uk
+Vi
 uk
 uk
 uk
@@ -143787,18 +144544,10 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -144051,23 +144800,23 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
+ps
+eo
+eo
+MB
+MB
+ps
 ID
 ID
 Bo
+jk
 ir
 jk
 jk
-jk
 Bo
 LY
 LY
+LY
 wl
 wl
 wl
@@ -144099,6 +144848,17 @@ uk
 uk
 uk
 uk
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -144106,21 +144866,10 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -144373,21 +145122,21 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
-ID
-ID
-ID
+ps
+lX
+Jj
+uM
+sD
+ps
 ID
 ID
 Bo
+jk
 ir
-jk
+zQ
 Nv
-jk
 Bo
+jk
 yz
 Sx
 nx
@@ -144422,27 +145171,27 @@ uk
 uk
 uk
 uk
+it
+it
+Vi
+Vi
+Vi
+Vi
+it
+uk
+uk
+Vi
+Vi
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -144696,20 +145445,20 @@ ID
 ID
 ID
 ps
-ps
-ps
-ps
+Tw
+Xv
+rb
+zC
 ps
 EW
 EW
-EW
-EW
 ps
-jk
-jk
+ps
+xd
+zQ
 Nv
-jk
 Bo
+jk
 Ck
 kC
 Ie
@@ -144745,27 +145494,27 @@ uk
 uk
 uk
 uk
+it
+Vi
+Vi
+Vi
+it
+it
+it
+uk
+uk
+Vi
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -145027,11 +145776,11 @@ zW
 hr
 uB
 ps
-jk
+xd
 ya
 jk
-jk
 Bo
+sZ
 dY
 Lr
 Zy
@@ -145066,28 +145815,28 @@ uk
 uk
 uk
 uk
+it
+it
+Vi
+Vi
+Vi
+it
+it
+it
+uk
+uk
+Vi
+Vi
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -145352,8 +146101,8 @@ ps
 hm
 ya
 jk
-Vi
 Bo
+jk
 nx
 jk
 jk
@@ -145389,26 +146138,26 @@ uk
 uk
 uk
 uk
+it
+Vi
+Vi
+Vi
+it
+it
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -145674,8 +146423,8 @@ Li
 ym
 jk
 pL
-Vi
 Bo
+jk
 yj
 jk
 jk
@@ -145710,28 +146459,28 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+Vi
+Vi
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -145989,17 +146738,17 @@ zO
 Ti
 go
 Bz
-cy
+pF
 cy
 BE
 Li
 jk
 xh
 pL
-jk
 Bo
 jk
-iQ
+jk
+Ud
 nN
 nN
 nN
@@ -146033,27 +146782,27 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+Vi
+Vi
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -146304,20 +147053,19 @@ ID
 ID
 ID
 ID
-by
 ps
 ps
 ps
 ps
 ps
-it
+ps
+OG
 ps
 ps
 ps
 ps
 jk
 xh
-jk
 jk
 Bo
 jk
@@ -146334,6 +147082,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -146354,27 +147103,27 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -146640,7 +147389,6 @@ jk
 jk
 jk
 jk
-mB
 Bo
 jk
 sr
@@ -146656,6 +147404,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -146676,27 +147425,27 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -146962,7 +147711,6 @@ jk
 jk
 jk
 jk
-jk
 Bo
 jk
 sr
@@ -146978,6 +147726,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -146997,28 +147746,28 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -147284,7 +148033,6 @@ Bo
 Bo
 Bo
 jk
-jk
 Bo
 jk
 sr
@@ -147300,6 +148048,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -147319,28 +148068,28 @@ uk
 uk
 uk
 uk
+it
+it
+it
+it
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -147606,9 +148355,8 @@ Bo
 ID
 Bo
 jk
-jk
 Bo
-jk
+sZ
 sr
 ID
 ID
@@ -147622,6 +148370,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -147640,29 +148389,29 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -147928,7 +148677,6 @@ ID
 ID
 Bo
 jk
-jk
 Bo
 sZ
 sr
@@ -147944,6 +148692,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -147961,30 +148710,30 @@ Qs
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+Vi
+Vi
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -148250,7 +148999,6 @@ ID
 ID
 Bo
 sZ
-jk
 Bo
 jk
 sr
@@ -148266,6 +149014,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -148284,29 +149033,29 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+Vi
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -148572,7 +149321,6 @@ Bo
 Bo
 Bo
 jk
-jk
 Bo
 jk
 sr
@@ -148588,6 +149336,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -148607,28 +149356,28 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -148894,7 +149643,6 @@ jk
 jk
 jk
 jk
-jk
 Bo
 jk
 sr
@@ -148910,6 +149658,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -148929,28 +149678,28 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -149216,7 +149965,6 @@ nN
 nN
 nN
 jk
-jk
 Bo
 jk
 sr
@@ -149232,6 +149980,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -149253,26 +150002,26 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -149538,7 +150287,6 @@ ID
 ID
 ID
 eU
-jk
 Bo
 jk
 sr
@@ -149554,6 +150302,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -149574,26 +150323,26 @@ uk
 uk
 uk
 uk
+Vf
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -149860,7 +150609,6 @@ ID
 ID
 ID
 eU
-jk
 Bo
 jk
 sr
@@ -149876,6 +150624,7 @@ ID
 ID
 ID
 ID
+ID
 Qs
 Qs
 Qs
@@ -149896,27 +150645,27 @@ uk
 uk
 uk
 uk
+Vf
+Vf
+it
+it
+it
+it
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -150185,7 +150934,7 @@ hE
 jk
 jk
 jk
-jk
+ep
 se
 ep
 ep
@@ -150216,29 +150965,29 @@ uk
 uk
 uk
 uk
+Vf
+Vf
+Vf
+Vf
+it
+it
+it
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -150537,31 +151286,31 @@ uk
 uk
 uk
 uk
+Vf
+Vf
+Vf
+Vf
+Vf
+it
+it
+it
 uk
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -150859,6 +151608,13 @@ uk
 uk
 uk
 uk
+Vf
+Vf
+Vf
+Vf
+it
+it
+it
 uk
 uk
 uk
@@ -150869,21 +151625,14 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -151180,6 +151929,13 @@ uk
 uk
 uk
 uk
+Vf
+Vf
+Vf
+Vf
+Vf
+it
+it
 uk
 uk
 uk
@@ -151193,20 +151949,13 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -151502,6 +152251,13 @@ uk
 uk
 uk
 uk
+Vf
+Vf
+Vf
+Vf
+it
+it
+it
 uk
 uk
 uk
@@ -151516,19 +152272,12 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -151825,32 +152574,32 @@ uk
 uk
 uk
 uk
+it
+Vf
+it
+it
+it
+it
 uk
 uk
 uk
 uk
 uk
 uk
+it
+it
+it
 uk
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -152147,6 +152896,21 @@ uk
 uk
 uk
 uk
+it
+it
+it
+it
+it
+it
+uk
+uk
+uk
+uk
+uk
+it
+it
+it
+it
 uk
 uk
 uk
@@ -152155,24 +152919,9 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -152468,6 +153217,23 @@ uk
 uk
 uk
 uk
+it
+it
+it
+it
+it
+it
+it
+uk
+uk
+uk
+uk
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -152477,25 +153243,8 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
+Vi
 uk
 uk
 uk
@@ -152790,6 +153539,23 @@ uk
 uk
 uk
 uk
+it
+it
+it
+it
+it
+it
+uk
+uk
+uk
+uk
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -152800,24 +153566,7 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+Vi
 uk
 uk
 uk
@@ -153112,23 +153861,23 @@ Tp
 Tp
 Tp
 uk
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+Vi
+Vi
+it
+it
+it
+it
 uk
 uk
 uk
@@ -153434,23 +154183,23 @@ Tp
 Tp
 Tp
 uk
+it
+it
+it
+it
+it
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+Vi
+Vi
+Vi
+it
+it
+it
 uk
 uk
 uk
@@ -153757,21 +154506,21 @@ Tp
 Tp
 uk
 uk
+it
+it
+it
+it
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+Vi
+Vi
+it
+it
+it
 uk
 uk
 uk
@@ -154037,8 +154786,8 @@ ID
 ID
 ID
 ID
-eU
-jk
+uo
+qa
 Bo
 rs
 ID
@@ -154088,16 +154837,16 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+Vi
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -154360,7 +155109,7 @@ ID
 ID
 ID
 Hz
-nn
+Bo
 Bo
 rs
 ID
@@ -154410,19 +155159,19 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+it
+it
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -154680,10 +155429,10 @@ ID
 ID
 ID
 ID
-Vf
-Bo
-Bo
-Bo
+ID
+rs
+rs
+rs
 rs
 ID
 ID
@@ -154732,21 +155481,21 @@ uk
 uk
 uk
 uk
+Vi
+uk
+it
+it
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -155002,11 +155751,11 @@ ID
 ID
 ID
 ID
-Vf
-rs
-rs
-rs
-rs
+ID
+ID
+ID
+ID
+ID
 ID
 ID
 rs
@@ -155054,22 +155803,22 @@ uk
 uk
 uk
 uk
+Vi
+it
+it
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -155374,25 +156123,25 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+it
+it
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -155695,26 +156444,26 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+it
+it
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -156017,25 +156766,25 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+it
+it
+it
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -156339,27 +157088,27 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vf
+uk
+it
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -156659,30 +157408,30 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vf
+Vf
+Vf
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -156981,31 +157730,31 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vf
+Vf
+Vf
+Vf
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -157302,32 +158051,32 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vf
+Vf
+Vf
+Vf
+Vf
+Vf
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -157624,32 +158373,32 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vf
+Vf
+Vf
+Vf
+Vf
+Vf
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -157946,32 +158695,32 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vf
+Vf
+Vf
+Vf
+Vf
+Vf
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -158268,32 +159017,32 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+uk
+uk
+uk
+Vf
+Vf
+Vf
+Vf
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -158590,31 +159339,31 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+uk
+uk
+uk
+Vf
+Vf
+Vf
+Vf
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -158912,30 +159661,30 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
 uk
 uk
+Vf
+Vf
 uk
 uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
+it
 uk
 uk
 uk
@@ -159235,6 +159984,11 @@ uk
 uk
 uk
 uk
+Vi
+Vi
+Vi
+Vi
+Vi
 uk
 uk
 uk
@@ -159248,15 +160002,10 @@ uk
 uk
 uk
 uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
-uk
+it
+it
+it
+it
 uk
 uk
 uk
@@ -224880,7 +225629,7 @@ Js
 Js
 Js
 Js
-Js
+qg
 qg
 qg
 qg
@@ -225202,11 +225951,11 @@ Js
 Js
 Js
 Js
-Js
 qg
 Cs
+Ht
 Zp
-KA
+Vg
 qg
 Js
 Js
@@ -225524,10 +226273,10 @@ qg
 Js
 Js
 Js
-Js
 qg
 Cs
-Zp
+hB
+IH
 Zp
 qg
 Js
@@ -225850,7 +226599,7 @@ qg
 qg
 qg
 Zp
-Zp
+IH
 qg
 qg
 qg
@@ -226159,23 +226908,23 @@ Qs
 Qs
 Qs
 qg
+IH
 Zp
+IH
 Zp
-Zp
-Zp
-Zp
+IH
 qg
-ZW
+VV
 Wj
 qg
 ZW
-Wj
+Rz
 qg
-Zp
+IH
 Zp
 qg
 Wc
-Zp
+IH
 Iz
 qg
 Js
@@ -226488,17 +227237,17 @@ rp
 KA
 qg
 xI
+Vg
+qg
+Ma
 KA
 qg
-xI
-KA
+Zp
+IH
 qg
+fN
 Zp
-Zp
-qg
-Wc
-Zp
-Iz
+Iy
 qg
 Js
 Js
@@ -226807,19 +227556,19 @@ qg
 qg
 qg
 qg
-Zp
+IH
+qg
+cX
+eh
 qg
 eh
-eh
+cX
 qg
-eh
-eh
-qg
-Zp
+IH
 Zp
 qg
 Wc
-Zp
+IH
 Ex
 qg
 Js
@@ -227130,19 +227879,19 @@ JD
 IK
 SA
 Zp
-bJ
+MY
 Zp
-Zp
+IH
 Uv
-Zp
+IH
 Zp
 Op
 Zp
-Zp
+IH
 qg
-Wc
+fN
 Zp
-Iz
+Iy
 qg
 Js
 Js
@@ -227449,21 +228198,21 @@ Qs
 qg
 sk
 Zp
+IH
 Zp
-Zp
-Zp
+IH
 Bu
+IH
 Zp
+IH
 Zp
+IH
 Zp
+IH
 Zp
+MY
 Zp
-Zp
-Zp
-Zp
-bJ
-Zp
-Zp
+IH
 tT
 qg
 Js
@@ -227770,23 +228519,23 @@ Qs
 Qs
 qg
 NY
+IH
 Zp
-Zp
-Zp
+IH
 hV
 qg
 md
-TI
+uu
 Zp
+Mg
 ff
-ff
-ff
+Mg
 Zp
-KA
+Vg
 qg
 Lo
 Zp
-tT
+Da
 qg
 Js
 Js
@@ -228093,11 +228842,11 @@ Qs
 qg
 aD
 TI
-xI
+Ma
 Zp
-xI
+Ma
 qg
-au
+jj
 au
 fa
 qg
@@ -228107,7 +228856,7 @@ bJ
 bJ
 qg
 qg
-Zp
+IH
 Zp
 qg
 Js
@@ -228416,21 +229165,21 @@ qg
 UZ
 aG
 Ol
-Zp
+IH
 ez
-au
+jj
 Zp
+IH
 Zp
-Zp
-Zp
+IH
 CA
+IH
 Zp
-Zp
-Zp
+IH
 Zp
 wv
 Zp
-Zp
+IH
 qg
 Js
 Js
@@ -228741,15 +229490,15 @@ qg
 qg
 qg
 qg
+ih
 Zp
+IH
 Zp
+IH
 Zp
+IH
 Zp
-Zp
-Zp
-Zp
-Zp
-Zp
+IH
 Zp
 gk
 Zp
@@ -229063,9 +229812,9 @@ vo
 vo
 jD
 qg
-GD
-GD
 ax
+GD
+bJ
 ax
 ax
 ax
@@ -231321,8 +232070,8 @@ qA
 qA
 qA
 qA
-jk
-jk
+yH
+Ay
 Ik
 Vz
 Mc
@@ -232275,7 +233024,7 @@ eH
 eH
 Lf
 Lf
-RO
+uF
 Ni
 Ni
 XC
@@ -232285,7 +233034,7 @@ YB
 Dw
 Hd
 Hd
-Hd
+nm
 qA
 qA
 qA
@@ -232597,17 +233346,17 @@ Lf
 Lf
 Lf
 Lf
-RO
-Ac
+uF
 Ni
 Ni
 Ni
 Ni
+VA
 jS
 ys
+eq
 Hd
-Hd
-Hd
+Yl
 qA
 qA
 cY
@@ -232919,7 +233668,7 @@ Lf
 Lf
 Lf
 Lf
-uF
+RO
 lY
 Ni
 Ni
@@ -232929,7 +233678,7 @@ YB
 Hd
 Hd
 Hd
-Hd
+WD
 qA
 qA
 qA
@@ -233241,17 +233990,17 @@ eH
 eH
 Lf
 Lf
-uF
-lY
+RO
+dn
 Ni
 Ni
 ch
-Iy
+tg
 RO
+hX
 Hd
-Hd
-Hd
-Hd
+Xy
+kw
 qA
 qA
 qA
@@ -233564,16 +234313,16 @@ lH
 Lf
 yF
 RO
-XC
+tk
 Ni
 Ni
 sQ
-sx
+tg
 YB
 RL
 Hd
 Hd
-Xy
+El
 qA
 qA
 qA
@@ -233890,12 +234639,12 @@ Kt
 Ni
 Ni
 Ni
-Ni
+VA
 YB
 ys
+eq
 Hd
-Hd
-Hd
+qe
 qA
 qA
 qA
@@ -234208,11 +234957,11 @@ Lf
 Lf
 yF
 RO
+Ac
 Ni
 Ni
 Ni
-Ni
-tg
+sx
 YB
 Hd
 Hd
@@ -234530,8 +235279,8 @@ yF
 yF
 yF
 RO
-dn
-tk
+YW
+aK
 UJ
 Ni
 Ni
@@ -234868,9 +235617,9 @@ WF
 ID
 ID
 gO
-Wr
+Dx
 qn
-Wr
+Dx
 qn
 da
 Jq
@@ -235190,11 +235939,11 @@ nd
 ID
 ID
 xC
-Wr
+Dx
 qn
-Wr
+Dx
 qn
-Wr
+Dx
 Jq
 Jq
 Un
@@ -235512,11 +236261,11 @@ nd
 ID
 ID
 xC
-Wr
+Dx
 qn
-Wr
+Dx
 qn
-Wr
+Dx
 Jq
 fK
 ID
@@ -235834,11 +236583,11 @@ nd
 ID
 ID
 xC
-Wr
+Dx
 qn
-Wr
+Dx
 qn
-Wr
+Dx
 da
 XK
 XK
@@ -236156,15 +236905,15 @@ nd
 ID
 ID
 xC
-Wr
+Dx
 qn
-Wr
+Dx
 qn
-Wr
+Dx
 da
-Wr
-Wr
-Wr
+Dx
+Dx
+Dx
 da
 ID
 ID
@@ -236478,15 +237227,15 @@ nd
 ID
 ID
 xC
-Wr
+Dx
 qn
-Wr
+Dx
 qn
-Wr
+Dx
 hR
+Dx
 Wr
-Wr
-Wr
+Dx
 da
 ID
 ID
@@ -236800,11 +237549,11 @@ nd
 ID
 ID
 xC
-Wr
+Dx
 qn
 Wr
 qn
-Wr
+Dx
 da
 ZR
 ZR
@@ -237122,11 +237871,11 @@ nd
 ID
 ID
 xC
-Wr
+Dx
 qn
-Wr
+Dx
 qn
-Wr
+Dx
 da
 ID
 ID
@@ -237444,11 +238193,11 @@ nd
 ID
 ID
 gO
-Wr
-Wr
-Wr
-Wr
-Wr
+Dx
+Dx
+Dx
+Dx
+Dx
 da
 ID
 ID
@@ -237770,7 +238519,7 @@ Zj
 LN
 nG
 gO
-Wr
+Dx
 da
 ID
 ID
@@ -238080,8 +238829,8 @@ JQ
 ID
 ID
 ID
-ls
-ls
+RR
+RR
 ah
 HI
 nd
@@ -238420,7 +239169,7 @@ xn
 xn
 xn
 xn
-xn
+KW
 ls
 ID
 ID
@@ -238741,8 +239490,8 @@ HI
 HI
 HI
 HI
-HI
 Ic
+rz
 ls
 ID
 ID
@@ -239064,7 +239813,7 @@ PF
 PF
 PF
 PF
-PF
+fm
 ls
 ID
 ID
@@ -240326,13 +241075,13 @@ vq
 IW
 IW
 pD
-IW
-IW
-pD
-IW
+SB
 IW
 pD
 IW
+IW
+pD
+SB
 IW
 vq
 RX
@@ -317302,7 +318051,7 @@ yS
 yS
 UD
 dc
-Mc
+Hm
 oT
 Mc
 Mc
@@ -317624,7 +318373,7 @@ yS
 yS
 UD
 dc
-Mc
+Hm
 Mc
 Mc
 Mc
@@ -318264,8 +319013,8 @@ yS
 yS
 yS
 yS
-ID
-ID
+ls
+ls
 ls
 ls
 ls
@@ -318586,8 +319335,8 @@ yS
 yS
 yS
 yS
-ID
-ID
+ls
+ls
 ls
 ls
 ls
@@ -325981,10 +326730,10 @@ IY
 Lc
 KZ
 uy
-Lc
-Lc
-Lc
-Lc
+uy
+uy
+uy
+uy
 uy
 uy
 pv
@@ -326303,10 +327052,10 @@ oU
 Lc
 KZ
 uy
-Lc
-zr
-zr
-Lc
+uy
+AK
+hA
+uy
 uy
 uy
 Lc
@@ -326626,8 +327375,8 @@ Lc
 KZ
 uy
 uy
-uy
-uy
+xJ
+VO
 uy
 uy
 uy
@@ -326950,7 +327699,7 @@ uy
 uy
 uy
 uy
-KP
+uy
 uy
 uy
 pv
@@ -327267,14 +328016,14 @@ Lc
 Lc
 Lc
 Lc
-Lc
-Lc
-wd
-wd
-Lc
-Lc
-pv
-pv
+uy
+uy
+uy
+uy
+KP
+uy
+uy
+uy
 Lc
 RX
 ls
@@ -327589,15 +328338,15 @@ ls
 ls
 ls
 Lc
-Ew
-Ow
-pQ
-pQ
-Ow
-yn
 Lc
-RX
-RX
+Lc
+wd
+wd
+Lc
+Lc
+pv
+pv
+Lc
 RX
 ls
 ls
@@ -327911,16 +328660,16 @@ ls
 ls
 ls
 Lc
-Lc
-Lc
-Cx
+Ew
+Ow
 pQ
+pQ
+Ow
+yn
 Lc
-Lc
-Lc
-ls
-ls
-ls
+RX
+RX
+RX
 ls
 ls
 ls
@@ -328233,12 +328982,12 @@ ls
 ls
 ls
 Lc
-Ew
-Ow
-Hf
-Hf
-Ow
-yn
+Lc
+Lc
+Cx
+pQ
+Lc
+Lc
 Lc
 ls
 ls
@@ -328555,12 +329304,12 @@ ls
 ls
 ls
 Lc
-Lc
-Lc
-Lc
-Lc
-Lc
-Lc
+Ew
+Ow
+Hf
+Hf
+Ow
+yn
 Lc
 ls
 ls
@@ -328876,14 +329625,14 @@ ls
 ls
 ls
 ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
-ls
+XY
+XY
+XY
+XY
+XY
+XY
+XY
+XY
 ls
 ls
 ls

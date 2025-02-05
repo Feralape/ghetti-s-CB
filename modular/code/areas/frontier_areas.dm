@@ -51,9 +51,10 @@
 
 /// COLONY AREAS	
 /area/frontier/outdoor/colony
-	name = "Colony"
+	name = "Colony Outdoors"
 	icon_state = "colony"
 	requires_power = 1
+	lightswitch = FALSE
 	ambience_area = list(
 		/datum/looping_sound/ambient/city,
 		/datum/looping_sound/ambient/critters,

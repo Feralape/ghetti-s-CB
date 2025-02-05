@@ -3,6 +3,7 @@
 /datum/job/frontier/rimwatch_officer // Rimwatch Officer
 	title = "Rimwatch Officer"
 	flag = OFFICER
+	faction = FACTION_OUTPOST
 	total_positions = 6
 	spawn_positions = 6
 	description = "As a Rimwatch Officer, your main duty is to protect the outpost and its people, and to uphold the Laws of the Rim."
@@ -52,6 +53,7 @@
 /datum/job/frontier/rimwatch_ranger // Rimwatch Ranger
 	title = "Rimwatch Ranger"
 	flag = OFFICER
+	faction = FACTION_OUTPOST
 	total_positions = 4
 	spawn_positions = 4
 	description = "As a Rimwatch Ranger, your duty is also to protect the outpost as well as to uphold the Laws of the Rim. However, you are also tasked with scouting the surrounding area and dealing with threats outside the outpost."
@@ -78,6 +80,7 @@
 	head = /obj/item/clothing/head/beret/rimwatch
 	neck = /obj/item/storage/belt/shoulderholster
 	l_pocket = /obj/item/storage/wallet/stash/mid
+	shoes = /obj/item/clothing/shoes/jackboots	
 	satchel =	/obj/item/storage/backpack/satchel/patrol
 	duffelbag = /obj/item/storage/backpack/duffelbag/patrol
 	backpack = 	/obj/item/storage/backpack/patrol
@@ -91,6 +94,7 @@
 /datum/job/frontier/rimwatch_marshall // Rimwatch Marshall
 	title = "Rimwatch Marshall"
 	flag = HOS	
+	faction = FACTION_OUTPOST
 	total_positions = 1
 	spawn_positions = 1
 	description = "As the Rimwatch Marshall, you are the leader of the Rimwatch. You are responsible for the safety of the outpost and its people, as well as the enforcement of the Laws of the Rim."
@@ -116,6 +120,7 @@
 	belt = /obj/item/storage/belt/tactical
 	head = /obj/item/clothing/head/marshall
 	neck = /obj/item/storage/belt/shoulderholster
+	shoes = /obj/item/clothing/shoes/jackboots
 	suit_store = /obj/item/melee/classic_baton/telescopic
 	l_pocket = /obj/item/storage/wallet/stash/high
 	satchel =	/obj/item/storage/backpack/satchel/patrol
