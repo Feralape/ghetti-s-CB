@@ -64,7 +64,7 @@ GLOBAL_LIST_INIT(footstep, list(
 		'sound/effects/footstep/floor2.ogg',
 		'sound/effects/footstep/floor3.ogg',
 		'sound/effects/footstep/floor4.ogg',
-		'sound/effects/footstep/floor5.ogg'), 75, -1),
+		'sound/effects/footstep/floor5.ogg'), 100, -1),
 	FOOTSTEP_PLATING = list(list(
 		'sound/effects/footstep/plating1.ogg',
 		'sound/effects/footstep/plating2.ogg',
@@ -76,23 +76,23 @@ GLOBAL_LIST_INIT(footstep, list(
 		'sound/effects/footstep/carpet2.ogg',
 		'sound/effects/footstep/carpet3.ogg',
 		'sound/effects/footstep/carpet4.ogg',
-		'sound/effects/footstep/carpet5.ogg'), 75, -1),
+		'sound/effects/footstep/carpet5.ogg'), 100, -1),
 	FOOTSTEP_SAND = list(list(
 		'sound/effects/footstep/asteroid1.ogg',
 		'sound/effects/footstep/asteroid2.ogg',
 		'sound/effects/footstep/asteroid3.ogg',
 		'sound/effects/footstep/asteroid4.ogg',
-		'sound/effects/footstep/asteroid5.ogg'), 75, 0),
+		'sound/effects/footstep/asteroid5.ogg'), 100, 0),
 	FOOTSTEP_GRASS = list(list(
 		'sound/effects/footstep/grass1.ogg',
 		'sound/effects/footstep/grass2.ogg',
 		'sound/effects/footstep/grass3.ogg',
-		'sound/effects/footstep/grass4.ogg'), 75, 0),
+		'sound/effects/footstep/grass4.ogg'), 125, 0),
 	FOOTSTEP_WATER = list(list(
 		'sound/effects/footstep/water1.ogg',
 		'sound/effects/footstep/water2.ogg',
 		'sound/effects/footstep/water3.ogg',
-		'sound/effects/footstep/water4.ogg'), 100, 1),
+		'sound/effects/footstep/water4.ogg'), 125, 1),
 	FOOTSTEP_LAVA = list(list(
 		'sound/effects/footstep/lava1.ogg',
 		'sound/effects/footstep/lava2.ogg',
@@ -127,7 +127,7 @@ GLOBAL_LIST_INIT(footstep, list(
 		'sound/f13effects/footstep/Road/road_walk3.ogg',
 		'sound/f13effects/footstep/Road/road_walk4.ogg',
 		'sound/f13effects/footstep/Road/road_walk5.ogg',
-		'sound/f13effects/footstep/Road/road_walk6.ogg'), 50, 1),
+		'sound/f13effects/footstep/Road/road_walk6.ogg'), 75, 1),
 ))
 
 //bare footsteps lists
@@ -149,18 +149,18 @@ GLOBAL_LIST_INIT(barefootstep, list(
 		'sound/effects/footstep/carpetbarefoot2.ogg',
 		'sound/effects/footstep/carpetbarefoot3.ogg',
 		'sound/effects/footstep/carpetbarefoot4.ogg',
-		'sound/effects/footstep/carpetbarefoot5.ogg'), 75, -2),
+		'sound/effects/footstep/carpetbarefoot5.ogg'), 80, -2),
 	FOOTSTEP_SAND = list(list(
 		'sound/effects/footstep/asteroid1.ogg',
 		'sound/effects/footstep/asteroid2.ogg',
 		'sound/effects/footstep/asteroid3.ogg',
 		'sound/effects/footstep/asteroid4.ogg',
-		'sound/effects/footstep/asteroid5.ogg'), 75, 0),
+		'sound/effects/footstep/asteroid5.ogg'), 80, 0),
 	FOOTSTEP_GRASS = list(list(
 		'sound/effects/footstep/grass1.ogg',
 		'sound/effects/footstep/grass2.ogg',
 		'sound/effects/footstep/grass3.ogg',
-		'sound/effects/footstep/grass4.ogg'), 75, 0),
+		'sound/effects/footstep/grass4.ogg'), 100, 0),
 	FOOTSTEP_WATER = list(list(
 		'sound/effects/footstep/water1.ogg',
 		'sound/effects/footstep/water2.ogg',

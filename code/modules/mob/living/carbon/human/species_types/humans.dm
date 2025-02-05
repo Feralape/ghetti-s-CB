@@ -14,7 +14,6 @@
 	tail_type = "mam_tail"
 	wagging_type = "mam_waggingtail"
 	species_type = "furry"
-	footstep_type = FOOTSTEP_MOB_BAREFOOT
 
 /datum/species/human/spec_death(gibbed, mob/living/carbon/human/H)
 	if(H)
