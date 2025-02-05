@@ -3,6 +3,7 @@
 	title = "Technician"
 	flag = ENGINEER
 	department_flag = ENGINEERING
+	faction = FACTION_OUTPOST
 	total_positions = 3
 	spawn_positions = 3
 	supervisors = "the Governor."
@@ -17,7 +18,7 @@
 
 
 /datum/outfit/job/technician
-	name =		"Outpost Technician"
+	name =		"Technician"
 	jobtype =	/datum/job/frontier/technician
 	shoes =		/obj/item/clothing/shoes/f13/explorer
 	belt = 		/obj/item/supplykit

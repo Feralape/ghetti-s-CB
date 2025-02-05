@@ -7,6 +7,10 @@
 	icon_regular_floor = "floor"
 	icon_plating = "plating"
 	icon = 'icons/fallout/turfs/floors.dmi'
+	footstep = FOOTSTEP_FLOOR//clonk
+	barefootstep = FOOTSTEP_FLOOR
+	clawfootstep = FOOTSTEP_RUST
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/f13/ReplaceWithLattice()
 	ChangeTurf(baseturfs)
@@ -18,6 +22,10 @@
 	icon_plating = "housebase"
 //	step_sounds = list("human" = "woodfootsteps")
 	broken_states = list("housewood1-broken", "housewood2-broken", "housewood3-broken", "housewood4-broken")
+	footstep = FOOTSTEP_WOOD
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+	clawfootstep = FOOTSTEP_WOOD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/floor/f13/wood/New()
 	..()

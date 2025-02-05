@@ -16,6 +16,7 @@
 #define FACTION_KHAN "Great Khans"
 #define FACTION_BIKER "Hells Nomads"
 #define FACTION_CLUB "Heavens Night"
+#define FACTION_OUTPOST "Outpost"
 
 #define ENGSEC			(1<<0)
 

@@ -279,7 +279,10 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
-	turf_types_to_check = list(/turf/open/liquid/water)
+	turf_types_to_check = list(/turf/open/liquid/water,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
+	/turf/open/indestructible/ground/inside/mountain)
 	var/dug = FALSE				//FALSE = has not yet been dug, TRUE = has already been dug
 	var/pit_sand = 1
 	// TODO: REWRITE PITS ENTIRELY
@@ -300,6 +303,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	footstep = FOOTSTEP_LOOSE_SAND
 	barefootstep = FOOTSTEP_LOOSE_SAND
 	clawfootstep = FOOTSTEP_LOOSE_SAND
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/desert/sonora/coarse
 	icon_state = "desertcoarse"
@@ -368,11 +372,35 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 //	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
 	slowdown = 0.3
 	flags_1 = CAN_HAVE_NATURE
-	footstep = FOOTSTEP_SAND
-	barefootstep = FOOTSTEP_SAND
-	clawfootstep = FOOTSTEP_SAND
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY	
 	edge_icon = /obj/effect/overlay/dirt_side
-	turf_types_to_check = list(/turf/open/liquid/water,
+	turf_types_to_check = list(/turf/open/liquid/water,  
+	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
+	/turf/open/indestructible/ground/inside/mountain)
+
+/turf/open/indestructible/ground/outside/dirt_noplants
+	name = "dirt"
+	icon = 'icons/fallout/turfs/dirt.dmi'
+	icon_state = "dirtfull_dark"
+//	step_sounds = list("human" = "dirtfootsteps")
+//	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
+//	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
+	slowdown = 0.3
+	flags_1 = CAN_HAVE_NATURE
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY	
+	edge_icon = /obj/effect/overlay/dirt_side
+	turf_types_to_check = list(/turf/open/liquid/water,  
+	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
 	/turf/open/indestructible/ground/inside/mountain)
 
 /obj/effect/overlay/dirt_side
@@ -400,6 +428,10 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 
 // DARK DIRT - the legacy one
 /turf/open/indestructible/ground/outside/dirt/dark
+	footstep = FOOTSTEP_GRAVEL
+	barefootstep = FOOTSTEP_GRAVEL
+	clawfootstep = FOOTSTEP_GRAVEL
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/dirt/harsh
 	icon = 'icons/fallout/turfs/ground_harsh.dmi'
@@ -429,12 +461,22 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon = 'icons/fallout/turfs/asphalt.dmi'
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/road_s
 	name = "\proper road"
 	icon_state = "innermiddle"
 	icon = 'icons/fallout/turfs/asphalt_s.dmi'
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/sidewalk
@@ -443,12 +485,20 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon = 'icons/fallout/turfs/sidewalk.dmi'
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/sidewalk_s
 	name = "\proper sidewalk"
 	icon_state = "outermiddle"
 	icon = 'icons/fallout/turfs/sidewalk_s.dmi'
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/ruins
@@ -458,12 +508,19 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon = 'icons/fallout/turfs/ground.dmi'
 	footstep = FOOTSTEP_ROAD
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	clawfootstep = FOOTSTEP_HARD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/wood
 	name = "\proper wood planks"
 	icon_state = "housewood1"
 	icon = 'icons/turf/floors.dmi'
+	footstep = FOOTSTEP_WOOD
+	barefootstep = FOOTSTEP_WOOD_BAREFOOT
+	clawfootstep = FOOTSTEP_WOOD_CLAW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	//	step_sounds = list("human" = "woodfootsteps")
 
 /turf/open/indestructible/ground/outside/woodalt
@@ -566,6 +623,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	footstep = FOOTSTEP_SNOW
 	barefootstep = FOOTSTEP_SNOW
 	clawfootstep = FOOTSTEP_SNOW
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/ruins/ex_act(severity, target)
 	contents_explosion(severity, target)
@@ -592,7 +650,14 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon = 'icons/fallout/turfs/mining.dmi'
 	footstep = FOOTSTEP_SAND
 	edge_icon = /obj/effect/overlay/rockfloor_side
-	turf_types_to_check = list(/turf/open/liquid/water)
+	turf_types_to_check = list(/turf/open/liquid/water, 
+	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk)
+	footstep = FOOTSTEP_SAND
+	barefootstep = FOOTSTEP_SAND
+	clawfootstep = FOOTSTEP_SAND
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	allowed_plants = list(/obj/item/seeds/glow)
 //	step_sounds = list("human" = "erikafootsteps")
 
@@ -673,6 +738,9 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon_state = "innermiddle"
 	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
 	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_ROAD
+	clawfootstep = FOOTSTEP_ROAD
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	step_sounds = list("human" = "erikafootsteps")
 
 /turf/open/indestructible/ground/outside/sidewalkdirt
@@ -680,7 +748,9 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	icon_state = "outermiddle"
 	icon = 'icons/fallout/turfs/sidewalkdirt.dmi'
 	footstep = FOOTSTEP_ROAD
-	barefootstep = FOOTSTEP_HARD_BAREFOOT
+	barefootstep = FOOTSTEP_ROAD
+	clawfootstep = FOOTSTEP_ROAD
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	step_sounds = list("human" = "erikafootsteps")
 
 //Obsolete but used in yucky Pahrump
@@ -688,6 +758,10 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	name = "gravel"
 	icon_state = "graveldirt"
 	icon = 'icons/fallout/turfs/ground.dmi'
+	footstep = FOOTSTEP_ROAD
+	barefootstep = FOOTSTEP_ROAD
+	clawfootstep = FOOTSTEP_ROAD
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 //	step_sounds = list("human" = "erikafootsteps")
 
 // New gravel, organized. Use directions for control. - Pebbles
@@ -698,8 +772,11 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	footstep = FOOTSTEP_GRAVEL
 	barefootstep = FOOTSTEP_GRAVEL
 	clawfootstep = FOOTSTEP_GRAVEL
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	edge_icon = /obj/effect/overlay/gravel/edge
 	turf_types_to_check = list(/turf/open/indestructible/ground/outside/dirt, 
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
 	/turf/open/liquid/water,
 	/turf/open/indestructible/ground/inside/mountain,
 	/turf/open/indestructible/ground/outside/desert
@@ -748,6 +825,11 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	name = "lightly grassed dirt"
 	icon = 'modular_coyote/icons/turfs/lightgrass.dmi'
 	icon_state = null
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	
 
 /turf/open/indestructible/ground/outside/dirt/bigdirtturf2
 	name = "big dirt turf 2"
@@ -828,15 +910,24 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	edge_icon = /obj/effect/overlay/grass/edge
 	turf_types_to_check = list(/turf/open/indestructible/ground/outside/dirt, 
 	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
 	/turf/open/indestructible/ground/outside/gravel, 
 	/turf/open/liquid/water,
 	/turf/open/indestructible/ground/inside/mountain)
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/grass0
 	name = "grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "grass0"
-
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /obj/effect/overlay/grass/edge
 	name = "grass edge"
@@ -865,16 +956,28 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	name = "grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "grass1"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/grass2
 	name = "grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "grass2"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/grass3
 	name = "grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "grass3"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/drygrass
 	name = "dry grass"
@@ -884,45 +987,78 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	turf_types_to_check = list(/turf/open/indestructible/ground/outside/dirt,
 	/turf/open/indestructible/ground/outside/civ/grass, 
 	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
 	/turf/open/indestructible/ground/outside/gravel, 
 	/turf/open/liquid/water,
 	/turf/open/indestructible/ground/inside/mountain)
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/drygrass0
 	name = "dry grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "dead_grass0"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/drygrass1
 	name = "dry grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "dead_grass1"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/drygrass2
 	name = "dry grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "dead_grass2"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/drygrass3
 	name = "dry grass"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "dead_grass3"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/woodalt
 	name = "wood"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "woodalt"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/thatch1
 	name = "thatch"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "thatch1"
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 /turf/open/indestructible/ground/outside/civ/thatch2
 	name = "thatch"
 	icon = 'icons/fallout/turfs/civfloor.dmi'
 	icon_state = "thatch2"
-
+	footstep = FOOTSTEP_GRASS
+	barefootstep = FOOTSTEP_GRASS
+	clawfootstep = FOOTSTEP_GRASS
+	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
 //bamboo
 
@@ -930,16 +1066,19 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-255"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/one
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-0"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/two
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-1"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/three
 	name = "bamboo"
@@ -950,76 +1089,91 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-3"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/five
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-4"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/six
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-5"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/seven
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-6"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/eight
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-7"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/nine
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-8"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/ten
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-9"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/eleven
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-10"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/twelve
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-11"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/thirteen
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-12"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/fourteen
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-13"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/fifteen
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-14"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/sixteen
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-15"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/seventeen
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-21"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/eighteen
 	name = "bamboo"
 	icon = 'icons/turf/floors/carpet.dmi'
 	icon_state = "mat-23"
+	footstep = FOOTSTEP_WOOD
 
 /turf/open/indestructible/ground/bamboo/nineteen
 	name = "bamboo"

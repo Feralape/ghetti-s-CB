@@ -10,7 +10,7 @@
 /obj/item/clothing/under/technician
 	name = "utility uniform"
 	desc = "A dark utility jumpsuit."
-	icon_state = "utilgem"
+	icon_state = "utilgen"
 	item_state = "utilgen"
 	item_color = "utilgen"
 	can_adjust = FALSE
