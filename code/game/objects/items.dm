@@ -1281,7 +1281,7 @@ GLOBAL_VAR_INIT(embedpocalypse, FALSE) // if true, all items will be able to emb
 		damage_multiplier = backstab_multiplier // Apply the backstab multiplier
 	if(istype(user, /mob/living/carbon/human))
 		var/mob/living/carbon/human/hoomanguy = user
-		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_ROGUE))
+		if(hoomanguy.has_quirk(/datum/quirk/advrogue))
 			damage_multiplier *= 2
 			to_chat(user, "<span class='notice'>You backstab [M] for horrific damage!</span>")
 		else

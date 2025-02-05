@@ -885,7 +885,7 @@ ATTACHMENTS
 	var/time_till_gun_is_ready = max(draw_time,(user.AmountWeaponDrawDelay()))
 	if(istype(user, /mob/living/carbon/human))
 		var/mob/living/carbon/human/hoomanguy = user
-		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_GUNNER))
+		if(hoomanguy.has_quirk(/datum/quirk/advgunner))
 			time_till_gun_is_ready *= 0.5 || 0
 	if(allow_quickdraw)
 		allow_quickdraw = FALSE

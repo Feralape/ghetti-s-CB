@@ -15,7 +15,7 @@
 			return
 		if(istype(L, /mob/living/carbon/human))
 			var/mob/living/carbon/human/hoomanguy = L
-			if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_FIGHTER))
+			if(hoomanguy.has_quirk(/datum/quirk/advfighter))
 				damage_multiplier *= 1.3
 		if(SEND_SIGNAL(src, COMSIG_ITEM_ATTACKCHAIN, user, target, params) & COMPONENT_ITEM_NO_ATTACK)
 			return

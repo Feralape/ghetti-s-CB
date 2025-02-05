@@ -91,7 +91,7 @@
 	var/staminadamage = P.stamina
 	if(istype(src, /mob/living/carbon/human))
 		var/mob/living/carbon/human/hoomanguy = src
-		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_TANK) && hoomanguy.wear_suit.stiffness >= MEDIUM_STIFFNESS) //30% reduction for tanks ig
+		if(hoomanguy.has_quirk(/datum/quirk/advtank) && hoomanguy.wear_suit.stiffness >= MEDIUM_STIFFNESS) //30% reduction for tanks ig
 			totaldamage *= 0.7
 			staminadamage *= 0.7
 	var/final_percent = 0

@@ -31,8 +31,10 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 		if (!magazine)
 			if(init_mag_type)
 				magazine = new init_mag_type(src)
+				magazine.init_ammo()
 			else
 				magazine = new mag_type(src)
+				magazine.init_ammo()
 			if(magazine.fixed_mag)
 				gun_tags |= GUN_INTERNAL_MAG
 	allowed_mags |= mag_type
@@ -234,18 +236,29 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 		chambered = AC
 		return TRUE
 
-/obj/item/gun/ballistic/attack_self(mob/living/user)
+//when z is pressed, dont return parent or else it opens up weapon data ui.
+/obj/item/gun/ballistic/attack_self(mob/user)
+	if(SEND_SIGNAL(src, COMSIG_ITEM_ATTACK_SELF, user) & COMPONENT_NO_INTERACT)
+		return
 	if(magazine)
 		if(magazine.fixed_mag || !casing_ejector)
 			pump(user, TRUE)
 			update_icon()
 		else
-			eject_magazine(user, en_bloc, !en_bloc, TRUE)
-			update_icon()
-		return
+			eject_chambered_round(user, TRUE)
+			return
 	if(chambered)
 		pump(user, TRUE)
 		update_icon()
+		return
+
+/obj/item/gun/ballistic/attack_hand(mob/living/user)
+	if(user.get_inactive_held_item() != src)
+		return ..()
+	if(magazine)
+		if(!magazine.fixed_mag || casing_ejector)
+			eject_magazine(user, en_bloc, !en_bloc, TRUE)
+			update_icon()
 		return
 	to_chat(user, span_notice("There's no magazine in \the [src]."))
 	update_icon()
@@ -295,7 +308,7 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 		. += "It accepts [span_notice(english_list(magazine.caliber))]"
 	. += "It has [span_notice("[get_ammo()]")] round\s remaining."
 	if (chambered && !casing_ejector)
-		. += "A [chambered.BB ? span_green("live") : span_alert("spent")] one is in the chamber."
+		. += "A <b>[chambered.BB ? span_green("live") : span_alert("spent")]</b> one is in the chamber."
 
 /obj/item/gun/ballistic/proc/get_ammo(countchambered = 1)
 	var/boolets = 0 //mature var names for mature people

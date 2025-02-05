@@ -90,6 +90,130 @@
 	else
 		verbs -= /obj/item/gun/ballistic/revolver/verb/spin
 
+#define COOLDOWN_ITEM_TRICK "cooldown_item_trick"
+
+//from tgmc
+/obj/item/gun/revolver/verb/revolvertrick()
+	set category = "Weapons"
+	set name = "Do a revolver trick"
+	var/obj/item/gun/revolver/gun = usr.get_active_held_item()
+	if(!istype(gun))
+		gun = usr.get_inactive_held_item()
+
+	if(!istype(gun))
+		to_chat(usr, span_warning("You need a gun in your hands to do that!"))
+		return
+	if(!gun)
+		return
+	if(!istype(gun))
+		return
+	do_trick(usr)
+
+///Checks to see if you successfully perform a trick, and what kind
+/obj/item/proc/do_trick(mob/living/carbon/human/user)
+	if(TIMER_COOLDOWN_CHECK(user, COOLDOWN_ITEM_TRICK))
+		return FALSE
+	if(!istype(user))
+		return FALSE
+	var/chance = -5
+	chance = user.health < 6 ? 0 : user.health - 5
+
+	var/obj/item/double = user.get_inactive_held_item()
+	if(prob(chance))
+		switch(rand(1,7))
+			if(1)
+				basic_spin_trick(user, -1)
+			if(2)
+				basic_spin_trick(user, 1)
+			if(3)
+				throw_catch_trick(user)
+			if(4)
+				basic_spin_trick(user, 1)
+			if(5)
+				var/arguments[] = istype(double) ? list(user, 1, double) : list(user, -1)
+				basic_spin_trick(arglist(arguments))
+			if(6)
+				var/arguments[] = istype(double) ? list(user, -1, double) : list(user, 1)
+				basic_spin_trick(arglist(arguments))
+			if(7)
+				if(istype(double))
+					spawn(0)
+						double.throw_catch_trick(user)
+					throw_catch_trick(user)
+				else
+					throw_catch_trick(user)
+	else
+		if(prob(10))
+			to_chat(user, span_warning("You fumble with [src] like an idiot... Uncool."))
+		else
+			user.visible_message(span_info("<b>[user]</b> fumbles with [src] like a huge idiot!"))
+
+	TIMER_COOLDOWN_START(user, COOLDOWN_ITEM_TRICK, 6)
+
+	return TRUE
+
+///The basic spin trick
+/obj/item/proc/basic_spin_trick(mob/living/carbon/human/user, direction = 1, obj/item/double)
+	set waitfor = 0
+	playsound(user, 'sound/items/spin.ogg', 25, 1)
+	if(double)
+		user.visible_message("[user] deftly flicks and spins [src] and [double]!",span_notice(" You flick and spin [src] and [double]!"))
+		animation_wrist_flick(double, 1)
+	else
+		user.visible_message("[user] deftly flicks and spins [src]!",span_notice(" You flick and spin [src]!"))
+	animation_wrist_flick(src, direction)
+	sleep(0.3 SECONDS)
+	if(loc && user) playsound(user, 'sound/items/thud.ogg', 25, 1)
+
+/proc/animation_wrist_flick(atom/A, direction = 1, loop_num = 0) //-1 for a left spin.
+	animate(A, transform = matrix(120 * direction, MATRIX_ROTATE), time = 1, loop = loop_num, easing = SINE_EASING|EASE_IN)
+	animate(transform = matrix(240 * direction, MATRIX_ROTATE), time = 1)
+	animate(transform = null, time = 2, easing = SINE_EASING|EASE_OUT)
+
+//Makes it look like the user threw something in the air (north) and then caught it.
+/proc/animation_toss_snatch(atom/A)
+	A.transform *= 0.75
+	animate(A, alpha = 185, pixel_x = rand(-4,4), pixel_y = 18, pixel_z = 0, time = 3)
+	animate(pixel_x = 0, pixel_y = 0, pixel_z = 0, time = 3)
+
+//Combines the flick and the toss to have the item spin in the air.
+/proc/animation_toss_flick(atom/A, direction = 1)
+	A.transform *= 0.75
+	animate(A, transform = matrix(120 * direction, MATRIX_ROTATE), alpha = 185, pixel_x = rand(-4,4), pixel_y = 18, time = 3, easing = SINE_EASING|EASE_IN)
+	animate(transform = matrix(240 * direction, MATRIX_ROTATE), pixel_x = 0, pixel_y = 0, time = 2)
+
+///The fancy trick. Woah.
+/obj/item/proc/throw_catch_trick(mob/living/carbon/human/user)
+	set waitfor = 0
+	user.visible_message("[user] deftly flicks [src] and tosses it into the air!",span_notice(" You flick and toss [src] into the air!"))
+	var/img_layer = MOB_LAYER+0.1
+	var/image/trick = image(icon,user,icon_state,img_layer)
+	switch(pick(1,2))
+		if(1) animation_toss_snatch(trick)
+		if(2) animation_toss_flick(trick, pick(1,-1))
+
+	invisibility = 100
+	for(var/mob/M in viewers(user))
+		SEND_IMAGE(M, trick)
+	sleep(0.5 SECONDS)
+	trick.loc = null
+	if(!loc || !user)
+		return
+	invisibility = 0
+	playsound(user, 'sound/items/thud.ogg', 25, 1)
+
+	if(user.get_active_held_item() != src)
+		return
+
+	if(user.get_inactive_held_item())
+		user.visible_message("[user] catches [src] with the same hand!",span_notice(" You catch [src] as it spins in to your hand!"))
+		return
+	user.visible_message("[user] catches [src] with his other hand!",span_notice(" You snatch [src] with your other hand! Awesome!"))
+	user.temporarilyRemoveItemFromInventory(src)
+	user.put_in_inactive_hand(src)
+	user.swap_hand()
+	user.update_inv_hands()
+
 /obj/item/gun/ballistic/revolver/proc/do_spin()
 	var/obj/item/ammo_box/magazine/internal/cylinder/C = magazine
 	. = istype(C)

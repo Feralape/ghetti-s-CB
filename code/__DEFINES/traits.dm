@@ -281,6 +281,7 @@
 #define	TRAIT_LIGHT_SENSITIVITY			"light_sensitivity"
 #define	TRAIT_PHOBIC			"trait_phobic"
 #define TRAIT_CRIT_SHOT		"crit_shot" //Crits are cool, but have you ever critted 3 times in a row?
+#define TRAIT_BOUNCE_SHOT		"bounce_shot" //bullets bounce off walls to targets, basically aimbot.
 #define SPREAD_CONTROL		"spread_control"
 #define TRAIT_PROSOPAGNOSIA		"prosopagnosia"
 #define TRAIT_DRUNK_HEALING		"drunk_healing"

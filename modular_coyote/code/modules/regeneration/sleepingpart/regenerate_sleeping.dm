@@ -68,7 +68,7 @@
 
 	if(istype(L, /mob/living/carbon/human))
 		var/mob/living/carbon/human/hoomanguy = L
-		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_FIGHTER))
+		if(hoomanguy.has_quirk(/datum/quirk/advfighter))
 			healAmount *= 2
 
 	var/healbots = isrobotic(L)

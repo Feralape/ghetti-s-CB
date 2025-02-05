@@ -62,7 +62,7 @@
 		speed_mod = user.mind.action_skill_mod(/datum/skill/numerical/surgery, speed_mod, THRESHOLD_UNTRAINED, FALSE)
 	if(istype(user, /mob/living/carbon/human))
 		var/mob/living/carbon/human/hoomanguy = user
-		if(hoomanguy.has_quirk(hoomanguy, TRAIT_ADV_HEALER))
+		if(hoomanguy.has_quirk(/datum/quirk/advhealer))
 			speed_mod *= -2
 	var/delay = time * speed_mod
 	delay = max(1, speed_mod)
