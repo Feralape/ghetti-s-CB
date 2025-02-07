@@ -17,7 +17,14 @@
 	weather_duration_lower = 5 MINUTES
 	weather_duration_upper = 25 MINUTES
 	tag_weather = WEATHER_RAIN
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest)
+	area_types = list(/area/frontier/outdoor, 
+/area/frontier/outdoor/wilderness, 
+/area/frontier/outdoor/river, 
+/area/frontier/outdoor/shoreline, 
+/area/frontier/outdoor/colony, 
+/area/frontier/outdoor/depot_dock,
+/area/frontier/outdoor/colony/roof
+)
 	protected_areas = list(/area/shuttle)
 	target_trait = ZTRAIT_STATION
 	protect_indoors = TRUE
@@ -34,7 +41,7 @@
 	var/list/mobs_washied_cd = list()
 
 /datum/weather/rain/eventarea
-	area_types = list(/area/f13/wasteland/event)
+	area_types = list(/area/frontier/wilderness/event)
 	probability = 0
 	target_trait = ZTRAIT_AWAY
 	weather_duration_lower = 18000
@@ -105,7 +112,14 @@
 	end_duration = 250
 	end_message = span_notice("<font size=2>The blanket of fog finally lifts up.</font>")
 	end_overlay = "fog"
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest)
+	area_types = list(/area/frontier/outdoor, 
+/area/frontier/outdoor/wilderness, 
+/area/frontier/outdoor/river, 
+/area/frontier/outdoor/shoreline, 
+/area/frontier/outdoor/colony, 
+/area/frontier/outdoor/depot_dock,
+/area/frontier/outdoor/colony/roof
+)
 	protected_areas = list(/area/shuttle)
 	target_trait = ZTRAIT_STATION
 	protect_indoors = TRUE

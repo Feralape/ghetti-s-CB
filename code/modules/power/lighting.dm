@@ -889,7 +889,7 @@
 	base_state = "floor"		// base description and icon_state
 	icon_state = "floor"
 	brightness = 5
-	nightshift_brightness = 4
+	nightshift_allowed = FALSE
 	layer = 2.5
 	light_type = /obj/item/light/bulb
 	fitting = "bulb"

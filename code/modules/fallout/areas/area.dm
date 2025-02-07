@@ -23,6 +23,7 @@
 //  AMBIENT  //
 //   AREAS   //
 ///////////////
+/*
 /area/f13/wasteland
 	name = "Wasteland"
 	icon_state = "wasteland"
@@ -1191,3 +1192,5 @@
 		AREA_Z_MUSIC(Z_LEVEL_NEWBOSTON, 'sound/effects/bamf.ogg'),
 		AREA_Z_MUSIC(Z_LEVEL_NEWBOSTON_UPPER, 'sound/effects/Huuu.ogg'),
 	)
+
+*/

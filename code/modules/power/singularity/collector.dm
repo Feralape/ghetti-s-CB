@@ -55,7 +55,7 @@
 		return FALSE
 	var/area/A = T.loc
 	var/add_rads = 0
-	if(istype(A, /area/f13/radiation))
+	if(istype(A, /area/frontier/radiation))
 		add_rads += area_radiation
 	if(A.rads_per_second)
 		add_rads += (A.rads_per_second*10)

@@ -13,8 +13,8 @@
 	exp_requirements = 0
 
 	outfit = /datum/outfit/job/trader
-	access = list(ACCESS_OUTPOST, ACCESS_CARGO)
-	minimal_access = list(ACCESS_OUTPOST, ACCESS_CARGO)
+	access = list(ACCESS_OUTPOST, ACCESS_CARGO, ACCESS_MINING_OFFICE, ACCESS_MINING)
+	minimal_access = list(ACCESS_OUTPOST, ACCESS_CARGO, ACCESS_MINING_OFFICE, ACCESS_MINING)
 
 /datum/outfit/job/trader
 	name =		"Trader"
@@ -85,8 +85,8 @@
 	exp_requirements = 0
 
 	outfit = /datum/outfit/job/frontier/dock_worker
-	access = list(ACCESS_OUTPOST, ACCESS_CARGO)
-	minimal_access = list(ACCESS_OUTPOST, ACCESS_CARGO)
+	access = list(ACCESS_OUTPOST, ACCESS_CARGO, ACCESS_MINING_OFFICE, ACCESS_MINING)
+	minimal_access = list(ACCESS_OUTPOST, ACCESS_CARGO, ACCESS_MINING_OFFICE, ACCESS_MINING)
 
 /datum/outfit/job/frontier/dock_worker/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
