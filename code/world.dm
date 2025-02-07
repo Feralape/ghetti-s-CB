@@ -4,7 +4,7 @@
 /world
 	mob = /mob/dead/new_player
 	turf = /turf/open/indestructible/ground/outside/civ/grass
-	area = /area/f13/wasteland
+	area = /area/frontier/outdoor/wilderness
 	view = "15x15"
 	hub = "Exadv1.spacestation13"
 	name = "/tg/ Station 13"

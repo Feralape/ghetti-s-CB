@@ -57,4 +57,11 @@ GLOBAL_LIST_INIT(potential_away_levels, generateMapList(filename = "[global.conf
 GLOBAL_LIST_INIT(potential_vr_levels, generateMapList(filename = "[global.config.directory]/vr_config.txt"))
 
 //Typepaths of outdoor areas.
-GLOBAL_LIST_INIT(outdoor_areas, list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest, /area/f13/tribe)) //I lick the fel viciously ~TK
+GLOBAL_LIST_INIT(outdoor_areas, list(/area/frontier/outdoor, 
+/area/frontier/outdoor/wilderness, 
+/area/frontier/outdoor/river, 
+/area/frontier/outdoor/shoreline, 
+/area/frontier/outdoor/colony, 
+/area/frontier/outdoor/depot_dock,
+/area/frontier/outdoor/colony/roof
+)) //I lick the fel viciously ~TK

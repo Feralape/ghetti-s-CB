@@ -16,8 +16,6 @@
 	open_space = 1
 	blob_allowed = 0
 	environment = 19
-	lightswitch = FALSE 
-	flags_1 = NONE 
 	grow_chance = 45
 	weather_tags = list(WEATHER_ALL)
 
@@ -48,13 +46,18 @@
 		/datum/looping_sound/ambient/seagulls,
 	)
 
+/area/frontier/wilderness/event
+	name = "Wilderness Event"
+
+/area/frontier/radiation
+	name = "radiation"
+	icon_state = "radiation"
 
 /// COLONY AREAS	
 /area/frontier/outdoor/colony
 	name = "Colony Outdoors"
 	icon_state = "colony"
 	requires_power = 1
-	lightswitch = FALSE
 	ambience_area = list(
 		/datum/looping_sound/ambient/city,
 		/datum/looping_sound/ambient/critters,
@@ -63,6 +66,23 @@
 		/datum/looping_sound/ambient/critters/birds,
 		/datum/looping_sound/ambient/critters/birds/crow,
 		)
+
+/area/frontier/outdoor/colony/depot_dock
+	name = "Depot Dock"
+	icon_state = "depot_shuttle"
+	requires_power = 1
+	ambience_area = list(
+		/datum/looping_sound/ambient/city,
+		/datum/looping_sound/ambient/critters,
+		/datum/looping_sound/ambient/general,
+		/datum/looping_sound/ambient/swamp/quiet,
+		/datum/looping_sound/ambient/critters/birds,
+		/datum/looping_sound/ambient/critters/birds/crow,
+		)
+
+
+
+
 
 /area/frontier/outdoor/colony/roof
 	name = "Roof"
@@ -91,11 +111,10 @@
 	requires_power = 1
 	ambience_area = list(
 		/datum/looping_sound/ambient/city,
-		/datum/looping_sound/ambient/critters,
 		/datum/looping_sound/ambient/general,
-		/datum/looping_sound/ambient/swamp/quiet,
-		/datum/looping_sound/ambient/critters/birds,
-		/datum/looping_sound/ambient/critters/birds/crow,
+		/datum/looping_sound/ambient/building,
+		/datum/looping_sound/ambient/lightbulb
+
 		)
 
 /area/frontier/indoor/gatehouse

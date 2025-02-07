@@ -17,7 +17,14 @@
 	end_duration = 100
 	end_message = span_notice("The cold snap dies down, it should be safe to go outside again.")
 
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest)
+	area_types = list(/area/frontier/outdoor, 
+/area/frontier/outdoor/wilderness, 
+/area/frontier/outdoor/river, 
+/area/frontier/outdoor/shoreline, 
+/area/frontier/outdoor/colony, 
+/area/frontier/outdoor/depot_dock,
+/area/frontier/outdoor/colony/roof
+)
 	protected_areas = list(/area/shuttle)
 	target_trait = ZTRAIT_STATION
 	tag_weather = WEATHER_COLD
