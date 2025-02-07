@@ -22,7 +22,7 @@
 /area/frontier/outdoor/river, 
 /area/frontier/outdoor/shoreline, 
 /area/frontier/outdoor/colony, 
-/area/frontier/outdoor/depot_dock,
+/area/frontier/outdoor/colony/depot_dock,,
 /area/frontier/outdoor/colony/roof
 )
 	protected_areas = list(/area/shuttle)
