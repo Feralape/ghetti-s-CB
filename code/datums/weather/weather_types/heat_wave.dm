@@ -23,8 +23,9 @@
 /area/frontier/outdoor/river, 
 /area/frontier/outdoor/shoreline, 
 /area/frontier/outdoor/colony, 
-/area/frontier/outdoor/colony/depot_dock,,
-/area/frontier/outdoor/colony/roof
+/area/frontier/outdoor/colony/depot_dock,
+/area/frontier/outdoor/colony/roof,
+/area/frontier/outdoor/eastwater_town
 )
 	protected_areas = list(/area/shuttle)
 	target_trait = ZTRAIT_STATION

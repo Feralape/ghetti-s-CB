@@ -24,7 +24,8 @@
 /area/frontier/outdoor/shoreline, 
 /area/frontier/outdoor/colony, 
 /area/frontier/outdoor/colony/depot_dock,,
-/area/frontier/outdoor/colony/roof
+/area/frontier/outdoor/colony/roof,
+/area/frontier/outdoor/eastwater_town
 )
 	target_trait = ZTRAIT_STATION
 	protect_indoors = TRUE

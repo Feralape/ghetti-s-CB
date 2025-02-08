@@ -219,12 +219,27 @@ GLOBAL_LIST_INIT(plant_type_weighted, list(
 	name = "savannah"
 	desc = "Some savannah."
 	icon = 'icons/fallout/turfs/savannah.dmi'
-	icon_state = "savannahcenter"
+	icon_state = "savannah"
 	slowdown = 0.4
 	flags_1 = CAN_HAVE_NATURE | ADJACENCIES_OVERLAY
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
+	edge_icon = /obj/effect/overlay/savannah/edge
+	turf_types_to_check = list(
+	/turf/open/indestructible/ground/outside/dirt,
+	/turf/open/indestructible/ground/outside/gravel, 
+	/turf/open/liquid/water,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
+	/turf/open/indestructible/ground/inside/mountain,
+	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/inside/mountain)
+
+/obj/effect/overlay/savannah/edge
+	name = "savannah edge"
+	icon = 'icons/fallout/turfs/savannah.dmi'
+	icon_state = "savannahedge"
 
 /turf/open/indestructible/ground/outside/savannah/center
 	icon_state = "savannahcenter"
@@ -377,7 +392,8 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	clawfootstep = FOOTSTEP_GRAVEL
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY	
 	edge_icon = /obj/effect/overlay/dirt_side
-	turf_types_to_check = list(/turf/open/liquid/water,  
+	turf_types_to_check = list(/turf/open/liquid/water, 
+	/turf/open/floor/plating/ice, 
 	/turf/open/indestructible/ground/outside/desert,
 	/turf/open/indestructible/ground/outside/road,
 	/turf/open/indestructible/ground/outside/sidewalk,
@@ -624,6 +640,31 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	barefootstep = FOOTSTEP_SNOW
 	clawfootstep = FOOTSTEP_SNOW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
+	edge_icon = /obj/effect/overlay/snow_edge
+	turf_types_to_check = list(/turf/open/liquid/water,
+	/turf/open/indestructible/ground/outside/desert,
+	/turf/open/indestructible/ground/outside/road,
+	/turf/open/indestructible/ground/outside/sidewalk,
+	/turf/open/indestructible/ground/inside/mountain,
+	/turf/open/indestructible/ground/outside/dirt,
+	/turf/open/indestructible/ground/outside/gravel,
+	/turf/open/indestructible/ground/outside/savannah,
+	/turf/open/indestructible/ground/outside/civ/grass,
+	/turf/open/indestructible/ground/outside/civ/drygrass,
+	/turf/open/floor/plating/ice)
+
+	
+
+/obj/effect/overlay/snow_edge
+	name = "snow"
+	icon = 'icons/turf/snow.dmi'
+	icon_state = "snow_corner"
+	density = FALSE
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	plane = FLOOR_PLANE
+	layer = ABOVE_OPEN_TURF_LAYER
+	anchored = TRUE
+	resistance_flags = INDESTRUCTIBLE
 
 /turf/open/indestructible/ground/outside/ruins/ex_act(severity, target)
 	contents_explosion(severity, target)
@@ -914,6 +955,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	/turf/open/indestructible/ground/outside/sidewalk,
 	/turf/open/indestructible/ground/outside/gravel, 
 	/turf/open/liquid/water,
+	/turf/open/floor/plating/ice,
 	/turf/open/indestructible/ground/inside/mountain)
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_GRASS
@@ -991,6 +1033,7 @@ GLOBAL_LIST_INIT(dirt_loots, list(
 	/turf/open/indestructible/ground/outside/sidewalk,
 	/turf/open/indestructible/ground/outside/gravel, 
 	/turf/open/liquid/water,
+	/turf/open/floor/plating/ice,
 	/turf/open/indestructible/ground/inside/mountain)
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_GRASS

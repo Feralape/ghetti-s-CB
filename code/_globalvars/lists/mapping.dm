@@ -63,5 +63,6 @@ GLOBAL_LIST_INIT(outdoor_areas, list(/area/frontier/outdoor,
 /area/frontier/outdoor/shoreline, 
 /area/frontier/outdoor/colony, 
 /area/frontier/outdoor/colony/depot_dock,
-/area/frontier/outdoor/colony/roof
+/area/frontier/outdoor/colony/roof,
+/area/frontier/outdoor/eastwater_town
 )) //I lick the fel viciously ~TK
