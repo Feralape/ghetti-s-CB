@@ -221,8 +221,53 @@
 		/datum/looping_sound/ambient/critters,
 		)
 
+/area/frontier/indoor/tunnel
+	name = "Highway Tunnel"
+	icon_state = "tunnel"
+	requires_power = 1
+	ambience_area = list(
+		/datum/looping_sound/ambient/cave,
+		/datum/looping_sound/ambient/building/sulphurtribe/highwinds,
+		/datum/looping_sound/ambient/building/sulphurtribe/highwinds/gong,
+		/datum/looping_sound/ambient/general,
+		/datum/looping_sound/ambient/lightbulb,
+		/datum/looping_sound/ambient/critters,
+		)
+
+//EASTWATER BAY
+/area/frontier/outdoor/eastwater_town
+	name = "Eastwater Town"
+	icon_state = "eastwater"
+	requires_power = 1
+	ambience_area = list(
+		/datum/looping_sound/ambient/critters,
+		/datum/looping_sound/ambient/town,
+		/datum/looping_sound/ambient/building/sulphurtribe/highwinds,
+		/datum/looping_sound/ambient/building/sulphurtribe/highwinds/gong,
+		)
 
 
+/area/frontier/outdoor/eastwater_town/bay
+	name = "Eastwater Bay"
+	icon_state = "eastwater_bay"
+	requires_power = 1
+	ambience_area = list(
+		/datum/looping_sound/ambient/critters,
+		/datum/looping_sound/ambient/town,
+		/datum/looping_sound/ambient/building/sulphurtribe/highwinds,
+		/datum/looping_sound/ambient/building/sulphurtribe/highwinds/gong,
+		/datum/looping_sound/soundrock/shore,
+		)
+
+/area/frontier/indoor/eastwater_town
+	name = "Eastwater Town Buildings"
+	icon_state = "eastwater_building"
+	requires_power = 1
+	ambience_area = list(
+		/datum/looping_sound/ambient/general,
+		/datum/looping_sound/ambient/woodcreak,
+		/datum/looping_sound/ambient/lightbulb,
+		)
 
 //CAVE WILDERNESS
 /area/frontier/indoor/cave

@@ -21,8 +21,9 @@
 /area/frontier/outdoor/river, 
 /area/frontier/outdoor/shoreline, 
 /area/frontier/outdoor/colony, 
-/area/frontier/outdoor/colony/depot_dock,,
-/area/frontier/outdoor/colony/roof
+/area/frontier/outdoor/colony/depot_dock,
+/area/frontier/outdoor/colony/roof,
+/area/frontier/outdoor/eastwater_town
 )
 	protect_indoors = TRUE
 	target_trait = ZTRAIT_ASHSTORM
@@ -126,8 +127,9 @@
 /area/frontier/outdoor/river, 
 /area/frontier/outdoor/shoreline, 
 /area/frontier/outdoor/colony, 
-/area/frontier/outdoor/colony/depot_dock,,
-/area/frontier/outdoor/colony/roof
+/area/frontier/outdoor/colony/depot_dock,
+/area/frontier/outdoor/colony/roof,
+/area/frontier/outdoor/eastwater_town
 )
 	protect_indoors = TRUE
 	target_trait = ZTRAIT_STATION
