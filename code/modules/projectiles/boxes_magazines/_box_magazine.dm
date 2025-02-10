@@ -1,3 +1,6 @@
+//fahkeet we are having even more ammo, i already doubled most ammo box file ammo amounts by itself tho.
+#define AMMO_BOX_MULTIPLIER 2
+
 //Boxes of ammo
 /obj/item/ammo_box
 	name = "ammo box (null_reference_exception)"
@@ -16,6 +19,7 @@
 	var/list/stored_ammo = list()
 	var/obj/item/ammo_casing/ammo_type = /obj/item/ammo_casing
 	var/max_ammo = 7
+	var/max_sprited_ammo
 	var/multiple_sprites = 0
 	/// Anything on the list can be added to this magazine. MUST be a list
 	var/list/caliber = list()
@@ -390,6 +394,9 @@
 				icon_state = "[initial(icon_state)]-8"
 			else
 				icon_state = "[initial(icon_state)]-[stored_ammo.len]"
+	if(max_sprited_ammo) //this is so we can put more ammo than sprites can handle without making 9000 icons for one box
+		if(stored_ammo.len > max_sprited_ammo)
+			icon_state = initial(icon_state)
 
 //Behavior for magazines
 /obj/item/ammo_box/magazine/proc/ammo_count()

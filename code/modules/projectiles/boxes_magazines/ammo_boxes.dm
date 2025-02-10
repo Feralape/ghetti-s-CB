@@ -9,7 +9,8 @@
 //Shotguns
 /obj/item/ammo_box/shotgun
 	icon = 'icons/fallout/objects/guns/ammo.dmi'
-	max_ammo = 12
+	max_ammo = 24*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 12
 	custom_materials = list(/datum/material/iron = MATS_SHOTGUN_BOX)
 	ammo_type = /obj/item/ammo_casing/shotgun
 	multiple_sprites = 1
@@ -50,7 +51,8 @@
 /obj/item/ammo_box/shotgun/improvised
 	name = "homemade shotgun shells"
 	desc = "Recycled paper, plastic, little pieces of metal and gunpowder. Loud but not very effective."
-	max_ammo = 8
+	max_ammo = 17*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 8
 	multiple_sprites = 1
 	ammo_type = /obj/item/ammo_casing/shotgun/improvised
 	icon_state = "improvshotbag"
@@ -72,7 +74,8 @@
 	desc = "A sack full of musket balls and blackpowder."
 	icon = 'modular_coyote/icons/objects/c13ammo.dmi'
 	icon_state = "gunpowder_musket"
-	max_ammo = 16
+	max_ammo = 32*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 16
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	ammo_type = /obj/item/ammo_casing/caseless/flintlock
 	multiple_sprites = 0
@@ -85,7 +88,8 @@
 	desc = "A sack full of musket balls and blackpowder."
 	icon = 'modular_coyote/icons/objects/c13ammo.dmi'
 	icon_state = "gunpowder_minie"
-	max_ammo = 16
+	max_ammo = 32*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 16
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	ammo_type = /obj/item/ammo_casing/caseless/flintlock/minie
 	multiple_sprites = 0
@@ -97,7 +101,8 @@
 	desc = "A sack full of superballs and blackpowder."
 	icon = 'modular_coyote/icons/objects/c13ammo.dmi'
 	icon_state = "gunpowder_rubber"
-	max_ammo = 16
+	max_ammo = 32*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 16
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	ammo_type = /obj/item/ammo_casing/caseless/flintlock/rubber
 	multiple_sprites = 0
@@ -112,7 +117,8 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/a22
 	caliber = list(CALIBER_22LR)
-	max_ammo = 60
+	max_ammo = 120*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 60
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -145,7 +151,8 @@
 	ammo_type = /obj/item/ammo_casing/caseless/needle
 	caliber = list(CALIBER_NEEDLE)
 	multiple_sprites = 2
-	max_ammo = 72
+	max_ammo = 144*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 72
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -158,7 +165,8 @@
 	ammo_type = /obj/item/ammo_casing/caseless/needle/improvised
 	caliber = list(CALIBER_NEEDLE)
 	multiple_sprites = 2
-	max_ammo = 72
+	max_ammo = 144*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 72
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -171,7 +179,8 @@
 	ammo_type = /obj/item/ammo_casing/shotgun/needlerbuckshot
 	caliber = list(CALIBER_SHOTGUNNEEDLER)
 	multiple_sprites = 2
-	max_ammo = 24
+	max_ammo = 24*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 12
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -184,7 +193,8 @@
 	ammo_type = /obj/item/ammo_casing/caseless/needle/heavy
 	caliber = list(CALIBER_HNEEDLE)
 	multiple_sprites = 2
-	max_ammo = 12
+	max_ammo = 24*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 12
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -198,7 +208,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_9MM)
 	ammo_type = /obj/item/ammo_casing/c9mm
-	max_ammo = 45
+	max_ammo = 90*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 45
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -229,7 +240,7 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_38)
 	ammo_type = /obj/item/ammo_casing/c38
-	max_ammo = 25
+	max_ammo = 50*AMMO_BOX_MULTIPLIER
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_SMALL_BOX)
 
@@ -261,7 +272,8 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/c10mm
 	caliber = list(CALIBER_10MM)
-	max_ammo = 30
+	max_ammo = 60*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 30
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_MEDIUM_BOX)
 	randomize_ammo_count = FALSE
@@ -291,7 +303,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_357)
 	ammo_type = /obj/item/ammo_casing/a357
-	max_ammo = 25
+	max_ammo = 50*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 25
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_HEAVY_BOX)
 	w_class = WEIGHT_CLASS_SMALL
 	randomize_ammo_count = FALSE
@@ -327,7 +340,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_44)
 	ammo_type = /obj/item/ammo_casing/m44
-	max_ammo = 21
+	max_ammo = 42*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 21
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_HEAVY_BOX)
 	randomize_ammo_count = FALSE
@@ -351,7 +365,8 @@
 	icon_state = "ammobox"
 	caliber = list(CALIBER_45LC)
 	ammo_type = /obj/item/ammo_casing/a45lc
-	max_ammo = 30
+	max_ammo = 60*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 30
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_MEDIUM_BOX)
 	randomize_ammo_count = FALSE
@@ -371,7 +386,8 @@
 	multiple_sprites = 2
 	icon_state = "45box"
 	ammo_type = /obj/item/ammo_casing/c45
-	max_ammo = 25
+	max_ammo = 50*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 25
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_MEDIUM_BOX)
 	randomize_ammo_count = FALSE
@@ -404,7 +420,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_4570)
 	ammo_type = /obj/item/ammo_casing/c4570
-	max_ammo = 15
+	max_ammo = 30*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 15
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_MEDIUM_BOX)
 	randomize_ammo_count = FALSE
@@ -428,7 +445,8 @@
 	name = "bag with reloaded .45-70 bullets"
 	ammo_type = /obj/item/ammo_casing/c4570/improvised
 	icon_state = "improvshotbag"
-	max_ammo = 20
+	max_ammo = 40*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 20
 	multiple_sprites = 3
 
 
@@ -441,7 +459,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_5MM)
 	ammo_type = /obj/item/ammo_casing/m5mm
-	max_ammo = 30
+	max_ammo = 60*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 30
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -455,7 +474,8 @@
 	name = "bag with reloaded 5mm bullets"
 	ammo_type = /obj/item/ammo_casing/m5mm/improvised
 	icon_state = "improvshotbag"
-	max_ammo = 30
+	max_ammo = 60*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 30
 	multiple_sprites = 3
 
 //5.56x45
@@ -466,7 +486,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_556)
 	ammo_type = /obj/item/ammo_casing/a556
-	max_ammo = 25
+	max_ammo = 50*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 25
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_SMALL_BOX)
 	randomize_ammo_count = FALSE
@@ -509,7 +530,8 @@
 	desc = "The casings are worn, the gunpowder some homebrew mix of dubious quality. At least it goes bang."
 	ammo_type = /obj/item/ammo_casing/a556/improvised
 	multiple_sprites = 3
-	max_ammo = 25
+	max_ammo = 50*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 25
 	icon_state = "improvshotbag"
 
 //7.62x51, .308 Winchester
@@ -520,7 +542,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_308)
 	ammo_type = /obj/item/ammo_casing/a308
-	max_ammo = 20
+	max_ammo = 40*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 20
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_MEDIUM_BOX)
 	randomize_ammo_count = FALSE
@@ -529,7 +552,8 @@
 	name = "bag with reloaded .308 bullets"
 	ammo_type = /obj/item/ammo_casing/a308/improvised
 	icon_state = "improvshotbag"
-	max_ammo = 20
+	max_ammo = 40*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 20
 	multiple_sprites = 3
 
 //7.62x51, .30-06
@@ -540,7 +564,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_3006)
 	ammo_type = /obj/item/ammo_casing/a3006
-	max_ammo = 15
+	max_ammo = 30*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 15
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_MEDIUM_BOX)
 	randomize_ammo_count = FALSE
@@ -554,7 +579,8 @@
 	name = "bag with reloaded .30-06 bullets"
 	ammo_type = /obj/item/ammo_casing/a3006/improvised
 	icon_state = "improvshotbag"
-	max_ammo = 15
+	max_ammo = 30*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 15
 	multiple_sprites = 3
 
 /*
@@ -565,7 +591,7 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_762)
 	ammo_type = /obj/item/ammo_casing/a762
-	max_ammo = 20
+	max_ammo = 40*AMMO_BOX_MULTIPLIER
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_MEDIUM_BOX)
 */
@@ -606,7 +632,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_50MG)
 	ammo_type = /obj/item/ammo_casing/a50MG
-	max_ammo = 12
+	max_ammo = 24*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 12
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_HEAVY_BOX)
 	randomize_ammo_count = FALSE
@@ -622,19 +649,21 @@
 	name = "bag with reloaded .50MG slugs"
 	ammo_type = /obj/item/ammo_casing/a50MG/improvised
 	icon_state = "improvshotbag"
-	max_ammo = 10
+	max_ammo = 20*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 10
 	multiple_sprites = 3
 
 /obj/item/ammo_box/a50MGbox/contam
 	name = "ammo box (12.7mm contaminated)"
-	max_ammo = 12
+	max_ammo = 24*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 12
 	desc = "12.7mm bullets loaded with a gaseous hepatoxic payload, which reduces the effectiveness of medicine and toxins."
 	ammo_type = /obj/item/ammo_casing/a50MG/contam
 
 /*
 /obj/item/ammo_box/a50MGbox/uraniumtipped
 	name = "ammo box (12.7mm uranium-tipped)"
-	max_ammo = 15
+	max_ammo = 30*AMMO_BOX_MULTIPLIER
 	desc = "12.7mm bullets loaded with enriched-uranium penetrators."
 	ammo_type = /obj/item/ammo_casing/a50MG/uraniumtipped
 */
@@ -646,7 +675,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_14MM)
 	ammo_type = /obj/item/ammo_casing/p14mm
-	max_ammo = 18
+	max_ammo = 34*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 18
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_HEAVY_BOX)
 	randomize_ammo_count = FALSE
@@ -659,7 +689,8 @@
 /obj/item/ammo_box/m14mm/improvised
 	name = "bag with reloaded 14mm bullets"
 	icon_state = "improvshotbag"
-	max_ammo = 20
+	max_ammo = 40*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 20
 	ammo_type = /obj/item/ammo_casing/p14mm/improvised
 	multiple_sprites = 3
 
@@ -671,7 +702,8 @@
 	multiple_sprites = 2
 	caliber = list(CALIBER_577NE)
 	ammo_type = /obj/item/ammo_casing/ne577
-	max_ammo = 20
+	max_ammo = 40*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 20
 	w_class = WEIGHT_CLASS_SMALL
 	custom_materials = list(/datum/material/iron = MATS_PISTOL_HEAVY_BOX)
 	randomize_ammo_count = FALSE
@@ -679,7 +711,8 @@
 /obj/item/ammo_box/ne577/improvised
 	name = "bag with reloaded .577 Nitro Express bullets"
 	icon_state = "improvshotbag"
-	max_ammo = 25
+	max_ammo = 50*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 25
 	ammo_type = /obj/item/ammo_casing/p14mm/improvised
 	multiple_sprites = 3
 
@@ -692,7 +725,8 @@
 	multiple_sprites = 2
 	ammo_type = /obj/item/ammo_casing/caseless/g11
 	w_class = WEIGHT_CLASS_SMALL
-	max_ammo = 50
+	max_ammo = 100*AMMO_BOX_MULTIPLIER
+	max_sprited_ammo = 50
 	custom_materials = list(/datum/material/iron = MATS_RIFLE_SMALL_BOX)
 	randomize_ammo_count = FALSE
 
@@ -1037,7 +1071,7 @@
 	icon_state = "musketbag"
 	ammo_type = /obj/item/ammo_casing/caseless/musketball
 	caliber = list(CALIBER_MUSKET_BALL)
-	max_ammo = 15
+	max_ammo = 30*AMMO_BOX_MULTIPLIER
 	custom_materials = list(/datum/material/iron = MATS_STRIPPER)
 	w_class = WEIGHT_CLASS_SMALL
 	randomize_ammo_count = FALSE
@@ -1211,7 +1245,7 @@
 	unloadable = TRUE
 	ammo_type = /obj/item/ammo_casing/caseless/flamethrower
 	w_class = WEIGHT_CLASS_SMALL
-	max_ammo = 6 // 3 bursts, you need 2 cans
+	max_ammo = 6
 	custom_materials = list(/datum/material/iron = MATS_MISC)
 	randomize_ammo_count = FALSE
 
@@ -1222,7 +1256,7 @@
 	desc = "A .rack of .50 MG ammo, for when you really need (a very big) something dead."
 	icon_state = "50ap"
 	ammo_type = /obj/item/ammo_casing/a50MG/AP
-	max_ammo = 5
+	max_ammo = 5*AMMO_BOX_MULTIPLIER
 	multiple_sprites = 1
 	custom_materials = list(/datum/material/iron = 40000, /datum/material/glass = 50000)
 
