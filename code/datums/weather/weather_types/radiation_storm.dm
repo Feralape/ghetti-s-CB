@@ -18,7 +18,15 @@
 	end_message = span_userdanger("The air seems to be cooling off again as the radiation storm passes, the sky returning to it's normal color.")
 
 	tag_weather = WEATHER_RADS
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest)
+	area_types = list(/area/frontier/outdoor, 
+/area/frontier/outdoor/wilderness, 
+/area/frontier/outdoor/river, 
+/area/frontier/outdoor/shoreline, 
+/area/frontier/outdoor/colony, 
+/area/frontier/outdoor/colony/depot_dock,
+/area/frontier/outdoor/colony/roof,
+/area/frontier/outdoor/eastwater_town
+)
 	protected_areas = list(
 		/area/maintenance,
 		/area/ai_monitored/turret_protected/ai_upload,

@@ -13,8 +13,8 @@
 	var/buildstacktype = /obj/item/stack/sheet/metal
 	var/buildstackamount = 1
 	var/item_chair = /obj/item/chair // if null it can't be picked up
-	plane = MOB_PLANE
-	layer = OBJ_LAYER
+	plane = OBJITEM_PLANE
+	layer = LOW_OBJ_LAYER
 
 /obj/structure/chair/examine(mob/user)
 	. = ..()

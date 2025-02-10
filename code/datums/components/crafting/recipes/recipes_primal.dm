@@ -289,7 +289,7 @@
 
 /datum/crafting_recipe/tribalwar/crossbow
 	name = "CrossBow"
-	result = /obj/item/gun/ballistic/bow/crossbow
+	result = /obj/item/gun/ballistic/bow/lightxbow
 	time = 180
 	reqs = list(/obj/item/stack/sheet/metal = 10,
 				/obj/item/stack/crafting/metalparts = 3,

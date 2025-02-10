@@ -18,7 +18,15 @@
 	end_sound = 'sound/ambience/acidrain_end.ogg'
 
 	tag_weather = WEATHER_ACID
-	area_types = list(/area/f13/wasteland, /area/f13/desert, /area/f13/farm, /area/f13/forest)
+	area_types = list(/area/frontier/outdoor, 
+/area/frontier/outdoor/wilderness, 
+/area/frontier/outdoor/river, 
+/area/frontier/outdoor/shoreline, 
+/area/frontier/outdoor/colony, 
+/area/frontier/outdoor/colony/depot_dock,,
+/area/frontier/outdoor/colony/roof,
+/area/frontier/outdoor/eastwater_town
+)
 	target_trait = ZTRAIT_STATION
 	protect_indoors = TRUE
 

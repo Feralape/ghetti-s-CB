@@ -6,7 +6,7 @@
 	"space_ruin_levels":0,
 	"space_empty_levels":0,
 	"shuttles": {
-		"cargo":"cargo_pahrump",
+		"cargo":"cargo_sovan",
 		"emergency": "emergency_pahrump",
 		"ferry": "ferry_fancy"
 	},

@@ -801,7 +801,7 @@ Raider
 		/obj/item/storage/fancy/candle_box = 1,
 		/obj/item/reagent_containers/food/drinks/bottle/holywater = 1,
 		///obj/item/storage/bag/tribe_quiver = 1,
-		///obj/item/gun/ballistic/bow/crossbow = 1,
+		///obj/item/gun/ballistic/bow/lightxbow = 1,
 		/obj/item/clothing/suit/bio_suit/plaguedoctorsuit = 1,
 		/obj/item/clothing/head/fluff/bandit = 1,
 		/obj/item/clothing/shoes/f13/fancy = 1,

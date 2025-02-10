@@ -475,6 +475,10 @@
 	suffix = "pahrump"
 	name = "supply train (Pahrump)"
 
+/datum/map_template/shuttle/cargo/sovan
+	suffix = "sovan"
+	name = "supply train (Sovan)"
+
 /datum/map_template/shuttle/emergency/delta
 	suffix = "delta"
 	name = "Delta Station Emergency Shuttle"
