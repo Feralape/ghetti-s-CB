@@ -31,7 +31,21 @@
 	spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/pistol/update_icon_state()
-	icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
+	var/loaded = istype(magazine)
+	if(loaded)
+		var/state_to_use = "[initial(icon_state)]"
+		if(!bolted && has_unbolted_loaded_icon) //if unbolted but loaded
+			state_to_use = "[initial(icon_state)]-ub"
+			return
+		else if(!bolted && !has_unbolted_loaded_icon)
+			state_to_use = "[initial(icon_state)]"
+			return
+		icon_state = state_to_use
+		return
+	if(bolted && has_unbolted_loaded_icon) //bolted but not loaded
+		icon_state = "[initial(icon_state)]-ul"
+		return
+	icon_state = "[initial(icon_state)]-e"
 
 
 /* * * * * * * * *

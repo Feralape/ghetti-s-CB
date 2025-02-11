@@ -48,6 +48,8 @@ ATTACHMENTS
 
 	var/clumsy_check = TRUE
 	var/obj/item/ammo_casing/chambered = null
+	var/bolted = TRUE
+	var/has_unbolted_loaded_icon = FALSE
 	trigger_guard = TRIGGER_GUARD_NORMAL	//trigger guard on the weapon, hulks can't fire them with their big meaty fingers
 	var/sawn_desc = null				//description change if weapon is sawn-off
 	var/sawn_off = FALSE

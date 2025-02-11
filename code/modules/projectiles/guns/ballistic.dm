@@ -91,13 +91,16 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 /// If the chamber is not empty, or theres no magazine, do nothing
 /obj/item/gun/ballistic/proc/chamber_round()
 	if (chambered || !magazine)
-		return
+		return FALSE
 	else if (magazine.ammo_count())
 		chambered = magazine.get_round()
 		chambered.forceMove(src)
 	update_icon()
+	return TRUE
 
 /obj/item/gun/ballistic/can_shoot()
+	if(!bolted && casing_ejector)
+		return FALSE
 	return !!chambered?.BB
 /* 	if(!magazine || !magazine.ammo_count(0))
 		return FALSE
@@ -117,15 +120,20 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 				return TRUE
 			if(magazine.fixed_mag) // fixed mag, just load bullets in
 				magazine.load_from_casing(A, user, FALSE)
-				chamber_round(0)
 				update_icon()
 				return TRUE
+		if(!chambered && !bolted)
+			chambered = A
+			A.forceMove(chambered)
+			bolted = TRUE
+			update_icon()
+			playsound(src, 'sound/weapons/bulletinsert.ogg', 70, 1)
+			return
 
 	if(istype(A, /obj/item/ammo_box))
 		var/obj/item/ammo_box/new_mag = A
 		if(magazine?.fixed_mag) // fixed mag, just load bullets in
 			magazine.load_from_box(A, user, FALSE)
-			chamber_round(0)
 			update_icon()
 			return TRUE
 		// removable mag, eject the mag
@@ -146,9 +154,6 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 			return FALSE
 		if(magazine.ammo_count())
 			playsound(src, "gun_insert_full_magazine", 70, 1)
-			if(!chambered)
-				chamber_round()
-				addtimer(CALLBACK(usr, GLOBAL_PROC_REF(playsound), src, 'sound/weapons/gun_chamber_round.ogg', 100, 1), 3)
 		else
 			playsound(src, "gun_insert_empty_magazine", 70, 1)
 		new_mag.update_icon()
@@ -244,13 +249,46 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 		if(magazine.fixed_mag || !casing_ejector)
 			pump(user, TRUE)
 			update_icon()
-		else
-			eject_chambered_round(user, TRUE)
 			return
+		if(casing_ejector)
+			if(chambered && !bolted)
+				bolted = TRUE
+				update_icon()
+				playsound(user.loc, 'sound/weapons/gun_chamber_round.ogg', 40, 1)
+				return
+			if(chambered && bolted)
+				eject_chambered_round(user, TRUE, TRUE)
+				playsound(user.loc, cock_sound, 40, 1)
+				return
+			if(!chambered && !bolted)
+				bolted = TRUE
+				chamber_round()
+				update_icon()
+				playsound(user.loc, 'sound/weapons/gun_chamber_round.ogg', 40, 1)
+				return
+			if(!chambered && bolted)
+				chamber_round()
+				playsound(user.loc, cock_sound, 40, 1)
+				return
+	if(!magazine && casing_ejector)
+		bolted = !bolted
+		if(!bolted)
+			playsound(user.loc, cock_sound, 40, 1)
+		else
+			playsound(user.loc, 'sound/weapons/gun_chamber_round.ogg', 40, 1)
+		update_icon()
+		return
 	if(chambered)
 		pump(user, TRUE)
 		update_icon()
 		return
+
+/obj/item/gun/ballistic/verb/open_slide()
+	set name = "Open slide"
+
+	bolted = FALSE
+	eject_chambered_round(soft_eject=TRUE)
+	update_icon()
 
 /obj/item/gun/ballistic/attack_hand(mob/living/user)
 	if(user.get_inactive_held_item() != src)
@@ -264,8 +302,13 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 	update_icon()
 	return
 
-///obj/item/gun/ballistic/AltClick(mob/living/user)
-//	pump(user, TRUE)
+/obj/item/gun/ballistic/AltClick(mob/living/user)
+	if(!magazine.fixed_mag || casing_ejector)
+		eject_magazine(user, en_bloc, !en_bloc, TRUE)
+		update_icon()
+		return
+	to_chat(user, span_notice("There's no magazine in \the [src]."))
+	update_icon()
 
 /obj/item/gun/ballistic/proc/eject_magazine(mob/living/user, is_enbloc, put_it_in_their_hand, sounds_and_words)
 	if(magazine.fixed_mag)
@@ -296,11 +339,11 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 	else
 		..()
 
-/obj/item/gun/ballistic/proc/eject_chambered_round(mob/living/user, sounds_and_words)
+/obj/item/gun/ballistic/proc/eject_chambered_round(mob/living/user, sounds_and_words, soft_eject = FALSE)
 	if(sounds_and_words)
 		to_chat(user, span_notice("You eject \a [chambered] from \the [src]'s chamber."))
 		playsound(src, "gun_slide_lock", 70, 1)
-	process_chamber(user, FALSE)
+	process_chamber(user, soft_eject)
 
 /obj/item/gun/ballistic/examine(mob/user)
 	. = ..()

@@ -93,10 +93,10 @@
 #define COOLDOWN_ITEM_TRICK "cooldown_item_trick"
 
 //from tgmc
-/obj/item/gun/revolver/verb/revolvertrick()
+/obj/item/gun/ballistic/revolver/verb/revolvertrick()
 	set category = "Weapons"
 	set name = "Do a revolver trick"
-	var/obj/item/gun/revolver/gun = usr.get_active_held_item()
+	var/obj/item/gun/ballistic/revolver/gun = usr.get_active_held_item()
 	if(!istype(gun))
 		gun = usr.get_inactive_held_item()
 
