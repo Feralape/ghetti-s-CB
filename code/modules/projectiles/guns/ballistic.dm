@@ -290,6 +290,7 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 		return
 
 /obj/item/gun/ballistic/verb/toggle_slide()
+	//racking and more detailed gun stuff bullshit brought to you by vide noir
 	set name = "Toggle slide"
 
 	bolted = !bolted
