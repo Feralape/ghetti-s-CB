@@ -125,8 +125,7 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 		if(!chambered && !bolted)
 			chambered = A
 			A.forceMove(chambered)
-			bolted = TRUE
-			update_icon()
+			to_chat(user, span_notice("You load a bullet into \the [src]."))
 			playsound(src, 'sound/weapons/bulletinsert.ogg', 70, 1)
 			return
 
@@ -254,9 +253,11 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 			if(chambered && !bolted)
 				bolted = TRUE
 				update_icon()
+				to_chat(user, span_notice("You release the slide of \the [src]."))
 				playsound(user.loc, 'sound/weapons/gun_chamber_round.ogg', 40, 1)
 				return
 			if(chambered && bolted)
+				to_chat(user, span_notice("You rack \the [src]."))
 				eject_chambered_round(user, TRUE, TRUE)
 				playsound(user.loc, cock_sound, 40, 1)
 				return
@@ -264,17 +265,22 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 				bolted = TRUE
 				chamber_round()
 				update_icon()
+				to_chat(user, span_notice("You release the slide of \the [src]."))
 				playsound(user.loc, 'sound/weapons/gun_chamber_round.ogg', 40, 1)
 				return
 			if(!chambered && bolted)
 				chamber_round()
+				to_chat(user, span_notice("You rack \the [src]."))
 				playsound(user.loc, cock_sound, 40, 1)
 				return
 	if(!magazine && casing_ejector)
 		bolted = !bolted
-		if(!bolted)
+		if(!bolted)	
+			to_chat(user, span_notice("You open the slide of \the [src]."))
 			playsound(user.loc, cock_sound, 40, 1)
+			eject_chambered_round(soft_eject=TRUE)
 		else
+			to_chat(user, span_notice("You release the slide of \the [src]."))
 			playsound(user.loc, 'sound/weapons/gun_chamber_round.ogg', 40, 1)
 		update_icon()
 		return
@@ -283,11 +289,15 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 		update_icon()
 		return
 
-/obj/item/gun/ballistic/verb/open_slide()
-	set name = "Open slide"
+/obj/item/gun/ballistic/verb/toggle_slide()
+	set name = "Toggle slide"
 
-	bolted = FALSE
-	eject_chambered_round(soft_eject=TRUE)
+	bolted = !bolted
+	if(!bolted)
+		playsound(usr.loc, cock_sound, 40, 1)
+		eject_chambered_round(soft_eject=TRUE)
+	else
+		playsound(usr.loc, 'sound/weapons/gun_chamber_round.ogg', 40, 1)
 	update_icon()
 
 /obj/item/gun/ballistic/attack_hand(mob/living/user)
@@ -298,7 +308,22 @@ GLOBAL_LIST_EMPTY(gun_accepted_magazines)
 			eject_magazine(user, en_bloc, !en_bloc, TRUE)
 			update_icon()
 		return
-	to_chat(user, span_notice("There's no magazine in \the [src]."))
+	if(bolted)
+		bolted = FALSE
+		to_chat(user, span_notice("You open the slide of \the [src]."))
+		playsound(user.loc, cock_sound, 40, 1)
+		eject_chambered_round(soft_eject=TRUE)
+		update_icon()
+		return
+	if(chambered && !bolted) //you will have to manually put a bullet in there for you to ever do this since opening bolt ejects the chamber normally.
+		to_chat(user, span_notice("You take the bullet from \the [src]'s chamber."))
+		playsound(usr.loc, cock_sound, 40, 1)
+		var/obj/item/ammo_casing/AC = chambered
+		AC.forceMove(drop_location())
+		user.put_in_hands(AC)
+		chambered = null
+		return
+	to_chat(user, span_notice("There's nothing in \the [src]."))
 	update_icon()
 	return
 
