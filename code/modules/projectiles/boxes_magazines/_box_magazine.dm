@@ -82,7 +82,7 @@
 	fill_magazine(num_bullets)
 
 /obj/item/ammo_box/proc/get_random_bullet_amount(num_bullets = max_ammo)
-	var/amount = pick(0, rand(0, num_bullets), num_bullets)
+	var/amount = pick(0, num_bullets)
 	return amount
 
 /obj/item/ammo_box/proc/fill_magazine(num_bullets = max_ammo, cock)

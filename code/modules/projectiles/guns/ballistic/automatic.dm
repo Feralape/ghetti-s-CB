@@ -42,7 +42,20 @@
 /obj/item/gun/ballistic/automatic/update_icon_state()
 	if(SEND_SIGNAL(src, COMSIG_ITEM_UPDATE_RESKIN))
 		return // all done!
-	icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
+	//icon_state = "[initial(icon_state)][magazine ? "-[magazine.max_ammo]" : ""][chambered ? "" : "-e"]"
+	var/loaded = istype(magazine)
+	if(loaded)
+		var/state_to_use = "[initial(icon_state)]-[magazine.max_ammo]"
+		if(!bolted && !magazine.stored_ammo) //-e here has ammo count before it so it should appear with magazine.
+			state_to_use = "[state_to_use]-e"
+		if(!bolted && special_bolting) //if unbolted but loaded
+			state_to_use = "[initial(icon_state)]-ub" //you need to make a special unbolt icon for this sorta thing.
+		icon_state = state_to_use
+		return
+	if(bolted && special_bolting) //bolted but not loaded
+		icon_state = "[initial(icon_state)]"
+		return
+	icon_state = "[initial(icon_state)]"
 
 /* /obj/item/gun/ballistic/automatic/attackby(obj/item/A, mob/user, params)
 	. = ..()
@@ -69,9 +82,6 @@
 			else
 				to_chat(user, span_warning("You cannot seem to get \the [src] out of your hands!")) */
 
-/obj/item/gun/ballistic/automatic/can_shoot()
-	return get_ammo()
-
 /*
 /obj/item/gun/ballistic/automatic/proc/empty_alarm()
 	if(!chambered && !get_ammo() && !alarmed)
@@ -88,12 +98,15 @@
 			"[magazine] falls out and clatters on the floor!",
 			span_notice("[magazine] falls out and clatters on the floor!")
 		)
+		bolted = FALSE
 		if(auto_eject_sound)
 			playsound(user, auto_eject_sound, 40, 1)
 		magazine.forceMove(get_turf(src.loc))
 		magazine.update_icon()
 		magazine = null
-		update_icon()
+	if(magazine && !magazine.stored_ammo.len && !chambered)
+		bolted = FALSE //slide remains open if there is nothing in the chamber after shooting.
+	update_icon()
 
 
 

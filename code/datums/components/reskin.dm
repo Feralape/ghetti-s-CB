@@ -2036,8 +2036,8 @@ GLOBAL_LIST_EMPTY(reskin_list)
 	target.item_state = item_state
 	. = TRUE
 	target.mob_overlay_icon = mob_overlay_icon
-	var/chambered = !!target.chambered
-	if(chambered)
+	var/bolted = !!target.bolted
+	if(bolted)
 		target.icon = chambered_icon
 		target.icon_state = chambered_state
 	else
@@ -2199,24 +2199,24 @@ GLOBAL_LIST_EMPTY(reskin_list)
 	target.mob_overlay_icon = mob_overlay_icon
 	var/obj/item/ammo_box/magazine/mag = target.magazine
 	var/loaded = istype(mag)
-	var/chambered = !!target.chambered
+	var/bolted = !!target.bolted
 	if(loaded) // gonna use the fancy magazine stuff
 		var/magsize = mag.max_ammo
 		if(magsize in supported_sizes)
 			var/state_to_use = "[icon_state]-[magsize]"
-			if(!chambered)
+			if(!bolted)
 				state_to_use = "[state_to_use]-e"
 			target.icon = icon
 			target.icon_state = state_to_use
 			return
-		if(chambered)
+		if(bolted)
 			target.icon = loaded_chambered_icon
 			target.icon_state = loaded_chambered_state
 			return
 		target.icon = loaded_empty_icon
 		target.icon_state = loaded_empty_state
 		return
-	if(chambered) // chambered and unloaded
+	if(bolted) // bolted and unloaded
 		target.icon = unloaded_chambered_icon
 		target.icon_state = unloaded_chambered_state
 		return

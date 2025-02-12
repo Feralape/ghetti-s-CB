@@ -15,6 +15,7 @@
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	item_state = "gun"
+	special_bolting = TRUE
 	weapon_class = WEAPON_CLASS_SMALL
 	mag_type = /obj/item/ammo_box/magazine/m10mm/adv/simple
 	weapon_weight = GUN_ONE_HAND_AKIMBO
@@ -31,7 +32,18 @@
 	spawnwithmagazine = FALSE
 
 /obj/item/gun/ballistic/automatic/pistol/update_icon_state()
-	icon_state = "[initial(icon_state)][chambered ? "" : "-e"]"
+	//not the best way to do slide things but most pistols have their mags in the grip so its not visible.
+	var/loaded = istype(magazine)
+	if(loaded)
+		var/state_to_use = "[initial(icon_state)]"
+		if(!bolted && special_bolting) //if unbolted but loaded
+			state_to_use = "[initial(icon_state)]-e"
+		icon_state = state_to_use
+		return
+	if(bolted && special_bolting) //bolted but not loaded
+		icon_state = "[initial(icon_state)]" 
+		return
+	icon_state = "[initial(icon_state)]-e"
 
 
 /* * * * * * * * *
